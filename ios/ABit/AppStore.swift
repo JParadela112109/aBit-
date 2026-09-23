@@ -3,75 +3,71 @@ import Observation
 
 @Observable
 final class AppStore {
-    var courses: [CourseSummary] = []
-    var bites: [BiteCard] = []
-    var quizzes: [QuizItem] = []
+    private(set) var bundles: [CourseBundleFile] = []
+    var selectedCourseID: String?
     var completedBiteIDs: Set<String> = []
+    var passedQuizIDs: Set<String> = []
     var friends: [FriendActivity] = [
         .init(id: "1", name: "Maya", studying: "Death · Kagan", bitsToday: 12),
         .init(id: "2", name: "Noah", studying: "Psych · Bloom", bitsToday: 8),
         .init(id: "3", name: "Ava", studying: "Markets · Shiller", bitsToday: 15),
     ]
 
-    var progress: Double {
+    var courses: [CourseMeta] { bundles.map(\.course) }
+
+    var selectedBundle: CourseBundleFile? {
+        if let id = selectedCourseID {
+            return bundles.first { $0.course.id == id }
+        }
+        return bundles.first
+    }
+
+    var selectedCourse: CourseMeta? { selectedBundle?.course }
+
+    func bites(for courseID: String) -> [BiteCard] {
+        bundles.first { $0.course.id == courseID }?
+            .bites.sorted { $0.order < $1.order } ?? []
+    }
+
+    func quizzes(for courseID: String) -> [QuizItem] {
+        bundles.first { $0.course.id == courseID }?.quizzes ?? []
+    }
+
+    func progress(for courseID: String) -> Double {
+        let bites = bites(for: courseID)
         guard !bites.isEmpty else { return 0 }
-        return Double(completedBiteIDs.count) / Double(bites.count)
+        let done = bites.filter { completedBiteIDs.contains($0.id) }.count
+        return Double(done) / Double(bites.count)
+    }
+
+    var overallBitsCleared: Int {
+        completedBiteIDs.count
+    }
+
+    var earnedDegrees: [CourseMeta] {
+        courses.filter { progress(for: $0.id) >= 0.99 }
     }
 
     init() {
-        loadSample()
+        reloadCourses()
     }
 
-    func loadSample() {
-        guard let url = Bundle.main.url(forResource: "SampleBites", withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let pack = try? JSONDecoder().decode(BitePack.self, from: data)
-        else {
-            loadFallback()
-            return
+    func reloadCourses() {
+        bundles = CourseLibrary.loadBundles()
+        if selectedCourseID == nil {
+            selectedCourseID = bundles.first?.course.id
         }
-        bites = pack.bites.sorted { $0.order < $1.order }
-        quizzes = pack.quizzes
-        courses = [
-            CourseSummary(
-                id: pack.courseId,
-                title: "Death",
-                professor: "Shelly Kagan",
-                department: "Philosophy",
-                biteCount: pack.bites.count,
-                accentLabel: "Yale · Open Course"
-            )
-        ]
     }
 
-    private func loadFallback() {
-        courses = [
-            CourseSummary(
-                id: "yale:phil-176",
-                title: "Death",
-                professor: "Shelly Kagan",
-                department: "Philosophy",
-                biteCount: 3,
-                accentLabel: "Yale · Open Course"
-            )
-        ]
-        bites = [
-            BiteCard(
-                id: "demo-1",
-                courseId: "yale:phil-176",
-                lectureId: "lecture-1",
-                order: 1,
-                kind: "concept",
-                headline: "What is death, philosophically?",
-                body: "Before ethics, ask what kind of thing death is — and what, exactly, ends.",
-                attributionLine: "Shelly Kagan, Death (Yale University: Open Yale Courses)",
-                sourceUrl: "https://oyc.yale.edu/philosophy/phil-176",
-                licenseSpdx: "CC-BY-NC-SA-3.0"
-            )
-        ]
+    func select(_ course: CourseMeta) {
+        selectedCourseID = course.id
     }
 
     func markComplete(_ bite: BiteCard) {
         completedBiteIDs.insert(bite.id)
+    }
+
+    func markQuizPassed(_ quiz: QuizItem) {
+        passedQuizIDs.insert(quiz.id)
     }
 }

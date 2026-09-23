@@ -1,0 +1,53 @@
+{
+  "id": "yale:psyc-110",
+  "source": "yale",
+  "department": "Psychology",
+  "number": "PSYC 110",
+  "title": "Introduction to Psychology",
+  "professor": "Paul Bloom",
+  "term": "Spring 2007",
+  "path": "/introduction-psychology/psyc-110",
+  "url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
+  "about": "What do your dreams mean? Do men and women differ in the nature and intensity of their sexual desires? Can apes learn sign language? Why can’t we tickle ourselves? This course tries to answer these questions and many others, providing a comprehensive overview of the scientific study of thought and behavior. It explores topics such as perception, communication, learning, memory, decision-making, religion, persuasion, love, lust, hunger, art, fiction, and dreams. We will look at how these aspects of the mind develop in children, how they differ across people, how they are wired-up in the brain, and how they break down due to illness and injury.",
+  "lectures": [
+    {
+      "id": "lecture-1",
+      "index": 1,
+      "title": "Introduction",
+      "path": "/psychology/psyc-110/lecture-1",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-1",
+      "overview": "Professor Paul Bloom welcomes students and presents the course as a comprehensive introduction to the study of the human mind. Course readings and requirements are discussed. The five main branches of psychology are presented: neuroscience, which is a study of the mind by looking at the brain; developmental, which focuses on how people grow and learn; cognitive, which refers to the computational approach to studying the mind; social, which studies how people interact; and clinical, which examines mental health and mental illnesses."
+    },
+    {
+      "id": "lecture-2",
+      "index": 2,
+      "title": "Foundations: This Is Your Brain",
+      "path": "/psychology/psyc-110/lecture-2",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-2",
+      "overview": "This lecture introduces students to two broad theories of how the mind relates to the body. Dualism is the ubiquitous and intuitive feeling that our conscious mind is separate from our physical bodies, whereas Materialism is the idea that all of our mental states are caused by physical states of the brain. This lecture reviews arguments explaining why materialism has become the predominant theory of mind in psychology. This discussion is followed by a basic overview of the neurophysiology of the brain."
+    },
+    {
+      "id": "lecture-3",
+      "index": 3,
+      "title": "Foundations: Freud",
+      "path": "/psychology/psyc-110/lecture-3",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-3",
+      "overview": "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical description and his contributions to the field of psychology. The limitations of his theories of psychoanalysis are covered in detail, as well as the ways in which his conception of the unconscious mind still operate in mainstream psychology today."
+    }
+  ],
+  "license": {
+    "spdx": "CC-BY-NC-SA-3.0",
+    "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "commercial_ok": false,
+    "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+  },
+  "attribution": {
+    "faculty": "Paul Bloom",
+    "course_title": "Introduction to Psychology",
+    "institution": "Yale University",
+    "project": "Open Yale Courses",
+    "source_url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
+    "accessed_at": "2026-09-23T15:47:48.032174Z"
+  }
+}

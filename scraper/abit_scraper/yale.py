@@ -147,15 +147,22 @@ class YaleOYCClient:
         # (e.g. /philosophy/phil-176/lecture-1). Prefer exact prefix, then
         # fall back to any /lecture-N link that shares the course number segment.
         course_path = course_path.rstrip("/")
-        number_slug = course_path.split("/")[-1]  # phil-176
+        number_slug = course_path.split("/")[-1]  # phil-176 or econ-252
         exact = re.compile(rf"^{re.escape(course_path)}/lecture-(\d+)/?$")
-        loose = re.compile(rf"^/.*/{re.escape(number_slug)}/lecture-(\d+)/?$")
+        loose = re.compile(rf"^/.*/{re.escape(number_slug)}(?:-[0-9]+)?/lecture-(\d+)/?$")
         found: dict[int, LectureOutline] = {}
         for a in soup.find_all("a", href=True):
             href = a["href"].split("?")[0]
             m = exact.match(href) or loose.match(href)
             if not m:
-                continue
+                # Last resort: any lecture link on the page
+                m2 = re.match(r"^/.+/lecture-(\d+)/?$", href)
+                if not m2:
+                    continue
+                # Prefer links that share the course number token
+                if number_slug.split("-")[0] not in href and number_slug not in href:
+                    continue
+                m = m2
             idx = int(m.group(1))
             title = a.get_text(" ", strip=True) or f"Lecture {idx}"
             # Prefer richer titles if we see the link twice

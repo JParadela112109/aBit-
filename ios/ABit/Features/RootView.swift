@@ -4,22 +4,20 @@ struct RootView: View {
     @Environment(AppStore.self) private var store
     @State private var tab: Tab = .learn
 
-    enum Tab: Hashable {
-        case learn, degree, friends
-    }
+    enum Tab: Hashable { case learn, degree, friends }
 
     var body: some View {
         TabView(selection: $tab) {
             NavigationStack {
                 HomeView()
             }
-            .tabItem { Label("Learn", systemImage: "square.grid.2x2.fill") }
+            .tabItem { Label("Learn", systemImage: "square.stack.3d.up.fill") }
             .tag(Tab.learn)
 
             NavigationStack {
                 DegreeView()
             }
-            .tabItem { Label("Degree", systemImage: "graduationcap.fill") }
+            .tabItem { Label("Degree", systemImage: "seal.fill") }
             .tag(Tab.degree)
 
             NavigationStack {
@@ -29,6 +27,6 @@ struct RootView: View {
             .tag(Tab.friends)
         }
         .tint(ABitTheme.lime)
-        .toolbarBackground(ABitTheme.ink, for: .tabBar)
+        .toolbarBackground(.ultraThinMaterial, for: .tabBar)
     }
 }

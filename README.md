@@ -14,18 +14,19 @@ aBit turns free open-course material from universities into Duolingo-style micro
 | `ios/ABit/` | SwiftUI app shell — design system, browse → bite → quiz → degree → social stubs |
 | `docs/` | Product vision, licensing, roadmap |
 
-## Phase 1 (now): Scraping
+## Phase 1 (now): Scraping → iOS in one step
 
 ```bash
 cd scraper
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python -m abit_scraper catalog --source yale
-python -m abit_scraper course --source yale --slug death/phil-176
-python -m abit_scraper bites --course-id yale:phil-176
+PYTHONPATH=. python -m abit_scraper catalog --source yale
+PYTHONPATH=. python -m abit_scraper course --source yale --slug death/phil-176
+PYTHONPATH=. python -m abit_scraper bites --course-id yale:phil-176
+PYTHONPATH=. python -m abit_scraper bundle --course-id yale:phil-176
 ```
 
-Outputs land in `scraper/data/`. Sample fixtures ship in `scraper/data/samples/`.
+That writes `ios/ABit/Resources/Courses/yale_phil-176.course.json`. Rebuild the app — the course appears under **Paths**. See [docs/ADDING_COURSES.md](docs/ADDING_COURSES.md).
 
 ### Licensing (important)
 
@@ -33,7 +34,9 @@ Open Yale Courses material is mostly **CC BY-NC-SA 3.0**. We store license + att
 
 ## Phase 2+: iOS
 
-Open `ios/ABit` in Xcode 16+, select an iPhone simulator, Run.
+```bash
+cd ios && brew install xcodegen && xcodegen generate && open ABit.xcodeproj
+```
 
 ## Product pillars
 
@@ -45,4 +48,4 @@ Open `ios/ABit` in Xcode 16+, select an iPhone simulator, Run.
 ## Stack
 
 - Scraper: Python 3.12, httpx, BeautifulSoup, pydantic  
-- App: SwiftUI, SwiftData (planned), Observation
+- App: SwiftUI, Observation, drop-in course JSON bundles

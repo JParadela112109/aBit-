@@ -8,7 +8,7 @@ import typer
 from rich.console import Console
 
 from .bites import build_bite_pack
-from .models import Catalog, CourseRecord
+from .models import BitePack, Catalog, CourseRecord
 from .yale import YaleOYCClient, save_json
 
 app = typer.Typer(add_completion=False, no_args_is_help=True, help="aBit open-course scraper")
@@ -95,11 +95,71 @@ def export_ios(
     bites_file: Path = typer.Option(...),
     out: Path = typer.Option(Path(__file__).resolve().parents[2] / "ios" / "ABit" / "Resources" / "SampleBites.json"),
 ) -> None:
-    """Copy a bite pack into the iOS sample bundle path."""
+    """Copy a bite pack into the iOS sample bundle path (legacy). Prefer `bundle`."""
     data = json.loads(bites_file.read_text(encoding="utf-8"))
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(data, indent=2), encoding="utf-8")
     console.print(f"[green]Exported[/green] {out}")
+
+
+@app.command()
+def bundle(
+    course_id: str = typer.Option(..., help="e.g. yale:phil-176"),
+    course_file: Optional[Path] = typer.Option(None),
+    bites_file: Optional[Path] = typer.Option(None),
+    out_dir: Path = typer.Option(
+        Path(__file__).resolve().parents[2] / "ios" / "ABit" / "Resources" / "Courses",
+        help="iOS Resources/Courses folder",
+    ),
+) -> None:
+    """Build a drop-in *.course.json for the iOS app and update manifest.json.
+
+    Workflow:
+      1) scrape course + bites
+      2) python -m abit_scraper bundle --course-id yale:phil-176
+      3) rebuild the iOS app — new course appears in the library
+    """
+    from .bites import build_bite_pack
+    from .bundle import write_bundle
+
+    cpath = course_file or DATA / "yale" / "courses" / f"{course_id.replace(':', '_')}.json"
+    if not cpath.exists():
+        raise typer.BadParameter(f"Missing course file: {cpath}")
+    course = CourseRecord.model_validate_json(cpath.read_text(encoding="utf-8"))
+
+    bpath = bites_file or DATA / "bites" / f"{course_id.replace(':', '_')}.json"
+    if bpath.exists():
+        pack = BitePack.model_validate_json(bpath.read_text(encoding="utf-8"))
+    else:
+        pack = build_bite_pack(course)
+
+    path = write_bundle(course, pack, out_dir)
+    console.print(f"[green]Bundled[/green] {path}")
+    console.print(f"[dim]Drop-in ready — ensure the file is in the Xcode app target.[/dim]")
+
+
+@app.command("bundle-all")
+def bundle_all(
+    out_dir: Path = typer.Option(
+        Path(__file__).resolve().parents[2] / "ios" / "ABit" / "Resources" / "Courses",
+    ),
+) -> None:
+    """Bundle every scraped course that has a bites pack."""
+    from .bundle import write_bundle
+
+    courses_dir = DATA / "yale" / "courses"
+    count = 0
+    for cpath in sorted(courses_dir.glob("*.json")):
+        course = CourseRecord.model_validate_json(cpath.read_text(encoding="utf-8"))
+        bpath = DATA / "bites" / f"{course.id.replace(':', '_')}.json"
+        if not bpath.exists():
+            continue
+        pack = BitePack.model_validate_json(bpath.read_text(encoding="utf-8"))
+        if not pack.bites:
+            continue
+        write_bundle(course, pack, out_dir)
+        count += 1
+    console.print(f"[bold]{count}[/bold] course bundles in {out_dir}")
 
 
 def main() -> None:

@@ -1,0 +1,134 @@
+{
+  "course_id": "yale:psyc-110",
+  "generated_at": "2026-09-23T15:47:48.220384Z",
+  "bites": [
+    {
+      "id": "yale:psyc-110:about:1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "about",
+      "order": 1,
+      "kind": "story",
+      "headline": "Why Introduction to Psychology?",
+      "body": "What do your dreams mean? Do men and women differ in the nature and intensity of their sexual desires? Can apes learn sign language? Why can’t we tickle ourselves? This course tries to answer these questions and many others, providing a comprehensive overview of the scientific…",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-1:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-1",
+      "order": 2,
+      "kind": "concept",
+      "headline": "Introduction",
+      "body": "Professor Paul Bloom welcomes students and presents the course as a comprehensive introduction to the study of the human mind.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-1:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-1",
+      "order": 3,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "Course readings and requirements are discussed.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-2:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-2",
+      "order": 4,
+      "kind": "concept",
+      "headline": "Foundations: This Is Your Brain",
+      "body": "This lecture introduces students to two broad theories of how the mind relates to the body.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-2:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-2",
+      "order": 5,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "Dualism is the ubiquitous and intuitive feeling that our conscious mind is separate from our physical bodies, whereas Materialism is the idea that all of our mental states are caused by physical states of the brain.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-3:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-3",
+      "order": 6,
+      "kind": "concept",
+      "headline": "Foundations: Freud",
+      "body": "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical description and his contributions to the field of psychology.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-3:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-3",
+      "order": 7,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "The limitations of his theories of psychoanalysis are covered in detail, as well as the ways in which his conception of the unconscious mind still operate in mainstream psychology today.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "yale:psyc-110:lecture-1:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-1",
+      "prompt": "After “Introduction”, which best captures the lecture’s opening focus?",
+      "choices": [
+        "Professor Paul Bloom welcomes students and presents the course as a comprehensive introduction to the study of the…",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    },
+    {
+      "id": "yale:psyc-110:lecture-2:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-2",
+      "prompt": "After “Foundations: This Is Your Brain”, which best captures the lecture’s opening focus?",
+      "choices": [
+        "This lecture introduces students to two broad theories of how the mind relates to the body.",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    },
+    {
+      "id": "yale:psyc-110:lecture-3:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-3",
+      "prompt": "After “Foundations: Freud”, which best captures the lecture’s opening focus?",
+      "choices": [
+        "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical description and his…",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    }
+  ]
+}

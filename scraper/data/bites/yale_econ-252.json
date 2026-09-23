@@ -1,0 +1,134 @@
+{
+  "course_id": "yale:econ-252",
+  "generated_at": "2026-09-23T15:47:59.863643Z",
+  "bites": [
+    {
+      "id": "yale:econ-252:about:1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "about",
+      "order": 1,
+      "kind": "story",
+      "headline": "Why Financial Markets (2008)?",
+      "body": "Financial institutions are a pillar of civilized society, supporting people in their productive ventures and managing the economic risks they take on. The workings of these institutions are important to comprehend if we are to predict their actions today and their evolution in…",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-1:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-1",
+      "order": 2,
+      "kind": "concept",
+      "headline": "Finance and Insurance as Powerful Forces in Our Economy and Society",
+      "body": "Professor Shiller provides a description of the course, Financial Markets, including administrative details and the topics to be discussed in each lecture.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-1:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-1",
+      "order": 3,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "He briefly discusses the importance of studying finance and each key topic.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-2:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-2",
+      "order": 4,
+      "kind": "concept",
+      "headline": "The Universal Principle of Risk Management: Pooling and the Hedging of Risks",
+      "body": "Statistics and mathematics underlie the theories of finance.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-2:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-2",
+      "order": 5,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "Probability Theory and various distribution types are important to understanding finance.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-3:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-3",
+      "order": 6,
+      "kind": "concept",
+      "headline": "Technology and Invention in Finance",
+      "body": "Technology and innovation underlie finance.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-3:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-3",
+      "order": 7,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "In order to manage risks successfully, particularly long-term, we must pool large amounts of risk among many, diverse people and overcome barriers such as moral hazard and erroneous framing.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "yale:econ-252:lecture-1:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-1",
+      "prompt": "After “Finance and Insurance as Powerful Forces in Our Economy and Society”, which best captures the lecture’s opening focus?",
+      "choices": [
+        "Professor Shiller provides a description of the course, Financial Markets, including administrative details and the…",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    },
+    {
+      "id": "yale:econ-252:lecture-2:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-2",
+      "prompt": "After “The Universal Principle of Risk Management: Pooling and the Hedging of Risks”, which best captures the lecture’s opening focus?",
+      "choices": [
+        "Statistics and mathematics underlie the theories of finance.",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    },
+    {
+      "id": "yale:econ-252:lecture-3:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-3",
+      "prompt": "After “Technology and Invention in Finance”, which best captures the lecture’s opening focus?",
+      "choices": [
+        "Technology and innovation underlie finance.",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    }
+  ]
+}

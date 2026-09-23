@@ -9,6 +9,7 @@ struct ABitApp: App {
             RootView()
                 .environment(store)
                 .preferredColorScheme(.dark)
+                .tint(ABitTheme.lime)
         }
     }
 }

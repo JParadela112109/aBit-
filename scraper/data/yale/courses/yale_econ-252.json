@@ -1,0 +1,53 @@
+{
+  "id": "yale:econ-252",
+  "source": "yale",
+  "department": "Economics",
+  "number": "ECON 252",
+  "title": "Financial Markets (2008)",
+  "professor": "Robert J. Shiller",
+  "term": "Spring 2008",
+  "path": "/economics/econ-252-08",
+  "url": "https://oyc.yale.edu/economics/econ-252-08",
+  "about": "Financial institutions are a pillar of civilized society, supporting people in their productive ventures and managing the economic risks they take on. The workings of these institutions are important to comprehend if we are to predict their actions today and their evolution in the coming information age. The course strives to offer understanding of the theory of finance and its relation to the history, strengths and imperfections of such institutions as banking, insurance, securities, futures, and other derivatives markets, and the future of these institutions over the next century.",
+  "lectures": [
+    {
+      "id": "lecture-1",
+      "index": 1,
+      "title": "Finance and Insurance as Powerful Forces in Our Economy and Society",
+      "path": "/economics/econ-252-08/lecture-1",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-1",
+      "overview": "Professor Shiller provides a description of the course, Financial Markets, including administrative details and the topics to be discussed in each lecture. He briefly discusses the importance of studying finance and each key topic. Lecture topics will include: behavioral finance, financial technology, financial instruments, commercial banking, investment banking, financial markets and institutions, real estate, regulation, monetary policy, and democratization of finance."
+    },
+    {
+      "id": "lecture-2",
+      "index": 2,
+      "title": "The Universal Principle of Risk Management: Pooling and the Hedging of Risks",
+      "path": "/economics/econ-252-08/lecture-2",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+      "overview": "Statistics and mathematics underlie the theories of finance. Probability Theory and various distribution types are important to understanding finance. Risk management, for instance, depends on tools such as variance, standard deviation, correlation, and regression analysis. Financial analysis methods such as present values and valuing streams of payments are fundamental to understanding the time value of money and have been in practice for centuries."
+    },
+    {
+      "id": "lecture-3",
+      "index": 3,
+      "title": "Technology and Invention in Finance",
+      "path": "/economics/econ-252-08/lecture-3",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-3",
+      "overview": "Technology and innovation underlie finance. In order to manage risks successfully, particularly long-term, we must pool large amounts of risk among many, diverse people and overcome barriers such as moral hazard and erroneous framing. Inventions such as insurance contracts and social security, and information technology all the way from such simple things as paper, and the postal service to modern computers have helped to manage risks and to encourage financial systems to address issues pertaining to risk. The tax and welfare system is one of the most important risk management systems."
+    }
+  ],
+  "license": {
+    "spdx": "CC-BY-NC-SA-3.0",
+    "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "commercial_ok": false,
+    "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+  },
+  "attribution": {
+    "faculty": "Robert J. Shiller",
+    "course_title": "Financial Markets (2008)",
+    "institution": "Yale University",
+    "project": "Open Yale Courses",
+    "source_url": "https://oyc.yale.edu/economics/econ-252-08",
+    "accessed_at": "2026-09-23T15:47:59.675565Z"
+  }
+}

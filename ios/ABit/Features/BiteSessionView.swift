@@ -2,94 +2,127 @@ import SwiftUI
 
 struct BiteSessionView: View {
     @Environment(AppStore.self) private var store
-    let course: CourseSummary
+    let courseID: String
 
     @State private var index = 0
     @State private var showQuiz = false
+    @State private var quizForLecture: String?
     @State private var appeared = false
+    @State private var celebrating = false
 
-    private var bites: [BiteCard] { store.bites }
+    private var course: CourseMeta? { store.courses.first { $0.id == courseID } }
+    private var bites: [BiteCard] { store.bites(for: courseID) }
+    private var quizzes: [QuizItem] { store.quizzes(for: courseID) }
+    private var accent: CourseAccent { .forDepartment(course?.department ?? "") }
 
     var body: some View {
         ZStack {
-            AtmosphereBackground()
+            AtmosphereBackground(accent: accent)
+
             if bites.isEmpty {
-                Text("No bites yet — run the scraper.")
+                Text("No bites in this bundle.")
                     .foregroundStyle(ABitTheme.mist)
             } else {
-                VStack(spacing: 20) {
-                    progress
-                    biteCard(bites[index])
+                VStack(spacing: 18) {
+                    progressBar
+                    biteSurface(bites[index])
                         .id(bites[index].id)
-                        .transition(.asymmetric(
-                            insertion: .move(edge: .trailing).combined(with: .opacity),
-                            removal: .move(edge: .leading).combined(with: .opacity)
-                        ))
+                        .transition(
+                            .asymmetric(
+                                insertion: .move(edge: .trailing).combined(with: .opacity),
+                                removal: .move(edge: .leading).combined(with: .opacity)
+                            )
+                        )
                     controls
                 }
-                .padding(22)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 16)
+            }
+
+            if celebrating {
+                celebrationOverlay
             }
         }
-        .navigationTitle(course.title)
+        .navigationTitle(course?.title ?? "Bites")
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showQuiz) {
-            if let quiz = store.quizzes.first(where: { $0.lectureId == bites[index].lectureId })
-                ?? store.quizzes.first {
-                QuizView(quiz: quiz) {
+            if let lecture = quizForLecture,
+               let quiz = quizzes.first(where: { $0.lectureId == lecture }) {
+                QuizView(quiz: quiz, accent: accent) {
+                    store.markQuizPassed(quiz)
                     showQuiz = false
                     advance()
                 }
-                .presentationDetents([.medium, .large])
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
             }
         }
     }
 
-    private var progress: some View {
-        HStack(spacing: 6) {
+    private var progressBar: some View {
+        HStack(spacing: 5) {
             ForEach(Array(bites.enumerated()), id: \.offset) { i, bite in
                 Capsule()
-                    .fill(i <= index || store.completedBiteIDs.contains(bite.id) ? ABitTheme.lime : ABitTheme.mist.opacity(0.25))
-                    .frame(height: 4)
+                    .fill(
+                        i < index || store.completedBiteIDs.contains(bite.id)
+                            ? ABitTheme.lime
+                            : (i == index ? ABitTheme.lime.opacity(0.55) : ABitTheme.mist.opacity(0.2))
+                    )
+                    .frame(height: 3)
+                    .animation(.spring(response: 0.35, dampingFraction: 0.8), value: index)
             }
         }
+        .padding(.top, 4)
     }
 
-    private func biteCard(_ bite: BiteCard) -> some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Text(bite.kind.uppercased())
+    private func biteSurface(_ bite: BiteCard) -> some View {
+        VStack(alignment: .leading, spacing: 22) {
+            Text(bite.kindLabel.uppercased())
                 .font(ABitTheme.caption)
-                .tracking(1.6)
+                .tracking(1.8)
                 .foregroundStyle(ABitTheme.lime)
 
             Text(bite.headline)
-                .font(.system(size: 34, weight: .semibold, design: .serif))
+                .font(.system(size: 36, weight: .semibold, design: .serif))
                 .foregroundStyle(ABitTheme.chalk)
                 .fixedSize(horizontal: false, vertical: true)
 
             Text(bite.body)
-                .font(.system(size: 18, weight: .regular, design: .rounded))
+                .font(ABitTheme.bodyLg)
                 .foregroundStyle(ABitTheme.mist)
-                .lineSpacing(4)
+                .lineSpacing(5)
                 .fixedSize(horizontal: false, vertical: true)
 
             Spacer(minLength: 0)
 
             Text(bite.attributionLine)
-                .font(.system(size: 11, design: .rounded))
-                .foregroundStyle(ABitTheme.mist.opacity(0.7))
+                .font(ABitTheme.micro)
+                .foregroundStyle(ABitTheme.mist.opacity(0.65))
                 .lineLimit(3)
         }
-        .padding(24)
+        .padding(26)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         .background(
-            RoundedRectangle(cornerRadius: 32, style: .continuous)
+            RoundedRectangle(cornerRadius: 36, style: .continuous)
                 .fill(ABitTheme.inkElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 36, style: .continuous)
+                        .strokeBorder(
+                            LinearGradient(
+                                colors: [ABitTheme.lime.opacity(0.25), .clear],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 1
+                        )
+                )
+                .shadow(color: accent.glow.opacity(0.18), radius: 40, y: 18)
         )
-        .scaleEffect(appeared ? 1 : 0.97)
+        .scaleEffect(appeared ? 1 : 0.965)
         .opacity(appeared ? 1 : 0)
         .onAppear {
             appeared = false
-            withAnimation(.spring(response: 0.45, dampingFraction: 0.85)) {
+            withAnimation(.spring(response: 0.48, dampingFraction: 0.82)) {
                 appeared = true
             }
         }
@@ -98,10 +131,22 @@ struct BiteSessionView: View {
     private var controls: some View {
         HStack(spacing: 12) {
             Button("Got it") {
-                store.markComplete(bites[index])
-                let lectureDone = !bites.contains { $0.lectureId == bites[index].lectureId && !store.completedBiteIDs.contains($0.id) && $0.id != bites[index].id }
-                if lectureDone && store.quizzes.contains(where: { $0.lectureId == bites[index].lectureId }) {
+                let bite = bites[index]
+                store.markComplete(bite)
+                let lecture = bite.lectureId
+                let remainingInLecture = bites.contains {
+                    $0.lectureId == lecture
+                        && $0.id != bite.id
+                        && !store.completedBiteIDs.contains($0.id)
+                }
+                let quiz = quizzes.first { $0.lectureId == lecture }
+                if !remainingInLecture, let quiz, !store.passedQuizIDs.contains(quiz.id) {
+                    quizForLecture = lecture
                     showQuiz = true
+                } else if index >= bites.count - 1 {
+                    withAnimation(.spring(response: 0.5, dampingFraction: 0.75)) {
+                        celebrating = true
+                    }
                 } else {
                     advance()
                 }
@@ -115,34 +160,34 @@ struct BiteSessionView: View {
         }
     }
 
-    private func advance() {
-        guard index < bites.count - 1 else { return }
-        withAnimation(.spring(response: 0.4, dampingFraction: 0.9)) {
-            index += 1
+    private var celebrationOverlay: some View {
+        ZStack {
+            Color.black.opacity(0.55).ignoresSafeArea()
+            VStack(spacing: 16) {
+                Image(systemName: "seal.fill")
+                    .font(.system(size: 48))
+                    .foregroundStyle(ABitTheme.lime)
+                    .symbolEffect(.bounce, value: celebrating)
+                Text("Path cleared")
+                    .font(ABitTheme.title)
+                    .foregroundStyle(ABitTheme.chalk)
+                Text("Claim your playful aBit Degree.")
+                    .font(ABitTheme.body)
+                    .foregroundStyle(ABitTheme.mist)
+                Button("Nice") { celebrating = false }
+                    .buttonStyle(PrimaryBitButton())
+                    .frame(width: 160)
+            }
+            .padding(28)
+            .background(ABitTheme.inkElevated, in: RoundedRectangle(cornerRadius: 32, style: .continuous))
+            .padding(32)
         }
     }
-}
 
-struct PrimaryBitButton: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .font(.system(.body, design: .rounded).weight(.bold))
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 16)
-            .background(ABitTheme.lime, in: Capsule())
-            .foregroundStyle(ABitTheme.ink)
-            .scaleEffect(configuration.isPressed ? 0.98 : 1)
-    }
-}
-
-struct GhostBitButton: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .font(.system(.body, design: .rounded).weight(.semibold))
-            .padding(.horizontal, 18)
-            .padding(.vertical, 16)
-            .background(ABitTheme.mist.opacity(0.12), in: Capsule())
-            .foregroundStyle(ABitTheme.chalk)
-            .scaleEffect(configuration.isPressed ? 0.98 : 1)
+    private func advance() {
+        guard index < bites.count - 1 else { return }
+        withAnimation(.spring(response: 0.42, dampingFraction: 0.88)) {
+            index += 1
+        }
     }
 }

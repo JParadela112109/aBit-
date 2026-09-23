@@ -3,11 +3,14 @@ import SwiftUI
 struct QuizView: View {
     let quiz: QuizItem
     var accent: CourseAccent = .forest
+    /// Called when the learner submits a check — `true` if correct.
+    var onAttempt: (Bool) -> Void
     var onPass: () -> Void
 
     @State private var selected: Int?
     @State private var submitted = false
     @State private var shakeWrong = false
+    @State private var reported = false
 
     private var isCorrect: Bool { selected == quiz.answerIndex }
 
@@ -64,7 +67,12 @@ struct QuizView: View {
                             withAnimation(.spring(response: 0.35, dampingFraction: 0.7)) {
                                 submitted = true
                             }
+                            if !reported {
+                                onAttempt(isCorrect)
+                                reported = true
+                            }
                             if isCorrect == false {
+                                reported = false
                                 withAnimation(.spring(response: 0.12, dampingFraction: 0.2)) {
                                     shakeWrong = true
                                 }

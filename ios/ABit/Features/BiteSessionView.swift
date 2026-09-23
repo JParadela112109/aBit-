@@ -48,11 +48,23 @@ struct BiteSessionView: View {
         .sheet(isPresented: $showQuiz) {
             if let lecture = quizForLecture,
                let quiz = quizzes.first(where: { $0.lectureId == lecture }) {
-                QuizView(quiz: quiz, accent: accent) {
-                    store.markQuizPassed(quiz)
-                    showQuiz = false
-                    advance()
-                }
+                QuizView(
+                    quiz: quiz,
+                    accent: accent,
+                    onAttempt: { correct in
+                        store.recordQuizAttempt(quiz, correct: correct)
+                    },
+                    onPass: {
+                        showQuiz = false
+                        if index >= bites.count - 1 {
+                            withAnimation(.spring(response: 0.5, dampingFraction: 0.75)) {
+                                celebrating = true
+                            }
+                        } else {
+                            advance()
+                        }
+                    }
+                )
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
             }
@@ -161,19 +173,34 @@ struct BiteSessionView: View {
     }
 
     private var celebrationOverlay: some View {
-        ZStack {
+        let passed = store.isCoursePassed(courseID)
+        let grade = store.letterGrade(for: courseID)
+        return ZStack {
             Color.black.opacity(0.55).ignoresSafeArea()
             VStack(spacing: 16) {
-                Image(systemName: "seal.fill")
+                Image(systemName: passed ? "checkmark.seal.fill" : "books.vertical.fill")
                     .font(.system(size: 48))
                     .foregroundStyle(ABitTheme.lime)
                     .symbolEffect(.bounce, value: celebrating)
-                Text("Path cleared")
+                Text(passed ? "Course passed" : "Bites complete")
                     .font(ABitTheme.title)
                     .foregroundStyle(ABitTheme.chalk)
-                Text("Claim your playful aBit Degree.")
-                    .font(ABitTheme.body)
-                    .foregroundStyle(ABitTheme.mist)
+                if let grade {
+                    Text("Grade \(grade.rawValue) · \(store.credits(for: courseID)) credits")
+                        .font(ABitTheme.body)
+                        .foregroundStyle(ABitTheme.mist)
+                } else {
+                    Text("Keep improving quiz checks to lock a passing grade.")
+                        .font(ABitTheme.body)
+                        .foregroundStyle(ABitTheme.mist)
+                        .multilineTextAlignment(.center)
+                }
+                Text(passed
+                     ? "Credits post to your transcript. Graduate from College when your program clears."
+                     : "Pass rules: 80%+ bites and 70%+ lecture checks.")
+                    .font(ABitTheme.caption)
+                    .foregroundStyle(ABitTheme.mist.opacity(0.85))
+                    .multilineTextAlignment(.center)
                 Button("Nice") { celebrating = false }
                     .buttonStyle(PrimaryBitButton())
                     .frame(width: 160)

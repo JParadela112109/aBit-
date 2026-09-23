@@ -17,7 +17,7 @@ struct RootView: View {
             NavigationStack {
                 DegreeView()
             }
-            .tabItem { Label("Degree", systemImage: "seal.fill") }
+            .tabItem { Label("College", systemImage: "building.columns.fill") }
             .tag(Tab.degree)
 
             NavigationStack {

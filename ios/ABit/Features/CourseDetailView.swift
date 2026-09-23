@@ -14,6 +14,10 @@ struct CourseDetailView: View {
         .forDepartment(course?.department ?? "")
     }
 
+    private var state: CourseAcademicState {
+        store.engine.academicState(for: courseID)
+    }
+
     var body: some View {
         ZStack {
             AtmosphereBackground(accent: accent)
@@ -21,16 +25,24 @@ struct CourseDetailView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading, spacing: 28) {
                         header(course)
+                        academicPanel(course)
                         about(course)
-                        NavigationLink {
-                            BiteSessionView(courseID: course.id)
-                        } label: {
-                            Text(progress > 0 ? "Resume bites" : "Start first bite")
-                        }
-                        .buttonStyle(PrimaryBitButton())
-                        .padding(.top, 4)
 
-                        Text("License \(course.license?.spdx ?? "CC-BY-NC-SA-3.0") · Not a university credential")
+                        if state == .locked {
+                            Text("Finish prerequisite courses before starting.")
+                                .font(ABitTheme.body)
+                                .foregroundStyle(ABitTheme.mist)
+                        } else {
+                            NavigationLink {
+                                BiteSessionView(courseID: course.id)
+                            } label: {
+                                Text(ctaLabel)
+                            }
+                            .buttonStyle(PrimaryBitButton())
+                            .padding(.top, 4)
+                        }
+
+                        Text("License \(course.license?.spdx ?? "CC-BY-NC-SA-3.0") · Course credit is internal to aBit — not an accredited credential")
                             .font(ABitTheme.micro)
                             .foregroundStyle(ABitTheme.mist.opacity(0.65))
                     }
@@ -47,6 +59,15 @@ struct CourseDetailView: View {
             if let course {
                 store.select(course)
             }
+        }
+    }
+
+    private var ctaLabel: String {
+        switch state {
+        case .passed: return "Review bites"
+        case .failed: return "Retry course"
+        case .inProgress: return "Resume bites"
+        default: return "Start first bite"
         }
     }
 
@@ -70,11 +91,70 @@ struct CourseDetailView: View {
                 .tint(ABitTheme.lime)
                 .padding(.top, 4)
 
-            Text("\(Int(progress * 100))% · \(bites.count) bites")
+            Text("\(Int(progress * 100))% bites · \(bites.count) cards")
                 .font(ABitTheme.caption)
                 .foregroundStyle(ABitTheme.mist)
         }
         .padding(.top, 8)
+    }
+
+    private func academicPanel(_ course: CourseMeta) -> some View {
+        let credits = store.credits(for: course.id)
+        let grade = store.letterGrade(for: course.id)
+        let quizRate = store.engine.quizPassRate(for: course.id)
+        let prereqs = store.engine.prerequisites(for: course.id)
+
+        return VStack(alignment: .leading, spacing: 12) {
+            Text("Academic standing")
+                .font(ABitTheme.titleSm)
+                .foregroundStyle(ABitTheme.chalk)
+
+            HStack {
+                standingChip("\(credits) credits")
+                standingChip(stateLabel)
+                if let grade {
+                    standingChip("Grade \(grade.rawValue)")
+                }
+            }
+
+            Text(passRuleCopy(quizRate: quizRate))
+                .font(ABitTheme.caption)
+                .foregroundStyle(ABitTheme.mist)
+                .fixedSize(horizontal: false, vertical: true)
+
+            if !prereqs.isEmpty {
+                Text("Prerequisites: " + prereqs.map { store.engine.title(for: $0) }.joined(separator: ", "))
+                    .font(ABitTheme.micro)
+                    .foregroundStyle(ABitTheme.mist)
+            }
+        }
+        .padding(16)
+        .background(ABitTheme.inkElevated, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+    }
+
+    private var stateLabel: String {
+        switch state {
+        case .locked: return "Locked"
+        case .available: return "Open"
+        case .inProgress: return "In progress"
+        case .passed: return "Passed"
+        case .failed: return "Failed"
+        }
+    }
+
+    private func standingChip(_ text: String) -> some View {
+        Text(text)
+            .font(ABitTheme.micro)
+            .foregroundStyle(ABitTheme.chalk)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6)
+            .background(ABitTheme.inkSoft, in: Capsule())
+    }
+
+    private func passRuleCopy(quizRate: Double) -> String {
+        let quizPct = Int(AcademicRules.minQuizPassRate * 100)
+        let bitePct = Int(AcademicRules.minBiteCompletionToPass * 100)
+        return "To pass: clear \(bitePct)%+ of bites and \(quizPct)%+ of lecture checks. Letter grade blends bite completion (\(Int(AcademicRules.biteWeight * 100))%) with quiz accuracy (\(Int(AcademicRules.quizWeight * 100))%). Your quiz rate: \(Int(quizRate * 100))%."
     }
 
     @ViewBuilder

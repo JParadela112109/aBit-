@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "course_credits": {
+    "yale:phil-176": 4,
+    "yale:psyc-110": 4,
+    "yale:econ-252": 4
+  },
+  "prerequisites": {},
+  "programs": [
+    {
+      "id": "ba-liberal-arts",
+      "title": "Bachelor of Arts",
+      "concentration": "Liberal Arts",
+      "school": "aBit College",
+      "credential": "B.A.",
+      "summary": "A full undergraduate path: humanities, mind & behavior, and markets.",
+      "min_credits": 12,
+      "min_gpa": 2.0,
+      "disclaimer": "Not an accredited university degree. aBit credentials are playful completion seals.",
+      "requirements": [
+        {
+          "id": "core-humanities",
+          "kind": "required",
+          "title": "Humanities core",
+          "course_ids": ["yale:phil-176"],
+          "min_credits": 4,
+          "credits_each": 4
+        },
+        {
+          "id": "core-social",
+          "kind": "required",
+          "title": "Social science core",
+          "course_ids": ["yale:psyc-110"],
+          "min_credits": 4,
+          "credits_each": 4
+        },
+        {
+          "id": "core-markets",
+          "kind": "required",
+          "title": "Markets & society",
+          "course_ids": ["yale:econ-252"],
+          "min_credits": 4,
+          "credits_each": 4
+        }
+      ]
+    },
+    {
+      "id": "ba-philosophy",
+      "title": "Bachelor of Arts",
+      "concentration": "Philosophy",
+      "school": "aBit College",
+      "credential": "B.A.",
+      "summary": "Pass Death, then add electives from psychology or markets.",
+      "min_credits": 8,
+      "min_gpa": 2.0,
+      "disclaimer": "Not an accredited university degree. aBit credentials are playful completion seals.",
+      "requirements": [
+        {
+          "id": "phil-major",
+          "kind": "required",
+          "title": "Philosophy major",
+          "course_ids": ["yale:phil-176"],
+          "min_credits": 4,
+          "credits_each": 4
+        },
+        {
+          "id": "phil-electives",
+          "kind": "elective",
+          "title": "Electives",
+          "course_ids": ["yale:psyc-110", "yale:econ-252"],
+          "min_credits": 4,
+          "credits_each": 4
+        }
+      ]
+    },
+    {
+      "id": "cert-mind-markets",
+      "title": "Certificate",
+      "concentration": "Mind & Markets",
+      "school": "aBit College",
+      "credential": "Certificate",
+      "summary": "A shorter path: psychology plus one markets or philosophy elective.",
+      "min_credits": 8,
+      "min_gpa": 2.0,
+      "disclaimer": "Not an accredited university degree. aBit credentials are playful completion seals.",
+      "requirements": [
+        {
+          "id": "cert-psych",
+          "kind": "required",
+          "title": "Psychology foundation",
+          "course_ids": ["yale:psyc-110"],
+          "min_credits": 4,
+          "credits_each": 4
+        },
+        {
+          "id": "cert-elective",
+          "kind": "elective",
+          "title": "Elective",
+          "course_ids": ["yale:phil-176", "yale:econ-252"],
+          "min_credits": 4,
+          "credits_each": 4
+        }
+      ]
+    }
+  ]
+}

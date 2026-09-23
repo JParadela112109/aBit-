@@ -21,7 +21,7 @@ cd scraper
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python -m abit_scraper catalog --source yale
-python -m abit_scraper course --source yale --slug philosophy/phil-176
+python -m abit_scraper course --source yale --slug death/phil-176
 python -m abit_scraper bites --course-id yale:phil-176
 ```
 

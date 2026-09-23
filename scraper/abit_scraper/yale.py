@@ -121,18 +121,25 @@ class YaleOYCClient:
 
     def _extract_about(self, soup: BeautifulSoup) -> str:
         header = soup.find(string=re.compile(r"About the Course", re.I))
-        if header:
-            parent = header.find_parent(["h2", "h3", "h4"])
-            if parent:
-                parts: list[str] = []
-                for sib in parent.find_next_siblings():
-                    if sib.name in {"h2", "h3", "h4"}:
-                        break
-                    text = sib.get_text(" ", strip=True)
-                    if text:
-                        parts.append(text)
-                if parts:
-                    return "\n\n".join(parts)
+        if not header:
+            return ""
+        parent = header.find_parent(["h2", "h3", "h4", "span", "div"])
+        root = parent or header.parent
+        parts: list[str] = []
+        for sib in root.find_next_siblings():
+            if sib.name in {"h2", "h3", "h4"}:
+                break
+            text = sib.get_text(" ", strip=True)
+            if text and text.lower() != "about the course":
+                parts.append(text)
+        if parts:
+            return "\n\n".join(parts)
+        # Sometimes the blurb is the next element after a label wrapper
+        nxt = root.find_next(["p", "div"])
+        if nxt:
+            text = nxt.get_text(" ", strip=True)
+            if text and "about the course" not in text.lower():
+                return text
         return ""
 
     def _extract_lectures(self, soup: BeautifulSoup, course_path: str) -> list[LectureOutline]:

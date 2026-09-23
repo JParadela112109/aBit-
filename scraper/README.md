@@ -9,7 +9,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 PYTHONPATH=. python -m abit_scraper catalog --source yale
-PYTHONPATH=. python -m abit_scraper course --source yale --slug philosophy/phil-176 --max-lectures 5
+PYTHONPATH=. python -m abit_scraper course --source yale --slug death/phil-176 --max-lectures 5
 PYTHONPATH=. python -m abit_scraper bites --course-id yale:phil-176
 PYTHONPATH=. python -m abit_scraper export-ios --bites-file data/bites/yale_phil-176.json
 ```

@@ -1,0 +1,676 @@
+{
+  "course_id": "yale:phil-176",
+  "schema_version": 1,
+  "about": {
+    "hook": {
+      "headline": "You will die. Now what?",
+      "body": "One fact is unusually stubborn: your life ends. aBit’s Death path doesn’t flinch from that. It asks what mortality means for persons, time, value, and how to live before the lights go out."
+    },
+    "stakes": {
+      "headline": "What’s on the table",
+      "body": "Is death the end—or only a change of address? Would forever be a gift or a trap? What is dying, exactly? The course splits metaphysics (what we are) from value theory (what makes death bad, and life good)."
+    }
+  },
+  "final": {
+    "prompt": "Across the arc—from persons and dualism to deprivation, immortality, fear, and suicide—what is Death ultimately asking you to hold?",
+    "correct": "What death means for persons, value, and how to live given mortality.",
+    "distractors": [
+      "How to perform clinical resuscitations in detail.",
+      "A survey of campus parking rules.",
+      "Whether Yale’s dining halls serve dessert."
+    ],
+    "explanation": "Across dualism, identity, deprivation, immortality, fear, and suicide, the arc is philosophical: what we are, why death matters, how to live."
+  },
+  "lectures": {
+    "1": {
+      "title": "Course Introduction",
+      "hook": {
+        "headline": "Drawing the map",
+        "body": "Kagan sets the syllabus like a border treaty: philosophical questions about death are in; medical trivia and grief counseling are out. First half: what persons and death are. Second half: whether death is bad—and what follows."
+      },
+      "key_term": {
+        "headline": "Two halves",
+        "body": "Metaphysics asks what must be true for someone to die. Value theory asks why that matters. Keep the split in mind; arguments will bounce between them all term."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Treat every later lecture as answering either “What is going on?” or “Why should I care?” If you lose the thread, return to that fork."
+      },
+      "quiz": {
+        "prompt": "What does Kagan say the course will emphasize?",
+        "correct": "Philosophical questions that arise when we contemplate death’s nature.",
+        "distractors": [
+          "Clinical procedures for declaring someone dead in hospitals.",
+          "A history of funeral customs across cultures only.",
+          "How to write a living will step by step."
+        ],
+        "explanation": "The opening frames Death as philosophy—metaphysics then value—not medicine or etiquette."
+      }
+    },
+    "2": {
+      "title": "The Nature of Persons: Dualism vs. Physicalism",
+      "hook": {
+        "headline": "What is a person?",
+        "body": "Before death can matter, we need a subject. Dualism says you are body plus soul. Physicalism says you are a body—though a body with remarkable powers of thought and action."
+      },
+      "key_term": {
+        "headline": "Dualism",
+        "body": "On the dualist picture, something non-physical rides along with the organism. That “soul” is often cast as what thinks, chooses, and maybe survives the corpse."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Notice how each later argument about souls, identity, or immortality quietly picks a side in this fight—or tries to dissolve it."
+      },
+      "quiz": {
+        "prompt": "How does physicalism answer “What is a person?”",
+        "correct": "A person is just a body—with a rich set of abilities.",
+        "distractors": [
+          "A person is only an immortal soul with no body.",
+          "A person is whatever society labels as such this week.",
+          "A person is a legal fiction with no metaphysical claim."
+        ],
+        "explanation": "Physicalism rejects an extra soul-stuff; the person is the capable body itself."
+      }
+    },
+    "3": {
+      "title": "Arguments for the Existence of the Soul, Part I",
+      "hook": {
+        "headline": "Invisible posits",
+        "body": "Why believe in a soul you can’t see? One strategy: inference to the best explanation. We invent unseen furniture when it best accounts for what we already agree happens."
+      },
+      "key_term": {
+        "headline": "Best explanation",
+        "body": "If ordinary matter can’t easily explain minds, meaning, or unity of consciousness, dualists say a soul is the cleaner story—debate whether that claim holds."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Ask of every soul argument: what exactly is being explained, and is the soul doing unique work—or just renaming the mystery?"
+      },
+      "quiz": {
+        "prompt": "What is an “inference to the best explanation” doing here?",
+        "correct": "Positing unseen things to explain agreed-upon phenomena.",
+        "distractors": [
+          "Proving souls by quoting scripture alone.",
+          "Measuring brain waves to locate the soul organ.",
+          "Defining death legally in every state."
+        ],
+        "explanation": "The lecture’s first family of soul arguments works by explanatory inference, not direct sighting."
+      }
+    },
+    "4": {
+      "title": "Introduction to Plato's Phaedo; Arguments for the Existence of the Soul, Part II",
+      "hook": {
+        "headline": "Enter Phaedo",
+        "body": "Plato’s dialogue stages Socrates on the day of his death—talking souls while facing his own. Kagan uses it to gather more dualist ammo, especially free will."
+      },
+      "key_term": {
+        "headline": "Free will lever",
+        "body": "Dualists often claim: if we truly choose, we can’t be only physical machines. A soul is wheeled in to host that freedom."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Watch whether free will really requires non-physical stuff—or whether the dualist smuggles in a contested picture of choice."
+      },
+      "quiz": {
+        "prompt": "Why do dualists bring free will into the soul debate?",
+        "correct": "They argue free will can’t fit a purely physical person, so a soul is needed.",
+        "distractors": [
+          "They think free will is impossible for souls too.",
+          "They only care about free will in corporate law.",
+          "They use free will to prove the body is immortal."
+        ],
+        "explanation": "Free will is framed as an objection to pure physicalism that motivates belief in an immaterial soul."
+      }
+    },
+    "5": {
+      "title": "Arguments for the Existence of the Soul, Part III: Free Will and Near-Death Experiences",
+      "hook": {
+        "headline": "Three premises",
+        "body": "The free-will argument tightens: (1) we have free will; (2) nothing determined has free will; (3) pure physical systems are determined. Conclusion: we aren’t purely physical."
+      },
+      "key_term": {
+        "headline": "Determinism",
+        "body": "If every physical event is fixed by prior causes, and you are only physics, your “choices” look like falling dominoes. Dualists refuse that picture for persons."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "You can reject the conclusion by denying a premise—deny free will, deny that physics implies determinism, or deny that free will needs indeterminacy."
+      },
+      "quiz": {
+        "prompt": "What conclusion does the free-will triad aim at?",
+        "correct": "Humans are not a purely physical system.",
+        "distractors": [
+          "All animals lack free will entirely.",
+          "Near-death experiences prove reincarnation.",
+          "Determinism only applies to stars, not brains."
+        ],
+        "explanation": "From free will + anti-determinism + physical determinism, dualists infer we aren’t only physical."
+      }
+    },
+    "6": {
+      "title": "Arguments for the Existence of the Soul, Part IV; Plato, Part I",
+      "hook": {
+        "headline": "Cartesian cracks, Platonic realms",
+        "body": "Cartesian soul arguments show wear. Plato offers another metaphysics: besides the changing empirical world, there is a second realm of stable Forms."
+      },
+      "key_term": {
+        "headline": "Two realms",
+        "body": "The everyday world is messy and temporary. Forms are the clean, intelligible originals—Justice itself, Equality itself—that minds somehow grasp."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "If Forms aren’t physical, grasping them may require a non-physical grasper. That’s the bridge Plato builds toward soul."
+      },
+      "quiz": {
+        "prompt": "What key Platonic idea does Kagan highlight here?",
+        "correct": "Besides the empirical world, there is a second realm of Forms.",
+        "distractors": [
+          "Only atoms exist and Forms are illusions.",
+          "Souls are identical to left-hemisphere activity.",
+          "Death is purely a legal category."
+        ],
+        "explanation": "The lecture pivots into Plato’s two-realm metaphysics as setup for soul arguments."
+      }
+    },
+    "7": {
+      "title": "Plato, Part II: Arguments for the Immortality of the Soul",
+      "hook": {
+        "headline": "Grasping the Forms",
+        "body": "If Forms are non-physical, a body alone can’t know them. Plato’s “argument from the nature of the forms” says the soul must be what understands that higher realm."
+      },
+      "key_term": {
+        "headline": "Argument from the Forms",
+        "body": "Knowledge of timeless objects seems to demand a knower that isn’t stuck in flesh. Immortality often rides along with that claim."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Ask whether understanding abstract truths really needs a separable soul—or whether brains can track patterns without extra ontology."
+      },
+      "quiz": {
+        "prompt": "What does the argument from the nature of the Forms claim?",
+        "correct": "Non-physical Forms must be grasped by a non-physical soul, not the body.",
+        "distractors": [
+          "Forms are physical objects stored in temples.",
+          "Only children can know Forms.",
+          "Forms prove the body is immortal by itself."
+        ],
+        "explanation": "Plato links grasp of non-physical Forms to a soul capable of knowing them."
+      }
+    },
+    "8": {
+      "title": "Plato, Part III: Arguments for the Immortality of the Soul (cont.)",
+      "hook": {
+        "headline": "Simple things don’t shatter",
+        "body": "Plato’s “argument from simplicity”: destruction means taking something apart. If the soul has no parts, it can’t be dismantled—so it can’t die that way."
+      },
+      "key_term": {
+        "headline": "Simplicity",
+        "body": "A composite can break. A partless soul, on this story, has nothing to unscrew. Immortality follows if that picture is right."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Challenge both claims: Is the soul really simple? And is every destruction a matter of parts coming loose?"
+      },
+      "quiz": {
+        "prompt": "What does Plato’s argument from simplicity say about destruction?",
+        "correct": "To be destroyed, something must have parts that can be taken apart.",
+        "distractors": [
+          "Only heavy objects can be destroyed.",
+          "Destruction requires divine permission only.",
+          "Anything simple is automatically physical."
+        ],
+        "explanation": "Simplicity is used to block the usual path to destruction—disassembly into parts."
+      }
+    },
+    "9": {
+      "title": "Plato, Part IV: Arguments for the Immortality of the Soul (cont.)",
+      "hook": {
+        "headline": "Essential properties",
+        "body": "Kagan presses simplicity further: changeless, partless, indestructible. Then comes the “argument from essential properties”—what the soul essentially is may rule out death."
+      },
+      "key_term": {
+        "headline": "Essential properties",
+        "body": "If life or thought belongs to the soul’s essence, then a “dead soul” is a contradiction—like a square circle—rather than a sad event."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Essential-property moves are powerful—and slippery. Watch whether Plato defines the soul so that immortality is baked in by vocabulary."
+      },
+      "quiz": {
+        "prompt": "What is distinctive about the argument from essential properties?",
+        "correct": "It claims the soul’s essence includes features that make death impossible for it.",
+        "distractors": [
+          "It measures soul weight on ancient scales.",
+          "It proves only animals have souls.",
+          "It shows Forms are destroyed each evening."
+        ],
+        "explanation": "The argument turns on what must be true of a soul by nature, not on empirical survival stories."
+      }
+    },
+    "10": {
+      "title": "Personal Identity, Part I: Identity Across Space and Time and the Soul Theory",
+      "hook": {
+        "headline": "Same person tomorrow?",
+        "body": "Metaphysical key to personal identity: what makes you now the same you later? The soul theory answers: same soul, same person—wherever the body goes."
+      },
+      "key_term": {
+        "headline": "Soul theory",
+        "body": "Identity rides on an inner nugget that persists. Bodies may swap; memories may blur; the soul is the ticket that keeps “you” continuous."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "If the soul is undetectable, how do we ever know we’ve got the same one? That epistemic headache drives rival theories next."
+      },
+      "quiz": {
+        "prompt": "On the soul theory, what makes you the same person over time?",
+        "correct": "Having the same soul.",
+        "distractors": [
+          "Wearing the same clothes.",
+          "Living in the same city.",
+          "Sharing a name on a passport alone."
+        ],
+        "explanation": "Soul theory locates identity in persistence of the same soul across time."
+      }
+    },
+    "11": {
+      "title": "Personal Identity, Part II: The Body Theory and the Personality Theory",
+      "hook": {
+        "headline": "Body or biography?",
+        "body": "Two rivals: the body view ties identity to the same living organism; the personality view ties it to the ongoing pattern of beliefs, desires, memories, and projects."
+      },
+      "key_term": {
+        "headline": "Personality view",
+        "body": "You are your psychological profile in motion. Swap brains or upload minds, and identity may travel with the pattern—not the meat."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Science-fiction thought experiments will pressure both views. Notice which intuition you trust when body and personality split."
+      },
+      "quiz": {
+        "prompt": "What does the personality view treat as the key to identity?",
+        "correct": "A unique ongoing set of beliefs, desires, memories, and goals.",
+        "distractors": [
+          "Only DNA sequence with no psychology.",
+          "Social security number alone.",
+          "The soul as a glowing orb."
+        ],
+        "explanation": "Personality theory identifies persons via continuing psychological profile."
+      }
+    },
+    "12": {
+      "title": "Personal Identity, Part III: Objections to the Personality Theory",
+      "hook": {
+        "headline": "The duplication problem",
+        "body": "If personality can be copied, two later people might share your pattern. Both can’t be uniquely you—so bare psychological continuity looks incomplete."
+      },
+      "key_term": {
+        "headline": "Branching",
+        "body": "When one past person “splits” into two equally good continuers, identity talk breaks. Theories need a no-branching clause—or a new question."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Duplication doesn’t just threaten personality theory; it forces every identity story to say what happens when there are too many heirs."
+      },
+      "quiz": {
+        "prompt": "What is the main objection raised against the personality theory here?",
+        "correct": "The problem of duplication—two copies can’t both be uniquely you.",
+        "distractors": [
+          "Personalities never change at all.",
+          "Bodies cannot age.",
+          "Memories are always false."
+        ],
+        "explanation": "Duplication cases show psychological continuity can fork, undermining unique identity."
+      }
+    },
+    "13": {
+      "title": "Personal Identity, Part IV: What Matters?",
+      "hook": {
+        "headline": "No branching, then what matters",
+        "body": "Personality theory is patched: same personality without branching. Similar patches hit other views. Then Kagan shifts: maybe “what matters in survival” isn’t strict identity."
+      },
+      "key_term": {
+        "headline": "What matters",
+        "body": "Care about future experiences continuous with yours—even if metaphysics won’t crown a single identical continuer. Survival-value can peel apart from identity."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "When death debates heat up, ask whether we fear losing identity itself—or losing the goods that a continuer would enjoy."
+      },
+      "quiz": {
+        "prompt": "How is the personality theory revised in this lecture?",
+        "correct": "Same personality counts only if there is no branching or duplication.",
+        "distractors": [
+          "Personality is abandoned entirely for soul theory.",
+          "Only body continuity matters forever after.",
+          "Identity requires identical fingerprints only."
+        ],
+        "explanation": "A no-branching requirement is added so personality continuity can’t fork into two “yous.”"
+      }
+    },
+    "14": {
+      "title": "What Matters (cont.); The Nature of Death, Part I",
+      "hook": {
+        "headline": "From survival to dying",
+        "body": "Maybe survival means a future someone with a personality like yours. Then the camera turns: what is it to die? Focus falls on bodily and mental functions that mark the moment."
+      },
+      "key_term": {
+        "headline": "Functions",
+        "body": "Death isn’t just a calendar date. It’s tied to the collapse of capacities—circulation, respiration, cognition—that keep a person going."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Defining death is partly scientific and partly philosophical: which functions are essential to still being here?"
+      },
+      "quiz": {
+        "prompt": "When defining the moment of death, what does Kagan first emphasize?",
+        "correct": "Bodily and mental functions crucial to marking death.",
+        "distractors": [
+          "Only the opinion of distant relatives.",
+          "Astrology charts for the day of death.",
+          "Whether the person owned property."
+        ],
+        "explanation": "The turn to “what is it to die?” begins with the functions that fail at death."
+      }
+    },
+    "15": {
+      "title": "The Nature of Death (cont.); Believing You Will Die",
+      "hook": {
+        "headline": "When P-functions stop",
+        "body": "Stopping person-functions looks like death—but sleep and coma are exceptions that force finer distinctions. Then a psychological twist: on some level, nobody quite believes they’ll die."
+      },
+      "key_term": {
+        "headline": "Disbelief",
+        "body": "We can recite mortality while living as if the end is always for someone else. That gap between saying and believing will power later ethics and fear."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "A clean definition of death still leaves the human habit of denying it. Both threads matter for the badness of death."
+      },
+      "quiz": {
+        "prompt": "Why isn’t “stopping person-functions” a complete definition of death by itself?",
+        "correct": "Exceptions like sleep or coma show temporary non-functioning isn’t always death.",
+        "distractors": [
+          "Because death never involves the body.",
+          "Because functions never stop in living things.",
+          "Because only plants have person-functions."
+        ],
+        "explanation": "Sleep and coma show we need a more careful account than mere temporary loss of function."
+      }
+    },
+    "16": {
+      "title": "Dying Alone; The Badness of Death, Part I",
+      "hook": {
+        "headline": "Ivan Ilych’s shock",
+        "body": "Tolstoy’s Ilych knew death was coming yet never believed it—until illness made mortality personal. Kagan treats him as ordinary: abstract knowledge, concrete denial."
+      },
+      "key_term": {
+        "headline": "Sudden intimacy",
+        "body": "Death becomes real when it stops being a statistic and starts being your schedule. That conversion is part of why death feels uniquely bad."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "When we ask why death is bad, notice whether we’re talking about the state of being dead—or the rupture of finally believing it."
+      },
+      "quiz": {
+        "prompt": "What does Ilych illustrate about typical attitudes toward mortality?",
+        "correct": "People can know death is coming yet not really believe it until it becomes personal.",
+        "distractors": [
+          "Everyone constantly meditates on their death date.",
+          "Only aristocrats fear death.",
+          "Illness never changes how we think about dying."
+        ],
+        "explanation": "Ilych models abstract acknowledgment paired with practical disbelief—until crisis."
+      }
+    },
+    "17": {
+      "title": "The Badness of Death, Part II: The Deprivation Account",
+      "hook": {
+        "headline": "Missing the goods",
+        "body": "On the deprivation account, death is bad because it cuts off the good things life would have continued to offer. Being dead isn’t a painful experience—it’s a comparative loss."
+      },
+      "key_term": {
+        "headline": "Deprivation",
+        "body": "You’re worse off by missing future joys, projects, and loves—not by suffering inside the grave. Badness is about lost opportunity."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "If deprivation is the story, earlier death can be worse than later death because more possible goods get canceled."
+      },
+      "quiz": {
+        "prompt": "According to the deprivation account, why is death bad?",
+        "correct": "Because it deprives you of the good things continued life would bring.",
+        "distractors": [
+          "Because being dead feels constantly painful.",
+          "Because funerals are expensive.",
+          "Because death increases your future pleasures."
+        ],
+        "explanation": "Deprivation locates badness in lost goods, not in an experienced hell of being dead."
+      }
+    },
+    "18": {
+      "title": "The Badness of Death, Part III; Immortality, Part I",
+      "hook": {
+        "headline": "Prenatal nonexistence & forever",
+        "body": "If missing future life is bad, is missing life before birth also bad? Nagel, Feldman, Parfit enter. Then the pivot: would immortality actually be desirable?"
+      },
+      "key_term": {
+        "headline": "Asymmetry",
+        "body": "Many feel future deprivation hurts while past nonexistence doesn’t. Explaining that asymmetry is a live puzzle for deprivation theorists."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Wanting endless life is not automatic. The next lectures ask under what conditions forever would still be a life worth wanting."
+      },
+      "quiz": {
+        "prompt": "After discussing deprivation, what new question does Kagan raise?",
+        "correct": "Whether immortality would be desirable, and under what conditions.",
+        "distractors": [
+          "How to build cryonics tanks in the lab.",
+          "Whether insects fear death.",
+          "How to rename the course mid-semester."
+        ],
+        "explanation": "The lecture moves from badness puzzles into the desirability of living forever."
+      }
+    },
+    "19": {
+      "title": "Immortality Part II; The Value of Life, Part I",
+      "hook": {
+        "headline": "Forever—and what makes life good",
+        "body": "Would endless life stay desirable under the right conditions? Then: what makes a life worth living at all? Hedonism says pleasure—until the “experience machine” thought experiment pushes back."
+      },
+      "key_term": {
+        "headline": "Experience machine",
+        "body": "If you could plug into perfect simulated joys, would you? Many refuse—suggesting we value contact with reality, not pleasure alone."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Your theory of well-being shapes whether immortality looks like paradise or a polished trap."
+      },
+      "quiz": {
+        "prompt": "What challenge does the experience machine pose to hedonism?",
+        "correct": "It suggests we care about more than pleasure—like real connection to the world.",
+        "distractors": [
+          "It proves pleasure is the only good.",
+          "It shows machines cannot simulate joy.",
+          "It argues immortality is always good."
+        ],
+        "explanation": "Refusal to plug in is used against the idea that pleasure exhausts well-being."
+      }
+    },
+    "20": {
+      "title": "The Value of Life, Part II; Other Bad Aspects of Death, Part I",
+      "hook": {
+        "headline": "Containers of value",
+        "body": "Neutral container theory: life’s value is just the sum of pleasant and painful contents. Valuable container theory: being alive itself adds worth beyond the playlist of moments."
+      },
+      "key_term": {
+        "headline": "Valuable container",
+        "body": "Existence isn’t a blank vessel. Merely living may carry value—so death can rob you of the container, not only of what’s inside."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "How you score the container changes how tragic early death looks—and how you weigh immortality."
+      },
+      "quiz": {
+        "prompt": "How does the valuable container theory differ from the neutral container theory?",
+        "correct": "It assigns value to being alive itself, not only to life’s pleasant or painful contents.",
+        "distractors": [
+          "It denies that pleasure ever matters.",
+          "It claims only pain has value.",
+          "It treats life as worthless in every case."
+        ],
+        "explanation": "Valuable container adds intrinsic worth to living; neutral container tallies only contents."
+      }
+    },
+    "21": {
+      "title": "Other Bad Aspects of Death, Part II",
+      "hook": {
+        "headline": "Death can strike anywhere",
+        "body": "Ubiquity: death may come at any time, to anyone. Imagine death-free vacations or safe hours—then feel how much of life’s texture is shaped by that constant exposure."
+      },
+      "key_term": {
+        "headline": "Ubiquity",
+        "body": "The badness isn’t only deprivation at the end; it’s living under an open-ended threat that can cancel plans without warning."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "The human condition is life followed by death. Valuing that package—or resenting it—will steer how we fear and how we choose."
+      },
+      "quiz": {
+        "prompt": "What does “ubiquity” add to the badness of death?",
+        "correct": "Death may occur at any time and strike anyone—an open-ended exposure.",
+        "distractors": [
+          "Death only happens on Tuesdays.",
+          "Death is rare and always predicted years ahead.",
+          "Only celebrities face sudden death."
+        ],
+        "explanation": "Ubiquity highlights unpredictability and universal exposure, not just the final moment."
+      }
+    },
+    "22": {
+      "title": "Fear of Death",
+      "hook": {
+        "headline": "When fear makes sense",
+        "body": "How should thoughts of death shape a life? Fear can be fitting—or confused. Separate fear of dying (the process) from fear of being dead (the state and aftermath)."
+      },
+      "key_term": {
+        "headline": "Two fears",
+        "body": "Pain, loss of control, and farewell belong to dying. Annihilation or the unknown belong to death itself. Different remedies fit different fears."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Before judging fear as irrational, name the object. Some fears track real losses; others may dissolve under clearer metaphysics."
+      },
+      "quiz": {
+        "prompt": "What distinction does Kagan emphasize about fear?",
+        "correct": "Fear of the process of dying versus fear of death itself and what may follow.",
+        "distractors": [
+          "Fear of cats versus fear of dogs.",
+          "Fear only of public speaking.",
+          "Fear that grades will be too high."
+        ],
+        "explanation": "The lecture separates dying-as-process from death-as-state when assessing appropriate fear."
+      }
+    },
+    "23": {
+      "title": "How to Live Given the Certainty of Death",
+      "hook": {
+        "headline": "Finite time, chosen aims",
+        "body": "Knowing the story ends, how should you set goals and chase them? Time scarcity isn’t only a mood—it constrains which projects can even be sane."
+      },
+      "key_term": {
+        "headline": "Time constraints",
+        "body": "Ambitions that need centuries may be beautiful fantasies. Mortality pressures us toward scaled aims—and sharper tradeoffs."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Quality of life partly depends on matching projects to a mortal schedule instead of pretending you have infinite runway."
+      },
+      "quiz": {
+        "prompt": "What practical question does this lecture press?",
+        "correct": "How to set and pursue goals given that life will certainly end.",
+        "distractors": [
+          "How to avoid ever thinking about goals.",
+          "How to live as if immortal without reflection.",
+          "How to outsource all choices to chance alone."
+        ],
+        "explanation": "Certainty of death becomes a constraint on planning and the quality of a lived life."
+      }
+    },
+    "24": {
+      "title": "Suicide, Part I: The Rationality of Suicide",
+      "hook": {
+        "headline": "Two lenses",
+        "body": "Suicide is explored under rationality (when ending life could make sense) and morality (when, if ever, it could be justified). Keep the lenses distinct."
+      },
+      "key_term": {
+        "headline": "Rationality vs morality",
+        "body": "A choice might be prudent for the agent yet still wrong—or kind yet self-destructive. The course examines both questions without collapsing them."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Graphs of life’s quality over time will appear next; they’re tools for the rationality question, not automatic moral verdicts."
+      },
+      "quiz": {
+        "prompt": "What two contexts does Kagan use to explore suicide?",
+        "correct": "Rationality (when it makes sense) and morality (when it can be justified).",
+        "distractors": [
+          "Fashion and cuisine only.",
+          "Sports rankings and weather.",
+          "Typography and architecture."
+        ],
+        "explanation": "The series opens by separating prudential and moral evaluations of ending one’s life."
+      }
+    },
+    "25": {
+      "title": "Suicide, Part II: Deciding under Uncertainty",
+      "hook": {
+        "headline": "Choosing without a crystal ball",
+        "body": "More cases and graphs: when might ending life be rational? The hard part is deciding whether to continue when you can’t know how the future quality curve will bend."
+      },
+      "key_term": {
+        "headline": "Uncertainty",
+        "body": "Tomorrow’s pain or relief isn’t guaranteed. Rational choice under mortality must weigh unknown upturns, not only today’s trough."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "Even if deprivation and well-being theories are clear, uncertainty about your own future complicates any real decision procedure."
+      },
+      "quiz": {
+        "prompt": "What complicates decisions about continuing or ending life in this lecture?",
+        "correct": "You cannot be certain how future life quality will go.",
+        "distractors": [
+          "Everyone knows their exact future happiness score.",
+          "Graphs make uncertainty disappear completely.",
+          "Only other people face uncertain futures."
+        ],
+        "explanation": "Uncertainty about future well-being is central to the decision problem."
+      }
+    },
+    "26": {
+      "title": "Suicide, Part III: The Morality of Suicide and Course Conclusion",
+      "hook": {
+        "headline": "Consequences—and duties",
+        "body": "Suicide’s effects on the agent and on others matter. Utilitarians may stop there; deontologists ask whether further moral constraints apply beyond outcomes."
+      },
+      "key_term": {
+        "headline": "Deontology vs utility",
+        "body": "If only consequences count, the math of harm and benefit decides. If rights or duties count too, some acts may be wrong even when the spreadsheet looks tidy."
+      },
+      "takeaway": {
+        "headline": "Carry this forward",
+        "body": "The course closes where it began: death forces metaphysics and ethics into the same room. Your answers reshape how you live the time before it."
+      },
+      "quiz": {
+        "prompt": "Besides consequences, what do deontologists say may matter morally about suicide?",
+        "correct": "Further moral factors—such as duties or constraints—beyond outcomes alone.",
+        "distractors": [
+          "Only the weather on the day of the act.",
+          "Nothing else; only taste in music.",
+          "Whether the person liked philosophy class."
+        ],
+        "explanation": "The finale contrasts utilitarian consequence-counting with deontological constraints."
+      }
+    }
+  }
+}

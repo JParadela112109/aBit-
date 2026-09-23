@@ -9,25 +9,29 @@ enum ABitTheme {
     static let lime = Color(red: 0.74, green: 0.90, blue: 0.32)
     static let limeDeep = Color(red: 0.55, green: 0.72, blue: 0.18)
 
-    static let displayHuge = Font.system(size: 64, weight: .bold, design: .serif)
-    static let display = Font.system(size: 40, weight: .bold, design: .serif)
-    static let title = Font.system(size: 26, weight: .semibold, design: .serif)
-    static let titleSm = Font.system(size: 20, weight: .semibold, design: .serif)
-    static let body = Font.system(size: 17, weight: .regular, design: .rounded)
-    static let bodyLg = Font.system(size: 19, weight: .regular, design: .rounded)
-    static let caption = Font.system(size: 12, weight: .semibold, design: .rounded)
-    static let micro = Font.system(size: 11, weight: .medium, design: .rounded)
+    // Fraunces (display) + Nunito (rounded body) — PostScript names from bundled OFL TTFs
+    static let displayHuge = Font.custom("Fraunces-Bold", size: 64, relativeTo: .largeTitle)
+    static let display = Font.custom("Fraunces-Bold", size: 40, relativeTo: .largeTitle)
+    static let title = Font.custom("Fraunces-SemiBold", size: 26, relativeTo: .title2)
+    static let titleSm = Font.custom("Fraunces-SemiBold", size: 20, relativeTo: .title3)
+    static let body = Font.custom("Nunito-Regular", size: 17, relativeTo: .body)
+    static let bodyLg = Font.custom("Nunito-Regular", size: 19, relativeTo: .title3)
+    static let caption = Font.custom("Nunito-SemiBold", size: 12, relativeTo: .caption)
+    static let micro = Font.custom("Nunito-SemiBold", size: 11, relativeTo: .caption2)
+
+    static let biteHeadline = Font.custom("Fraunces-SemiBold", size: 34, relativeTo: .title)
+    static let brandMark = Font.custom("Fraunces-Bold", size: 62, relativeTo: .largeTitle)
 }
 
 struct AtmosphereBackground: View {
     var accent: CourseAccent = .forest
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var phase = false
 
     var body: some View {
         ZStack {
             ABitTheme.ink.ignoresSafeArea()
 
-            // Soft paper grain substitute — layered radial washes
             RadialGradient(
                 colors: [accent.glow.opacity(0.35), .clear],
                 center: .topLeading,
@@ -35,8 +39,8 @@ struct AtmosphereBackground: View {
                 endRadius: 420
             )
             .ignoresSafeArea()
-            .scaleEffect(phase ? 1.08 : 0.94)
-            .opacity(phase ? 1 : 0.75)
+            .scaleEffect(reduceMotion ? 1 : (phase ? 1.08 : 0.94))
+            .opacity(reduceMotion ? 0.9 : (phase ? 1 : 0.75))
 
             RadialGradient(
                 colors: [ABitTheme.lime.opacity(0.14), .clear],
@@ -45,7 +49,7 @@ struct AtmosphereBackground: View {
                 endRadius: 360
             )
             .ignoresSafeArea()
-            .scaleEffect(phase ? 0.92 : 1.06)
+            .scaleEffect(reduceMotion ? 1 : (phase ? 0.92 : 1.06))
 
             LinearGradient(
                 colors: [.clear, ABitTheme.ink.opacity(0.85)],
@@ -55,6 +59,7 @@ struct AtmosphereBackground: View {
             .ignoresSafeArea()
         }
         .onAppear {
+            guard !reduceMotion else { return }
             withAnimation(.easeInOut(duration: 7).repeatForever(autoreverses: true)) {
                 phase = true
             }
@@ -71,7 +76,7 @@ struct BrandMark: View {
             Text("B").foregroundStyle(ABitTheme.lime)
             Text("it")
         }
-        .font(.system(size: size, weight: .bold, design: .serif))
+        .font(Font.custom("Fraunces-Bold", size: size, relativeTo: .largeTitle))
         .foregroundStyle(ABitTheme.chalk)
         .accessibilityLabel("aBit")
     }
@@ -80,7 +85,7 @@ struct BrandMark: View {
 struct PrimaryBitButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(.body, design: .rounded).weight(.bold))
+            .font(Font.custom("Nunito-Bold", size: 17, relativeTo: .body))
             .frame(maxWidth: .infinity)
             .padding(.vertical, 17)
             .background(ABitTheme.lime, in: Capsule())
@@ -93,7 +98,7 @@ struct PrimaryBitButton: ButtonStyle {
 struct GhostBitButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(.body, design: .rounded).weight(.semibold))
+            .font(Font.custom("Nunito-SemiBold", size: 17, relativeTo: .body))
             .padding(.horizontal, 18)
             .padding(.vertical, 17)
             .background(ABitTheme.mist.opacity(0.12), in: Capsule())

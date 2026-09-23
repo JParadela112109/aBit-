@@ -2,12 +2,14 @@ import SwiftUI
 
 struct BiteSessionView: View {
     @Environment(AppStore.self) private var store
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let courseID: String
 
     @State private var index = 0
     @State private var showQuiz = false
     @State private var activeQuiz: QuizItem?
     @State private var appeared = false
+    @State private var progressValue: Double = 0
     @State private var celebrating = false
     @State private var didInit = false
 
@@ -97,8 +99,12 @@ struct BiteSessionView: View {
 
     private var sessionHeader: some View {
         VStack(alignment: .leading, spacing: 10) {
-            ProgressView(value: Double(index + 1), total: Double(max(bites.count, 1)))
+            ProgressView(value: progressValue, total: Double(max(bites.count, 1)))
                 .tint(ABitTheme.lime)
+                .animation(
+                    reduceMotion ? nil : .spring(response: 0.55, dampingFraction: 0.86),
+                    value: progressValue
+                )
 
             HStack {
                 Text(moduleLabel)
@@ -109,6 +115,19 @@ struct BiteSessionView: View {
                     .font(ABitTheme.caption)
                     .foregroundStyle(ABitTheme.lime)
             }
+        }
+        .onAppear { syncProgress(animated: false) }
+        .onChange(of: index) { _, _ in syncProgress(animated: true) }
+    }
+
+    private func syncProgress(animated: Bool) {
+        let target = Double(index + 1)
+        if animated, !reduceMotion {
+            withAnimation(.spring(response: 0.55, dampingFraction: 0.86)) {
+                progressValue = target
+            }
+        } else {
+            progressValue = target
         }
     }
 
@@ -125,9 +144,12 @@ struct BiteSessionView: View {
                 .font(ABitTheme.caption)
                 .tracking(1.8)
                 .foregroundStyle(ABitTheme.lime)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(ABitTheme.lime.opacity(0.12), in: Capsule())
 
             Text(bite.headline)
-                .font(.system(size: 34, weight: .semibold, design: .serif))
+                .font(ABitTheme.biteHeadline)
                 .foregroundStyle(ABitTheme.chalk)
                 .fixedSize(horizontal: false, vertical: true)
 
@@ -162,12 +184,17 @@ struct BiteSessionView: View {
                 )
                 .shadow(color: accent.glow.opacity(0.18), radius: 40, y: 18)
         )
-        .scaleEffect(appeared ? 1 : 0.965)
+        .scaleEffect(appeared ? 1 : (reduceMotion ? 1 : 0.94))
         .opacity(appeared ? 1 : 0)
+        .offset(y: appeared ? 0 : (reduceMotion ? 0 : 10))
         .onAppear {
             appeared = false
-            withAnimation(.spring(response: 0.48, dampingFraction: 0.82)) {
+            if reduceMotion {
                 appeared = true
+            } else {
+                withAnimation(.spring(response: 0.52, dampingFraction: 0.78)) {
+                    appeared = true
+                }
             }
         }
     }

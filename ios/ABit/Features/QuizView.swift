@@ -24,8 +24,15 @@ struct QuizView: View {
                         .tracking(1.6)
                         .foregroundStyle(ABitTheme.lime)
 
+                    if isFinal {
+                        Text("Course arc")
+                            .font(ABitTheme.micro)
+                            .tracking(1.2)
+                            .foregroundStyle(ABitTheme.mist)
+                    }
+
                     Text(quiz.prompt)
-                        .font(.system(size: 26, weight: .semibold, design: .serif))
+                        .font(ABitTheme.title)
                         .foregroundStyle(ABitTheme.chalk)
                         .fixedSize(horizontal: false, vertical: true)
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import re
 
+from .editorial import load_editorial, lecture_override
 from .models import BiteCard, BitePack, CourseRecord, QuizItem
 
 GENERIC_DISTRACTORS = [
@@ -34,7 +35,6 @@ def _title_case_term(phrase: str) -> str:
     words = re.findall(r"[A-Za-z][A-Za-z\-']+", phrase)
     if not words:
         return "Key idea"
-    # Prefer capitalized philosophical/econ terms or longest content word
     ranked = sorted(words, key=lambda w: (w[0].isupper(), len(w)), reverse=True)
     return ranked[0]
 
@@ -44,7 +44,6 @@ def _stable_shuffle(items: list[str], seed: str) -> list[str]:
 
 
 def _quiz_choices(correct: str, pool: list[str], seed: str) -> tuple[list[str], int, str]:
-    """Build 4 choices with the correct answer not always first."""
     distractors: list[str] = []
     for cand in _stable_shuffle(pool, seed):
         c = _clip(cand, 110)
@@ -60,7 +59,6 @@ def _quiz_choices(correct: str, pool: list[str], seed: str) -> tuple[list[str], 
 
     options = [correct] + distractors[:3]
     options = _stable_shuffle(options, seed + ":opts")
-    # Ensure uniqueness after shuffle
     deduped: list[str] = []
     for o in options:
         if o not in deduped:
@@ -76,25 +74,72 @@ def _quiz_choices(correct: str, pool: list[str], seed: str) -> tuple[list[str], 
     return deduped, answer, explanation
 
 
+def _editorial_quiz_choices(
+    correct: str, distractors: list[str], seed: str, explanation: str
+) -> tuple[list[str], int, str]:
+    options = [correct] + list(distractors)[:3]
+    while len(options) < 4:
+        options.append(GENERIC_DISTRACTORS[len(options) % len(GENERIC_DISTRACTORS)])
+    options = _stable_shuffle(options[:4], seed)
+    if correct not in options:
+        options[0] = correct
+    answer = options.index(correct)
+    return options, answer, explanation
+
+
 def build_bite_pack(course: CourseRecord) -> BitePack:
-    """Editorial-style micro-lessons from lecture overviews (transformative, attributed)."""
+    """Micro-lessons from lecture overviews, preferring curated editorial overrides."""
     credit = (
         course.attribution.as_credit_line()
         if course.attribution
         else f"{course.professor}, {course.title} (Open course)"
     )
+    editorial = load_editorial(course.id)
     bites: list[BiteCard] = []
     quizzes: list[QuizItem] = []
     order = 0
 
-    # Pool of sentences across the course for better distractors
     all_sents: list[str] = []
     for lec in course.lectures:
         all_sents.extend(_sentences(lec.overview))
     if course.about:
         all_sents.extend(_sentences(course.about))
 
-    if course.about:
+    # --- About / opening ---
+    about_ed = (editorial or {}).get("about") if editorial else None
+    if about_ed and about_ed.get("hook"):
+        order += 1
+        bites.append(
+            BiteCard(
+                id=f"{course.id}:about:hook",
+                course_id=course.id,
+                lecture_id="about",
+                order=order,
+                kind="story",
+                headline=about_ed["hook"]["headline"],
+                body=about_ed["hook"]["body"],
+                attribution_line=credit,
+                source_url=course.url,
+                license_spdx=course.license.spdx,
+            )
+        )
+        if about_ed.get("stakes"):
+            order += 1
+            bites.append(
+                BiteCard(
+                    id=f"{course.id}:about:stakes",
+                    course_id=course.id,
+                    lecture_id="about",
+                    order=order,
+                    kind="concept",
+                    headline=about_ed["stakes"]["headline"],
+                    body=about_ed["stakes"]["body"],
+                    attribution_line=credit,
+                    source_url=course.url,
+                    license_spdx=course.license.spdx,
+                )
+            )
+    elif course.about:
         about_sents = _sentences(course.about)
         order += 1
         bites.append(
@@ -129,6 +174,13 @@ def build_bite_pack(course: CourseRecord) -> BitePack:
             )
 
     for lec in course.lectures:
+        ov = lecture_override(editorial, lec.index) if editorial else None
+        if ov:
+            order, bites, quizzes = _append_editorial_lecture(
+                course, lec, ov, credit, order, bites, quizzes
+            )
+            continue
+
         sents = _sentences(lec.overview)
         if not sents:
             order += 1
@@ -151,7 +203,6 @@ def build_bite_pack(course: CourseRecord) -> BitePack:
             )
             continue
 
-        # 1) Hook — named after the lecture
         order += 1
         bites.append(
             BiteCard(
@@ -168,7 +219,6 @@ def build_bite_pack(course: CourseRecord) -> BitePack:
             )
         )
 
-        # 2) Key term — pull a salient word/phrase from the title or first sentence
         term = _title_case_term(lec.title) if len(lec.title.split()) <= 6 else _title_case_term(sents[0])
         order += 1
         bites.append(
@@ -191,7 +241,6 @@ def build_bite_pack(course: CourseRecord) -> BitePack:
             )
         )
 
-        # 3) Takeaway
         if len(sents) > 1:
             order += 1
             bites.append(
@@ -209,7 +258,6 @@ def build_bite_pack(course: CourseRecord) -> BitePack:
                 )
             )
 
-        # Lecture check — grounded distractors from other overviews
         correct = _clip(sents[0], 110)
         pool = [s for s in all_sents if s != sents[0]]
         choices, answer, explanation = _quiz_choices(correct, pool, f"{course.id}:{lec.id}")
@@ -225,8 +273,27 @@ def build_bite_pack(course: CourseRecord) -> BitePack:
             )
         )
 
-    # Course final — synthesizes the arc (university-like)
-    if course.lectures:
+    # Course final
+    final_ed = (editorial or {}).get("final") if editorial else None
+    if final_ed:
+        choices, answer, explanation = _editorial_quiz_choices(
+            final_ed["correct"],
+            final_ed.get("distractors") or [],
+            f"{course.id}:final",
+            final_ed.get("explanation") or "",
+        )
+        quizzes.append(
+            QuizItem(
+                id=f"{course.id}:final",
+                course_id=course.id,
+                lecture_id="final",
+                prompt=final_ed["prompt"],
+                choices=choices,
+                answer_index=answer,
+                explanation=explanation,
+            )
+        )
+    elif course.lectures:
         titles = [lec.title for lec in course.lectures[:5]]
         arc = ", ".join(titles[:3]) + ("…" if len(titles) > 3 else "")
         correct_final = _clip(
@@ -248,9 +315,83 @@ def build_bite_pack(course: CourseRecord) -> BitePack:
                 prompt=f"Final for {course.title}: which best states the course’s core concern?",
                 choices=choices,
                 answer_index=answer,
-                explanation=explanation
-                + (f" Early sessions include: {arc}." if arc else ""),
+                explanation=explanation + (f" Early sessions include: {arc}." if arc else ""),
             )
         )
 
     return BitePack(course_id=course.id, bites=bites, quizzes=quizzes)
+
+
+def _append_editorial_lecture(course, lec, ov, credit, order, bites, quizzes):
+    hook = ov.get("hook") or {}
+    term = ov.get("key_term") or {}
+    take = ov.get("takeaway") or {}
+    quiz = ov.get("quiz") or {}
+
+    if hook:
+        order += 1
+        bites.append(
+            BiteCard(
+                id=f"{course.id}:{lec.id}:hook",
+                course_id=course.id,
+                lecture_id=lec.id,
+                order=order,
+                kind="concept",
+                headline=hook.get("headline") or lec.title,
+                body=hook.get("body") or "",
+                attribution_line=credit,
+                source_url=lec.url,
+                license_spdx=course.license.spdx,
+            )
+        )
+    if term:
+        order += 1
+        bites.append(
+            BiteCard(
+                id=f"{course.id}:{lec.id}:term",
+                course_id=course.id,
+                lecture_id=lec.id,
+                order=order,
+                kind="key_term",
+                headline=term.get("headline") or "Key term",
+                body=term.get("body") or "",
+                attribution_line=credit,
+                source_url=lec.url,
+                license_spdx=course.license.spdx,
+            )
+        )
+    if take:
+        order += 1
+        bites.append(
+            BiteCard(
+                id=f"{course.id}:{lec.id}:takeaway",
+                course_id=course.id,
+                lecture_id=lec.id,
+                order=order,
+                kind="takeaway",
+                headline=take.get("headline") or "Carry this forward",
+                body=take.get("body") or "",
+                attribution_line=credit,
+                source_url=lec.url,
+                license_spdx=course.license.spdx,
+            )
+        )
+    if quiz.get("correct"):
+        choices, answer, explanation = _editorial_quiz_choices(
+            quiz["correct"],
+            quiz.get("distractors") or [],
+            f"{course.id}:{lec.id}",
+            quiz.get("explanation") or "",
+        )
+        quizzes.append(
+            QuizItem(
+                id=f"{course.id}:{lec.id}:q1",
+                course_id=course.id,
+                lecture_id=lec.id,
+                prompt=quiz.get("prompt") or f"In “{lec.title}”, what matters most?",
+                choices=choices,
+                answer_index=answer,
+                explanation=explanation,
+            )
+        )
+    return order, bites, quizzes

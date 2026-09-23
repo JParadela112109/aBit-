@@ -72,11 +72,23 @@ struct CourseDetailView: View {
     }
 
     private func header(_ course: CourseMeta) -> some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Text(course.accentLabel.uppercased())
-                .font(ABitTheme.caption)
-                .tracking(1.5)
-                .foregroundStyle(accent.chip)
+        let lectureCount = Set(bites.map(\.lectureId).filter { $0.hasPrefix("lecture-") }).count
+        let isEditorialDeath = course.id == "yale:phil-176"
+
+        return VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 10) {
+                Text(course.accentLabel.uppercased())
+                    .font(ABitTheme.caption)
+                    .tracking(1.5)
+                    .foregroundStyle(accent.chip)
+
+                if isEditorialDeath {
+                    Text("EDITORIAL PATH")
+                        .font(ABitTheme.micro)
+                        .tracking(1.1)
+                        .foregroundStyle(ABitTheme.mist.opacity(0.85))
+                }
+            }
 
             Text(course.title)
                 .font(ABitTheme.display)
@@ -91,11 +103,21 @@ struct CourseDetailView: View {
                 .tint(ABitTheme.lime)
                 .padding(.top, 4)
 
-            Text("\(Int(progress * 100))% bites · \(bites.count) cards")
+            Text(pathMetaLine(lectureCount: lectureCount, isEditorial: isEditorialDeath))
                 .font(ABitTheme.caption)
                 .foregroundStyle(ABitTheme.mist)
         }
         .padding(.top, 8)
+    }
+
+    private func pathMetaLine(lectureCount: Int, isEditorial: Bool) -> String {
+        let lectureBit = lectureCount == 1 ? "1 lecture" : "\(lectureCount) lectures"
+        let biteBit = "\(bites.count) bites"
+        let progressBit = "\(Int(progress * 100))% complete"
+        if isEditorial {
+            return "\(lectureBit) · \(biteBit) · \(progressBit)"
+        }
+        return "\(progressBit) · \(biteBit)"
     }
 
     private func academicPanel(_ course: CourseMeta) -> some View {

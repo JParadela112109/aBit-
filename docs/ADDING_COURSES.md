@@ -32,6 +32,40 @@ Or bundle everything you’ve scraped:
 PYTHONPATH=. python -m abit_scraper bundle-all
 ```
 
+## Optional editorial layer
+
+For flagship paths (Death is the reference), add curated micro-copy so bites aren’t truncated overview sentences.
+
+1. Create `scraper/data/editorial/<course_id_with_underscores>.json`  
+   Example: `yale:phil-176` → `scraper/data/editorial/yale_phil-176.json`
+2. Shape:
+
+```json
+{
+  "course_id": "yale:phil-176",
+  "schema_version": 1,
+  "about": { "hook": { "headline", "body" }, "stakes": { … } },
+  "final": { "prompt", "correct", "distractors": [], "explanation" },
+  "lectures": {
+    "1": {
+      "hook": { "headline", "body" },
+      "key_term": { "headline", "body" },
+      "takeaway": { "headline", "body" },
+      "quiz": { "prompt", "correct", "distractors": [], "explanation" }
+    }
+  }
+}
+```
+
+3. Rebuild:
+
+```bash
+PYTHONPATH=. python -m abit_scraper bites --course-id yale:phil-176
+PYTHONPATH=. python -m abit_scraper bundle --course-id yale:phil-176
+```
+
+`build_bite_pack` loads editorial overrides when present and falls back to the deterministic generator for any lecture without an override. Keep attribution / `license_spdx` / `source_url` from the scrape — editorial is transformative micro-copy, not a transcript dump.
+
 ## Then in Xcode
 
 1. Confirm the new `*.course.json` is in the **ABit** target → **Copy Bundle Resources**

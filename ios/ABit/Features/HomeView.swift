@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
     @Environment(AppStore.self) private var store
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var heroVisible = false
 
     private var continueCourse: CourseMeta? {
@@ -31,8 +32,12 @@ struct HomeView: View {
         }
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
-            withAnimation(.spring(response: 0.7, dampingFraction: 0.84).delay(0.05)) {
+            if reduceMotion {
                 heroVisible = true
+            } else {
+                withAnimation(.spring(response: 0.72, dampingFraction: 0.82).delay(0.04)) {
+                    heroVisible = true
+                }
             }
         }
     }
@@ -43,13 +48,21 @@ struct HomeView: View {
 
             BrandMark(size: 62)
                 .opacity(heroVisible ? 1 : 0)
-                .offset(y: heroVisible ? 0 : 16)
+                .offset(y: heroVisible ? 0 : 22)
+                .animation(
+                    reduceMotion ? nil : .spring(response: 0.68, dampingFraction: 0.78).delay(0.02),
+                    value: heroVisible
+                )
 
             Text("College, in bites.")
                 .font(ABitTheme.title)
                 .foregroundStyle(ABitTheme.chalk)
                 .opacity(heroVisible ? 1 : 0)
-                .offset(y: heroVisible ? 0 : 12)
+                .offset(y: heroVisible ? 0 : 18)
+                .animation(
+                    reduceMotion ? nil : .spring(response: 0.7, dampingFraction: 0.8).delay(0.1),
+                    value: heroVisible
+                )
 
             Text("Real open lectures. Tiny lessons. Pass the course, earn the credits, graduate your program.")
                 .font(ABitTheme.body)
@@ -57,6 +70,11 @@ struct HomeView: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .frame(maxWidth: 340, alignment: .leading)
                 .opacity(heroVisible ? 1 : 0)
+                .offset(y: heroVisible ? 0 : 14)
+                .animation(
+                    reduceMotion ? nil : .spring(response: 0.72, dampingFraction: 0.84).delay(0.16),
+                    value: heroVisible
+                )
 
             if let course = continueCourse {
                 NavigationLink {
@@ -67,7 +85,7 @@ struct HomeView: View {
                         Image(systemName: "arrow.right")
                             .font(.system(size: 14, weight: .bold))
                     }
-                    .font(.system(.body, design: .rounded).weight(.bold))
+                    .font(Font.custom("Nunito-Bold", size: 17, relativeTo: .body))
                     .foregroundStyle(ABitTheme.ink)
                     .padding(.horizontal, 22)
                     .padding(.vertical, 16)
@@ -76,6 +94,12 @@ struct HomeView: View {
                 .buttonStyle(PressableCardStyle())
                 .padding(.top, 8)
                 .opacity(heroVisible ? 1 : 0)
+                .offset(y: heroVisible ? 0 : 16)
+                .scaleEffect(heroVisible ? 1 : 0.96)
+                .animation(
+                    reduceMotion ? nil : .spring(response: 0.62, dampingFraction: 0.72).delay(0.24),
+                    value: heroVisible
+                )
             }
 
             Spacer(minLength: 20)
@@ -97,7 +121,7 @@ struct HomeView: View {
                     .tracking(1.2)
                     .foregroundStyle(ABitTheme.mist)
                 Text("\(store.currentStreak) day\(store.currentStreak == 1 ? "" : "s")")
-                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                    .font(Font.custom("Nunito-Bold", size: 22, relativeTo: .title2))
                     .foregroundStyle(ABitTheme.lime)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -179,7 +203,7 @@ struct CoursePathRow: View {
                 .frame(width: 64, height: 84)
                 .overlay {
                     Text(String(course.title.prefix(1)))
-                        .font(.system(size: 28, weight: .bold, design: .serif))
+                        .font(Font.custom("Fraunces-Bold", size: 28, relativeTo: .title))
                         .foregroundStyle(ABitTheme.chalk)
                 }
 

@@ -95,8 +95,8 @@ struct BiteCard: Identifiable, Codable, Hashable {
     var kindLabel: String {
         switch kind {
         case "story": return "Opening"
-        case "takeaway": return "Keep this"
-        case "key_term": return "Term"
+        case "takeaway": return "Carry forward"
+        case "key_term": return "Key term"
         default: return "Concept"
         }
     }

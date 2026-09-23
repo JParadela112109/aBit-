@@ -33,6 +33,46 @@
       "path": "/psychology/psyc-110/lecture-3",
       "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-3",
       "overview": "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical description and his contributions to the field of psychology. The limitations of his theories of psychoanalysis are covered in detail, as well as the ways in which his conception of the unconscious mind still operate in mainstream psychology today."
+    },
+    {
+      "id": "lecture-4",
+      "index": 4,
+      "title": "Foundations: Skinner",
+      "path": "/psychology/psyc-110/lecture-4",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-4",
+      "overview": "Professor Bloom opens with a brief discussion of the value and evolutionary basis of unconscious processing. The rest of this lecture introduces students to the theory of Behaviorism, particularly the work of prominent behaviorist, B. F. Skinner. Different types of learning are discussed in detail, as well as reasons why behaviorism has been largely displaced as an adequate theory of human mental life."
+    },
+    {
+      "id": "lecture-5",
+      "index": 5,
+      "title": "What Is It Like to Be a Baby: The Development of Thought",
+      "path": "/psychology/psyc-110/lecture-5",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-5",
+      "overview": "This lecture explores issues and ideas related to the branch of psychology known as cognitive development. It begins with an introduction of Piaget who, interested in the emergence of knowledge in general, studied children and the way they learn about the world in order to formulate his theories of cognitive development. This is followed by an introduction to the modern science of infant cognition. Finally, the question of the relationship between and the existence of different kinds of development is addressed."
+    },
+    {
+      "id": "lecture-6",
+      "index": 6,
+      "title": "How Do We Communicate?: Language in the Brain, Mouth and the Hands",
+      "path": "/psychology/psyc-110/lecture-6",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-6",
+      "overview": "One of the most uniquely human abilities is the capacity for creating and understanding language. This lecture introduces students to the major topics within the study of language: phonology, morphology, syntax and recursion. This lecture also describes theories of language acquisition, arguments for the specialization of language, and the commonalities observed in different languages across cultures."
+    },
+    {
+      "id": "lecture-7",
+      "index": 7,
+      "title": "Conscious of the Present; Conscious of the Past: Language (cont.); Vision and Memory",
+      "path": "/psychology/psyc-110/lecture-7",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-7",
+      "overview": "This lecture finishes the discussion of language by briefly reviewing two additional topics: communication systems in non-human primates and other animals, and the relationship between language and thought. The majority of this lecture is then spent on introducing students to major theories and discoveries in the fields of perception, attention and memory. Topics include why we see certain visual illusions, why we don't always see everything we think we see, and the relationship between different types of memory."
+    },
+    {
+      "id": "lecture-8",
+      "index": 8,
+      "title": "Conscious of the Present; Conscious of the Past: Vision and Memory (cont.)",
+      "path": "/psychology/psyc-110/lecture-8",
+      "url": "https://oyc.yale.edu/psychology/psyc-110/lecture-8",
+      "overview": "In this lecture, Professor Bloom reviews the basic psychological research on memory. Specific topics covered include the different memory types, memory limitations, strategies that improve memory, and memory disorders. This lecture also includes a discussion of several important social implications for memory research, such as recovered memories, and the influence of suggestibility on eyewitness testimony."
     }
   ],
   "license": {
@@ -48,6 +88,6 @@
     "institution": "Yale University",
     "project": "Open Yale Courses",
     "source_url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
-    "accessed_at": "2026-09-23T15:47:48.032174Z"
+    "accessed_at": "2026-09-23T18:06:45.813441Z"
   }
 }

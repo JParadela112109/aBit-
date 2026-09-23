@@ -10,9 +10,14 @@ final class AppStore {
     var enrolledProgramIDs: Set<String> = []
     var completedBiteIDs: Set<String> = []
     var passedQuizIDs: Set<String> = []
-    /// quizID → attempt count (wrong answers count too)
     var quizAttempts: [String: Int] = [:]
     var conferredDegrees: [ConferredDegree] = []
+    /// courseID → last bite index for resume
+    var resumeIndexByCourse: [String: Int] = [:]
+    var currentStreak: Int = 0
+    var longestStreak: Int = 0
+    var lastStudyDay: String? // yyyy-MM-dd
+    var bitsCompletedToday: Int = 0
 
     var friends: [FriendActivity] = [
         .init(id: "1", name: "Maya", studying: "B.A. Philosophy", bitsToday: 12),
@@ -21,16 +26,29 @@ final class AppStore {
     ]
 
     private let defaults = UserDefaults.standard
+    private let calendar = Calendar.current
     private enum Keys {
         static let bites = "abit.completedBiteIDs"
         static let quizzes = "abit.passedQuizIDs"
         static let attempts = "abit.quizAttempts"
         static let enrolled = "abit.enrolledProgramIDs"
         static let conferred = "abit.conferredDegrees"
+        static let resume = "abit.resumeIndexByCourse"
+        static let streak = "abit.currentStreak"
+        static let longest = "abit.longestStreak"
+        static let lastDay = "abit.lastStudyDay"
+        static let bitsToday = "abit.bitsCompletedToday"
+        static let bitsTodayDay = "abit.bitsTodayDay"
     }
 
     var courses: [CourseMeta] { bundles.map(\.course) }
     var programs: [DegreeProgram] { academicCatalog.programs }
+
+    var dailyGoal: Int { 5 }
+
+    var dailyGoalProgress: Double {
+        min(1, Double(bitsCompletedToday) / Double(dailyGoal))
+    }
 
     var selectedBundle: CourseBundleFile? {
         if let id = selectedCourseID {
@@ -63,6 +81,10 @@ final class AppStore {
         bundles.first { $0.course.id == courseID }?.quizzes ?? []
     }
 
+    func finalExam(for courseID: String) -> QuizItem? {
+        quizzes(for: courseID).first { $0.lectureId == "final" }
+    }
+
     func progress(for courseID: String) -> Double {
         engine.biteCompletion(for: courseID)
     }
@@ -93,6 +115,7 @@ final class AppStore {
 
     init() {
         loadPersisted()
+        rollDailyCountersIfNeeded()
         reloadCourses()
     }
 
@@ -119,8 +142,23 @@ final class AppStore {
     }
 
     func markComplete(_ bite: BiteCard) {
+        let wasNew = !completedBiteIDs.contains(bite.id)
         completedBiteIDs.insert(bite.id)
+        if wasNew {
+            recordStudyActivity(bitsDelta: 1)
+        }
         persist()
+    }
+
+    func saveResumeIndex(_ index: Int, for courseID: String) {
+        resumeIndexByCourse[courseID] = index
+        persist()
+    }
+
+    func resumeIndex(for courseID: String) -> Int {
+        let bites = bites(for: courseID)
+        let saved = resumeIndexByCourse[courseID] ?? 0
+        return min(max(0, saved), max(0, bites.count - 1))
     }
 
     func recordQuizAttempt(_ quiz: QuizItem, correct: Bool) {
@@ -128,6 +166,7 @@ final class AppStore {
         if correct {
             passedQuizIDs.insert(quiz.id)
         }
+        recordStudyActivity(bitsDelta: 0)
         persist()
     }
 
@@ -153,6 +192,50 @@ final class AppStore {
         return degree
     }
 
+    // MARK: - Streaks
+
+    private func todayKey() -> String {
+        let c = calendar.dateComponents([.year, .month, .day], from: Date())
+        return String(format: "%04d-%02d-%02d", c.year!, c.month!, c.day!)
+    }
+
+    private func rollDailyCountersIfNeeded() {
+        let today = todayKey()
+        let bitsDay = defaults.string(forKey: Keys.bitsTodayDay)
+        if bitsDay != today {
+            bitsCompletedToday = 0
+            defaults.set(today, forKey: Keys.bitsTodayDay)
+            defaults.set(0, forKey: Keys.bitsToday)
+        }
+    }
+
+    private func recordStudyActivity(bitsDelta: Int) {
+        rollDailyCountersIfNeeded()
+        let today = todayKey()
+        if bitsDelta > 0 {
+            bitsCompletedToday += bitsDelta
+        }
+
+        if lastStudyDay == today {
+            // already counted streak today
+        } else if let last = lastStudyDay, let lastDate = date(from: last),
+                  let yesterday = calendar.date(byAdding: .day, value: -1, to: calendar.startOfDay(for: Date())),
+                  calendar.isDate(lastDate, inSameDayAs: yesterday) {
+            currentStreak += 1
+            lastStudyDay = today
+        } else {
+            currentStreak = 1
+            lastStudyDay = today
+        }
+        longestStreak = max(longestStreak, currentStreak)
+    }
+
+    private func date(from key: String) -> Date? {
+        let parts = key.split(separator: "-").compactMap { Int($0) }
+        guard parts.count == 3 else { return nil }
+        return calendar.date(from: DateComponents(year: parts[0], month: parts[1], day: parts[2]))
+    }
+
     // MARK: - Persistence
 
     private func loadPersisted() {
@@ -172,6 +255,13 @@ final class AppStore {
            let decoded = try? JSONDecoder().decode([ConferredDegree].self, from: data) {
             conferredDegrees = decoded
         }
+        if let resume = defaults.dictionary(forKey: Keys.resume) as? [String: Int] {
+            resumeIndexByCourse = resume
+        }
+        currentStreak = defaults.integer(forKey: Keys.streak)
+        longestStreak = defaults.integer(forKey: Keys.longest)
+        lastStudyDay = defaults.string(forKey: Keys.lastDay)
+        bitsCompletedToday = defaults.integer(forKey: Keys.bitsToday)
     }
 
     private func persist() {
@@ -179,6 +269,12 @@ final class AppStore {
         defaults.set(Array(passedQuizIDs), forKey: Keys.quizzes)
         defaults.set(quizAttempts, forKey: Keys.attempts)
         defaults.set(Array(enrolledProgramIDs), forKey: Keys.enrolled)
+        defaults.set(resumeIndexByCourse, forKey: Keys.resume)
+        defaults.set(currentStreak, forKey: Keys.streak)
+        defaults.set(longestStreak, forKey: Keys.longest)
+        defaults.set(lastStudyDay, forKey: Keys.lastDay)
+        defaults.set(bitsCompletedToday, forKey: Keys.bitsToday)
+        defaults.set(todayKey(), forKey: Keys.bitsTodayDay)
         if let data = try? JSONEncoder().encode(conferredDegrees) {
             defaults.set(data, forKey: Keys.conferred)
         }

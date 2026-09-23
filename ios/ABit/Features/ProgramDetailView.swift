@@ -3,7 +3,7 @@ import SwiftUI
 struct ProgramDetailView: View {
     @Environment(AppStore.self) private var store
     let program: DegreeProgram
-    @State private var commenceFlash = false
+    @State private var conferredDegree: ConferredDegree?
 
     private var progress: ProgramProgress {
         store.programProgress(program)
@@ -55,6 +55,11 @@ struct ProgramDetailView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .fullScreenCover(item: $conferredDegree) { degree in
+            CommencementView(degree: degree) {
+                conferredDegree = nil
+            }
+        }
     }
 
     private func metaPill(_ text: String) -> some View {
@@ -157,13 +162,12 @@ struct ProgramDetailView: View {
                 Text("All requirements clear. Commence to seal the credential.")
                     .font(ABitTheme.body)
                     .foregroundStyle(ABitTheme.mist)
-                Button(commenceFlash ? "Conferred" : "Commence") {
-                    if store.commence(program) != nil {
-                        commenceFlash = true
+                Button("Commence") {
+                    if let degree = store.commence(program) {
+                        conferredDegree = degree
                     }
                 }
                 .buttonStyle(PrimaryBitButton())
-                .disabled(commenceFlash)
             } else {
                 Text("Still needed:")
                     .font(ABitTheme.caption)

@@ -41,8 +41,9 @@ struct AcademicEngine {
     }
 
     func quizPassRate(for courseID: String) -> Double {
-        let quizzes = quizzesByCourse[courseID] ?? []
-        guard !quizzes.isEmpty else { return 1 } // no quizzes → treat as satisfied
+        // Lecture checks only — the course final is gated separately in isPassed.
+        let quizzes = (quizzesByCourse[courseID] ?? []).filter { $0.lectureId != "final" }
+        guard !quizzes.isEmpty else { return 1 }
         let passed = quizzes.filter { passedQuizIDs.contains($0.id) }.count
         return Double(passed) / Double(quizzes.count)
     }
@@ -51,8 +52,8 @@ struct AcademicEngine {
     func courseScore(for courseID: String) -> Double {
         let bites = biteCompletion(for: courseID)
         let quizzes = quizPassRate(for: courseID)
-        let hasQuizzes = !(quizzesByCourse[courseID] ?? []).isEmpty
-        if hasQuizzes {
+        let lectureQuizzes = (quizzesByCourse[courseID] ?? []).filter { $0.lectureId != "final" }
+        if !lectureQuizzes.isEmpty {
             return bites * AcademicRules.biteWeight + quizzes * AcademicRules.quizWeight
         }
         return bites
@@ -74,7 +75,9 @@ struct AcademicEngine {
         guard grade.isPassing else { return false }
         let bitesOK = biteCompletion(for: courseID) >= AcademicRules.minBiteCompletionToPass
         let quizzesOK = quizPassRate(for: courseID) >= AcademicRules.minQuizPassRate
-        return bitesOK && quizzesOK
+        let finals = (quizzesByCourse[courseID] ?? []).filter { $0.lectureId == "final" }
+        let finalOK = finals.isEmpty || finals.allSatisfy { passedQuizIDs.contains($0.id) }
+        return bitesOK && quizzesOK && finalOK
     }
 
     func academicState(for courseID: String) -> CourseAcademicState {

@@ -21,11 +21,12 @@ Finishing bites in **one** course is **not** a degree. A degree is a **program**
 | Rule | Threshold |
 | --- | --- |
 | Bite completion | ≥ **80%** |
-| Quiz pass rate | ≥ **70%** of lecture checks (if any exist) |
-| Letter grade | From composite score: **40%** bites + **60%** quizzes |
+| Lecture-check pass rate | ≥ **70%** of lecture quizzes (final excluded) |
+| Course final | Must **pass** if the bundle includes one |
+| Letter grade | Composite: **40%** bites + **60%** lecture checks |
 
 Grades: A / A- / B+ / B / B- / C+ / C / C- / D / F (4.0 scale).  
-**F** or missing either threshold ⇒ course not passed ⇒ no credits toward a program.
+**F**, missing a threshold, or a failed/missing final ⇒ no credits toward a program.
 
 ## Programs (shipped)
 

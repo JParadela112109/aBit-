@@ -33,6 +33,46 @@
       "path": "/economics/econ-252-08/lecture-3",
       "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-3",
       "overview": "Technology and innovation underlie finance. In order to manage risks successfully, particularly long-term, we must pool large amounts of risk among many, diverse people and overcome barriers such as moral hazard and erroneous framing. Inventions such as insurance contracts and social security, and information technology all the way from such simple things as paper, and the postal service to modern computers have helped to manage risks and to encourage financial systems to address issues pertaining to risk. The tax and welfare system is one of the most important risk management systems."
+    },
+    {
+      "id": "lecture-4",
+      "index": 4,
+      "title": "Portfolio Diversification and Supporting Financial Institutions (CAPM Model)",
+      "path": "/economics/econ-252-08/lecture-4",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-4",
+      "overview": "Portfolio diversification is the most fundamental concept of risk management. The allocation of financial resources in stocks, bonds, riskless, assets, oil and other assets determine the expected return and risk of a portfolio. Taking account of covariances and expected returns, investors can create a diversified portfolio that maximizes expected return for a given level of risk. An important mission of financial institutions is to provide portfolio-diversification services."
+    },
+    {
+      "id": "lecture-5",
+      "index": 5,
+      "title": "Insurance: The Archetypal Risk Management Institution",
+      "path": "/economics/econ-252-08/lecture-5",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-5",
+      "overview": "Insurance provides significant risk management to a broad public, and is an essential tool for promoting human welfare. By pooling large numbers of independent or low-correlated risks, insurance providers can minimize overall risk. The risk management is tailored to individual circumstances and reflects centuries of insurance industry experience with real risks and with moral hazard and selection bias issues. Probability theory and statistical tools help to explain how insurance companies use risk pooling to minimize overall risk. Innovation and government regulation have played important roles in the formation and oversight of insurance institutions."
+    },
+    {
+      "id": "lecture-6",
+      "index": 6,
+      "title": "Efficient Markets vs. Excess Volatility",
+      "path": "/economics/econ-252-08/lecture-6",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-6",
+      "overview": "Several theories in finance relate to stock price analysis and prediction. The efficient markets hypothesis states that stock prices for publicly-traded companies reflect all available information. Prices adjust to new information instantaneously, so it is impossible to \"beat the market.\" Furthermore, the random walk theory asserts that changes in stock prices arise only from unanticipated new information, and so it is impossible to predict the direction of stock prices. Using statistical tools, we can attempt to test the hypotheses and to predict future stock prices. These tests show that efficient markets theory is a half-truth: it is difficult but not impossible for some people to beat the market."
+    },
+    {
+      "id": "lecture-7",
+      "index": 7,
+      "title": "Behavioral Finance: The Role of Psychology",
+      "path": "/economics/econ-252-08/lecture-7",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-7",
+      "overview": "Behavioral Finance is a relatively recent revolution in finance that applies insights from all of the social sciences to finance. New decision-making models incorporate psychology and sociology, among other disciplines, to explain economic and financial phenomenon, such as erratic stock price variations. Psychological patterns such as overconfidence and perceived kinks in the value function seem to impact financial decision-making, but are not included in classical theories such as the Expected Utility Theory. Kahneman and Tversky's Prospect Theory addresses such issues and sheds light on irrational deviations from traditional decision-making models."
+    },
+    {
+      "id": "lecture-8",
+      "index": 8,
+      "title": "Human Foibles, Fraud, Manipulation, and Regulation",
+      "path": "/economics/econ-252-08/lecture-8",
+      "url": "https://oyc.yale.edu/economics/econ-252-08/lecture-8",
+      "overview": "Regulation of financial and securities markets is intended to protect investors while still enabling them to make personal investment decisions. Psychological phenomena, such as magical thinking, overconfidence, and representativeness heuristic can cause deviations from rational behavior and distort financial decision-making. However, regulation and regulatory bodies, such as the SEC, FDIC, and SIPC, most of which were created just after the Great Depression, are intended to help prevent the manipulation of investors' psychological foibles and maintain trust in the markets so that a broad spectrum of investors will continue to participate."
     }
   ],
   "license": {
@@ -48,6 +88,6 @@
     "institution": "Yale University",
     "project": "Open Yale Courses",
     "source_url": "https://oyc.yale.edu/economics/econ-252-08",
-    "accessed_at": "2026-09-23T15:47:59.675565Z"
+    "accessed_at": "2026-09-23T18:06:52.454064Z"
   }
 }

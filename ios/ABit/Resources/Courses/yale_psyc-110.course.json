@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-23T15:52:06.434196+00:00",
+  "generated_at": "2026-09-23T18:06:53.386124+00:00",
   "course": {
     "id": "yale:psyc-110",
     "source": "yale",
@@ -31,13 +31,25 @@
   },
   "bites": [
     {
-      "id": "yale:psyc-110:about:1",
+      "id": "yale:psyc-110:about:hook",
       "course_id": "yale:psyc-110",
       "lecture_id": "about",
       "order": 1,
       "kind": "story",
-      "headline": "Why Introduction to Psychology?",
-      "body": "What do your dreams mean? Do men and women differ in the nature and intensity of their sexual desires? Can apes learn sign language? Why can\u2019t we tickle ourselves? This course tries to answer these questions and many others, providing a comprehensive overview of the scientific\u2026",
+      "headline": "Why study Introduction to Psychology?",
+      "body": "Do men and women differ in the nature and intensity of their sexual desires?",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:about:stakes",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "about",
+      "order": 2,
+      "kind": "concept",
+      "headline": "What\u2019s at stake",
+      "body": "This course tries to answer these questions and many others, providing a comprehensive overview of the scientific study of thought and behavior.",
       "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -46,7 +58,7 @@
       "id": "yale:psyc-110:lecture-1:hook",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-1",
-      "order": 2,
+      "order": 3,
       "kind": "concept",
       "headline": "Introduction",
       "body": "Professor Paul Bloom welcomes students and presents the course as a comprehensive introduction to the study of the human mind.",
@@ -55,13 +67,25 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
+      "id": "yale:psyc-110:lecture-1:term",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-1",
+      "order": 4,
+      "kind": "key_term",
+      "headline": "Introduction",
+      "body": "Course readings and requirements are discussed.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
       "id": "yale:psyc-110:lecture-1:takeaway",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-1",
-      "order": 3,
+      "order": 5,
       "kind": "takeaway",
-      "headline": "Keep this bit",
-      "body": "Course readings and requirements are discussed.",
+      "headline": "Carry this forward",
+      "body": "The five main branches of psychology are presented: neuroscience, which is a study of the mind by looking at the brain; developmental, which focuses on how people grow and learn; cognitive, which refers to the computational approach to\u2026",
       "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-1",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -70,7 +94,7 @@
       "id": "yale:psyc-110:lecture-2:hook",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-2",
-      "order": 4,
+      "order": 6,
       "kind": "concept",
       "headline": "Foundations: This Is Your Brain",
       "body": "This lecture introduces students to two broad theories of how the mind relates to the body.",
@@ -79,13 +103,25 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
+      "id": "yale:psyc-110:lecture-2:term",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-2",
+      "order": 7,
+      "kind": "key_term",
+      "headline": "Foundations",
+      "body": "Dualism is the ubiquitous and intuitive feeling that our conscious mind is separate from our physical bodies, whereas Materialism is the idea that all of our mental states are caused by physical states of the brain.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
       "id": "yale:psyc-110:lecture-2:takeaway",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-2",
-      "order": 5,
+      "order": 8,
       "kind": "takeaway",
-      "headline": "Keep this bit",
-      "body": "Dualism is the ubiquitous and intuitive feeling that our conscious mind is separate from our physical bodies, whereas Materialism is the idea that all of our mental states are caused by physical states of the brain.",
+      "headline": "Carry this forward",
+      "body": "This discussion is followed by a basic overview of the neurophysiology of the brain.",
       "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-2",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -94,7 +130,7 @@
       "id": "yale:psyc-110:lecture-3:hook",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-3",
-      "order": 6,
+      "order": 9,
       "kind": "concept",
       "headline": "Foundations: Freud",
       "body": "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical description and his contributions to the field of psychology.",
@@ -103,15 +139,207 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
-      "id": "yale:psyc-110:lecture-3:takeaway",
+      "id": "yale:psyc-110:lecture-3:term",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-3",
-      "order": 7,
-      "kind": "takeaway",
-      "headline": "Keep this bit",
+      "order": 10,
+      "kind": "key_term",
+      "headline": "Foundations",
       "body": "The limitations of his theories of psychoanalysis are covered in detail, as well as the ways in which his conception of the unconscious mind still operate in mainstream psychology today.",
       "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-3:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-3",
+      "order": 11,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "The limitations of his theories of psychoanalysis are covered in detail, as well as the ways in which his conception of the unconscious mind still operate in mainstream psychology today.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-4:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-4",
+      "order": 12,
+      "kind": "concept",
+      "headline": "Foundations: Skinner",
+      "body": "Professor Bloom opens with a brief discussion of the value and evolutionary basis of unconscious processing.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-4:term",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-4",
+      "order": 13,
+      "kind": "key_term",
+      "headline": "Foundations",
+      "body": "The rest of this lecture introduces students to the theory of Behaviorism, particularly the work of prominent behaviorist, B.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-4:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-4",
+      "order": 14,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Different types of learning are discussed in detail, as well as reasons why behaviorism has been largely displaced as an adequate theory of human mental life.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-5:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-5",
+      "order": 15,
+      "kind": "concept",
+      "headline": "What Is It Like to Be a Baby: The Development of Thought",
+      "body": "This lecture explores issues and ideas related to the branch of psychology known as cognitive development.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-5:term",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-5",
+      "order": 16,
+      "kind": "key_term",
+      "headline": "This",
+      "body": "It begins with an introduction of Piaget who, interested in the emergence of knowledge in general, studied children and the way they learn about the world in order to formulate his theories of cognitive development.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-5:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-5",
+      "order": 17,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Finally, the question of the relationship between and the existence of different kinds of development is addressed.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-6:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-6",
+      "order": 18,
+      "kind": "concept",
+      "headline": "How Do We Communicate?: Language in the Brain, Mouth and the Hands",
+      "body": "One of the most uniquely human abilities is the capacity for creating and understanding language.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-6:term",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-6",
+      "order": 19,
+      "kind": "key_term",
+      "headline": "One",
+      "body": "This lecture introduces students to the major topics within the study of language: phonology, morphology, syntax and recursion.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-6:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-6",
+      "order": 20,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "This lecture also describes theories of language acquisition, arguments for the specialization of language, and the commonalities observed in different languages across cultures.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-7:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-7",
+      "order": 21,
+      "kind": "concept",
+      "headline": "Conscious of the Present; Conscious of the Past: Language (cont.); Vision and Memory",
+      "body": "This lecture finishes the discussion of language by briefly reviewing two additional topics: communication systems in non-human primates and other animals, and the relationship between language and thought.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-7:term",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-7",
+      "order": 22,
+      "kind": "key_term",
+      "headline": "This",
+      "body": "The majority of this lecture is then spent on introducing students to major theories and discoveries in the fields of perception, attention and memory.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-7:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-7",
+      "order": 23,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Topics include why we see certain visual illusions, why we don't always see everything we think we see, and the relationship between different types of memory.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-8:hook",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-8",
+      "order": 24,
+      "kind": "concept",
+      "headline": "Conscious of the Present; Conscious of the Past: Vision and Memory (cont.)",
+      "body": "In this lecture, Professor Bloom reviews the basic psychological research on memory.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-8",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-8:term",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-8",
+      "order": 25,
+      "kind": "key_term",
+      "headline": "Professor",
+      "body": "Specific topics covered include the different memory types, memory limitations, strategies that improve memory, and memory disorders.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-8",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:psyc-110:lecture-8:takeaway",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-8",
+      "order": 26,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "This lecture also includes a discussion of several important social implications for memory research, such as recovered memories, and the influence of suggestibility on eyewitness testimony.",
+      "attribution_line": "Paul Bloom, Introduction to Psychology (Yale University: Open Yale Courses), https://oyc.yale.edu/introduction-psychology/psyc-110 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/psychology/psyc-110/lecture-8",
       "license_spdx": "CC-BY-NC-SA-3.0"
     }
   ],
@@ -120,43 +348,127 @@
       "id": "yale:psyc-110:lecture-1:q1",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-1",
-      "prompt": "After \u201cIntroduction\u201d, which best captures the lecture\u2019s opening focus?",
+      "prompt": "In \u201cIntroduction\u201d, what is the session\u2019s opening focus?",
       "choices": [
-        "Professor Paul Bloom welcomes students and presents the course as a comprehensive introduction to the study of the\u2026",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "Professor Paul Bloom welcomes students and presents the course as a comprehensive introduction to the study\u2026",
+        "The rest of this lecture introduces students to the theory of Behaviorism, particularly the work of\u2026",
+        "In this lecture, Professor Bloom reviews the basic psychological research on memory.",
+        "This lecture also describes theories of language acquisition, arguments for the specialization of language,\u2026"
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: Professor Paul Bloom welcomes students and presents the course as a comprehensive introduction to the study\u2026"
     },
     {
       "id": "yale:psyc-110:lecture-2:q1",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-2",
-      "prompt": "After \u201cFoundations: This Is Your Brain\u201d, which best captures the lecture\u2019s opening focus?",
+      "prompt": "In \u201cFoundations: This Is Your Brain\u201d, what is the session\u2019s opening focus?",
       "choices": [
         "This lecture introduces students to two broad theories of how the mind relates to the body.",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "The majority of this lecture is then spent on introducing students to major theories and discoveries in the\u2026",
+        "Do men and women differ in the nature and intensity of their sexual desires?",
+        "This course tries to answer these questions and many others, providing a comprehensive overview of the\u2026"
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: This lecture introduces students to two broad theories of how the mind relates to the body."
     },
     {
       "id": "yale:psyc-110:lecture-3:q1",
       "course_id": "yale:psyc-110",
       "lecture_id": "lecture-3",
-      "prompt": "After \u201cFoundations: Freud\u201d, which best captures the lecture\u2019s opening focus?",
+      "prompt": "In \u201cFoundations: Freud\u201d, what is the session\u2019s opening focus?",
       "choices": [
-        "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical description and his\u2026",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "This lecture also includes a discussion of several important social implications for memory research, such\u2026",
+        "Specific topics covered include the different memory types, memory limitations, strategies that improve\u2026",
+        "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical\u2026",
+        "The limitations of his theories of psychoanalysis are covered in detail, as well as the ways in which his\u2026"
+      ],
+      "answer_index": 2,
+      "explanation": "The overview centers on: This lecture introduces students to the theories of Sigmund Freud, including a brief biographical\u2026"
+    },
+    {
+      "id": "yale:psyc-110:lecture-4:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-4",
+      "prompt": "In \u201cFoundations: Skinner\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "This lecture finishes the discussion of language by briefly reviewing two additional topics: communication\u2026",
+        "This lecture reviews arguments explaining why materialism has become the predominant theory of mind in\u2026",
+        "One of the most uniquely human abilities is the capacity for creating and understanding language.",
+        "Professor Bloom opens with a brief discussion of the value and evolutionary basis of unconscious processing."
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: Professor Bloom opens with a brief discussion of the value and evolutionary basis of unconscious processing."
+    },
+    {
+      "id": "yale:psyc-110:lecture-5:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-5",
+      "prompt": "In \u201cWhat Is It Like to Be a Baby: The Development of Thought\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "This lecture explores issues and ideas related to the branch of psychology known as cognitive development.",
+        "We will look at how these aspects of the mind develop in children, how they differ across people, how they\u2026",
+        "This lecture also includes a discussion of several important social implications for memory research, such\u2026",
+        "Specific topics covered include the different memory types, memory limitations, strategies that improve\u2026"
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: This lecture explores issues and ideas related to the branch of psychology known as cognitive development."
+    },
+    {
+      "id": "yale:psyc-110:lecture-6:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-6",
+      "prompt": "In \u201cHow Do We Communicate?: Language in the Brain, Mouth and the Hands\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "The majority of this lecture is then spent on introducing students to major theories and discoveries in the\u2026",
+        "One of the most uniquely human abilities is the capacity for creating and understanding language.",
+        "The limitations of his theories of psychoanalysis are covered in detail, as well as the ways in which his\u2026",
+        "This lecture also describes theories of language acquisition, arguments for the specialization of language,\u2026"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: One of the most uniquely human abilities is the capacity for creating and understanding language."
+    },
+    {
+      "id": "yale:psyc-110:lecture-7:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-7",
+      "prompt": "In \u201cConscious of the Present; Conscious of the Past: Language (cont.); Vision and Memory\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "Specific topics covered include the different memory types, memory limitations, strategies that improve\u2026",
+        "One of the most uniquely human abilities is the capacity for creating and understanding language.",
+        "Dualism is the ubiquitous and intuitive feeling that our conscious mind is separate from our physical\u2026",
+        "This lecture finishes the discussion of language by briefly reviewing two additional topics: communication\u2026"
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: This lecture finishes the discussion of language by briefly reviewing two additional topics: communication\u2026"
+    },
+    {
+      "id": "yale:psyc-110:lecture-8:q1",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "lecture-8",
+      "prompt": "In \u201cConscious of the Present; Conscious of the Past: Vision and Memory (cont.)\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "Finally, the question of the relationship between and the existence of different kinds of development is\u2026",
+        "Course readings and requirements are discussed.",
+        "The five main branches of psychology are presented: neuroscience, which is a study of the mind by looking at\u2026",
+        "In this lecture, Professor Bloom reviews the basic psychological research on memory."
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: In this lecture, Professor Bloom reviews the basic psychological research on memory."
+    },
+    {
+      "id": "yale:psyc-110:final",
+      "course_id": "yale:psyc-110",
+      "lecture_id": "final",
+      "prompt": "Final for Introduction to Psychology: which best states the course\u2019s core concern?",
+      "choices": [
+        "This lecture introduces students to the theories of Sigmund Freud, including a brief biographical\u2026",
+        "What do your dreams mean? Do men and women differ in the nature and intensity of their sexual desires? Can apes learn\u2026",
+        "The majority of this lecture is then spent on introducing students to major theories and discoveries in the\u2026",
+        "It begins with an introduction of Piaget who, interested in the emergence of knowledge in general, studied\u2026"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: What do your dreams mean? Do men and women differ in the nature and intensity of their sexual desires? Can apes learn\u2026 Early sessions include: Introduction, Foundations: This Is Your Brain, Foundations: Freud\u2026."
     }
   ]
 }

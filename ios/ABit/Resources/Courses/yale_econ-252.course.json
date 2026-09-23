@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-23T15:52:06.432759+00:00",
+  "generated_at": "2026-09-23T18:06:53.381287+00:00",
   "course": {
     "id": "yale:econ-252",
     "source": "yale",
@@ -31,13 +31,25 @@
   },
   "bites": [
     {
-      "id": "yale:econ-252:about:1",
+      "id": "yale:econ-252:about:hook",
       "course_id": "yale:econ-252",
       "lecture_id": "about",
       "order": 1,
       "kind": "story",
-      "headline": "Why Financial Markets (2008)?",
-      "body": "Financial institutions are a pillar of civilized society, supporting people in their productive ventures and managing the economic risks they take on. The workings of these institutions are important to comprehend if we are to predict their actions today and their evolution in\u2026",
+      "headline": "Why study Financial Markets (2008)?",
+      "body": "Financial institutions are a pillar of civilized society, supporting people in their productive ventures and managing the economic risks they take on.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:about:stakes",
+      "course_id": "yale:econ-252",
+      "lecture_id": "about",
+      "order": 2,
+      "kind": "concept",
+      "headline": "What\u2019s at stake",
+      "body": "The workings of these institutions are important to comprehend if we are to predict their actions today and their evolution in the coming information age.",
       "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/economics/econ-252-08",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -46,7 +58,7 @@
       "id": "yale:econ-252:lecture-1:hook",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-1",
-      "order": 2,
+      "order": 3,
       "kind": "concept",
       "headline": "Finance and Insurance as Powerful Forces in Our Economy and Society",
       "body": "Professor Shiller provides a description of the course, Financial Markets, including administrative details and the topics to be discussed in each lecture.",
@@ -55,13 +67,25 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
+      "id": "yale:econ-252:lecture-1:term",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-1",
+      "order": 4,
+      "kind": "key_term",
+      "headline": "Professor",
+      "body": "He briefly discusses the importance of studying finance and each key topic.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
       "id": "yale:econ-252:lecture-1:takeaway",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-1",
-      "order": 3,
+      "order": 5,
       "kind": "takeaway",
-      "headline": "Keep this bit",
-      "body": "He briefly discusses the importance of studying finance and each key topic.",
+      "headline": "Carry this forward",
+      "body": "Lecture topics will include: behavioral finance, financial technology, financial instruments, commercial banking, investment banking, financial markets and institutions, real estate, regulation, monetary policy, and democratization of\u2026",
       "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-1",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -70,7 +94,7 @@
       "id": "yale:econ-252:lecture-2:hook",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-2",
-      "order": 4,
+      "order": 6,
       "kind": "concept",
       "headline": "The Universal Principle of Risk Management: Pooling and the Hedging of Risks",
       "body": "Statistics and mathematics underlie the theories of finance.",
@@ -79,13 +103,25 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
+      "id": "yale:econ-252:lecture-2:term",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-2",
+      "order": 7,
+      "kind": "key_term",
+      "headline": "Statistics",
+      "body": "Probability Theory and various distribution types are important to understanding finance.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
       "id": "yale:econ-252:lecture-2:takeaway",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-2",
-      "order": 5,
+      "order": 8,
       "kind": "takeaway",
-      "headline": "Keep this bit",
-      "body": "Probability Theory and various distribution types are important to understanding finance.",
+      "headline": "Carry this forward",
+      "body": "Financial analysis methods such as present values and valuing streams of payments are fundamental to understanding the time value of money and have been in practice for centuries.",
       "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -94,7 +130,7 @@
       "id": "yale:econ-252:lecture-3:hook",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-3",
-      "order": 6,
+      "order": 9,
       "kind": "concept",
       "headline": "Technology and Invention in Finance",
       "body": "Technology and innovation underlie finance.",
@@ -103,15 +139,207 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
-      "id": "yale:econ-252:lecture-3:takeaway",
+      "id": "yale:econ-252:lecture-3:term",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-3",
-      "order": 7,
-      "kind": "takeaway",
-      "headline": "Keep this bit",
+      "order": 10,
+      "kind": "key_term",
+      "headline": "Technology",
       "body": "In order to manage risks successfully, particularly long-term, we must pool large amounts of risk among many, diverse people and overcome barriers such as moral hazard and erroneous framing.",
       "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-3:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-3",
+      "order": 11,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "The tax and welfare system is one of the most important risk management systems.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-4:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-4",
+      "order": 12,
+      "kind": "concept",
+      "headline": "Portfolio Diversification and Supporting Financial Institutions (CAPM Model)",
+      "body": "Portfolio diversification is the most fundamental concept of risk management.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-4:term",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-4",
+      "order": 13,
+      "kind": "key_term",
+      "headline": "Portfolio",
+      "body": "The allocation of financial resources in stocks, bonds, riskless, assets, oil and other assets determine the expected return and risk of a portfolio.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-4:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-4",
+      "order": 14,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "An important mission of financial institutions is to provide portfolio-diversification services.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-5:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-5",
+      "order": 15,
+      "kind": "concept",
+      "headline": "Insurance: The Archetypal Risk Management Institution",
+      "body": "Insurance provides significant risk management to a broad public, and is an essential tool for promoting human welfare.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-5:term",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-5",
+      "order": 16,
+      "kind": "key_term",
+      "headline": "Institution",
+      "body": "By pooling large numbers of independent or low-correlated risks, insurance providers can minimize overall risk.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-5:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-5",
+      "order": 17,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Innovation and government regulation have played important roles in the formation and oversight of insurance institutions.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-6:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-6",
+      "order": 18,
+      "kind": "concept",
+      "headline": "Efficient Markets vs. Excess Volatility",
+      "body": "Several theories in finance relate to stock price analysis and prediction.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-6:term",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-6",
+      "order": 19,
+      "kind": "key_term",
+      "headline": "Volatility",
+      "body": "The efficient markets hypothesis states that stock prices for publicly-traded companies reflect all available information.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-6:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-6",
+      "order": 20,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "These tests show that efficient markets theory is a half-truth: it is difficult but not impossible for some people to beat the market.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-7:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-7",
+      "order": 21,
+      "kind": "concept",
+      "headline": "Behavioral Finance: The Role of Psychology",
+      "body": "Behavioral Finance is a relatively recent revolution in finance that applies insights from all of the social sciences to finance.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-7:term",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-7",
+      "order": 22,
+      "kind": "key_term",
+      "headline": "Behavioral",
+      "body": "New decision-making models incorporate psychology and sociology, among other disciplines, to explain economic and financial phenomenon, such as erratic stock price variations.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-7:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-7",
+      "order": 23,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Kahneman and Tversky's Prospect Theory addresses such issues and sheds light on irrational deviations from traditional decision-making models.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-8:hook",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-8",
+      "order": 24,
+      "kind": "concept",
+      "headline": "Human Foibles, Fraud, Manipulation, and Regulation",
+      "body": "Regulation of financial and securities markets is intended to protect investors while still enabling them to make personal investment decisions.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-8",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-8:term",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-8",
+      "order": 25,
+      "kind": "key_term",
+      "headline": "Manipulation",
+      "body": "Psychological phenomena, such as magical thinking, overconfidence, and representativeness heuristic can cause deviations from rational behavior and distort financial decision-making.",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-8",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:econ-252:lecture-8:takeaway",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-8",
+      "order": 26,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "However, regulation and regulatory bodies, such as the SEC, FDIC, and SIPC, most of which were created just after the Great Depression, are intended to help prevent the manipulation of investors' psychological foibles and maintain trust\u2026",
+      "attribution_line": "Robert J. Shiller, Financial Markets (2008) (Yale University: Open Yale Courses), https://oyc.yale.edu/economics/econ-252-08 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-8",
       "license_spdx": "CC-BY-NC-SA-3.0"
     }
   ],
@@ -120,43 +348,127 @@
       "id": "yale:econ-252:lecture-1:q1",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-1",
-      "prompt": "After \u201cFinance and Insurance as Powerful Forces in Our Economy and Society\u201d, which best captures the lecture\u2019s opening focus?",
+      "prompt": "In \u201cFinance and Insurance as Powerful Forces in Our Economy and Society\u201d, what is the session\u2019s opening focus?",
       "choices": [
-        "Professor Shiller provides a description of the course, Financial Markets, including administrative details and the\u2026",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "Several theories in finance relate to stock price analysis and prediction.",
+        "The workings of these institutions are important to comprehend if we are to predict their actions today and\u2026",
+        "Professor Shiller provides a description of the course, Financial Markets, including administrative details\u2026",
+        "In order to manage risks successfully, particularly long-term, we must pool large amounts of risk among\u2026"
       ],
-      "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "answer_index": 2,
+      "explanation": "The overview centers on: Professor Shiller provides a description of the course, Financial Markets, including administrative details\u2026"
     },
     {
       "id": "yale:econ-252:lecture-2:q1",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-2",
-      "prompt": "After \u201cThe Universal Principle of Risk Management: Pooling and the Hedging of Risks\u201d, which best captures the lecture\u2019s opening focus?",
+      "prompt": "In \u201cThe Universal Principle of Risk Management: Pooling and the Hedging of Risks\u201d, what is the session\u2019s opening focus?",
       "choices": [
         "Statistics and mathematics underlie the theories of finance.",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "Financial analysis methods such as present values and valuing streams of payments are fundamental to\u2026",
+        "New decision-making models incorporate psychology and sociology, among other disciplines, to explain\u2026",
+        "The workings of these institutions are important to comprehend if we are to predict their actions today and\u2026"
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: Statistics and mathematics underlie the theories of finance."
     },
     {
       "id": "yale:econ-252:lecture-3:q1",
       "course_id": "yale:econ-252",
       "lecture_id": "lecture-3",
-      "prompt": "After \u201cTechnology and Invention in Finance\u201d, which best captures the lecture\u2019s opening focus?",
+      "prompt": "In \u201cTechnology and Invention in Finance\u201d, what is the session\u2019s opening focus?",
       "choices": [
-        "Technology and innovation underlie finance.",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "Prices adjust to new information instantaneously, so it is impossible to \"beat the market.\" Furthermore, the\u2026",
+        "Risk management, for instance, depends on tools such as variance, standard deviation, correlation, and\u2026",
+        "Using statistical tools, we can attempt to test the hypotheses and to predict future stock prices.",
+        "Technology and innovation underlie finance."
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: Technology and innovation underlie finance."
+    },
+    {
+      "id": "yale:econ-252:lecture-4:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-4",
+      "prompt": "In \u201cPortfolio Diversification and Supporting Financial Institutions (CAPM Model)\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "Portfolio diversification is the most fundamental concept of risk management.",
+        "Risk management, for instance, depends on tools such as variance, standard deviation, correlation, and\u2026",
+        "Prices adjust to new information instantaneously, so it is impossible to \"beat the market.\" Furthermore, the\u2026",
+        "The allocation of financial resources in stocks, bonds, riskless, assets, oil and other assets determine the\u2026"
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: Portfolio diversification is the most fundamental concept of risk management."
+    },
+    {
+      "id": "yale:econ-252:lecture-5:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-5",
+      "prompt": "In \u201cInsurance: The Archetypal Risk Management Institution\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "Inventions such as insurance contracts and social security, and information technology all the way from such\u2026",
+        "Insurance provides significant risk management to a broad public, and is an essential tool for promoting\u2026",
+        "Regulation of financial and securities markets is intended to protect investors while still enabling them to\u2026",
+        "Kahneman and Tversky's Prospect Theory addresses such issues and sheds light on irrational deviations from\u2026"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Insurance provides significant risk management to a broad public, and is an essential tool for promoting\u2026"
+    },
+    {
+      "id": "yale:econ-252:lecture-6:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-6",
+      "prompt": "In \u201cEfficient Markets vs. Excess Volatility\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "The efficient markets hypothesis states that stock prices for publicly-traded companies reflect all\u2026",
+        "Kahneman and Tversky's Prospect Theory addresses such issues and sheds light on irrational deviations from\u2026",
+        "Financial analysis methods such as present values and valuing streams of payments are fundamental to\u2026",
+        "Several theories in finance relate to stock price analysis and prediction."
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: Several theories in finance relate to stock price analysis and prediction."
+    },
+    {
+      "id": "yale:econ-252:lecture-7:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-7",
+      "prompt": "In \u201cBehavioral Finance: The Role of Psychology\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "The course strives to offer understanding of the theory of finance and its relation to the history,\u2026",
+        "Behavioral Finance is a relatively recent revolution in finance that applies insights from all of the social\u2026",
+        "The risk management is tailored to individual circumstances and reflects centuries of insurance industry\u2026",
+        "Insurance provides significant risk management to a broad public, and is an essential tool for promoting\u2026"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Behavioral Finance is a relatively recent revolution in finance that applies insights from all of the social\u2026"
+    },
+    {
+      "id": "yale:econ-252:lecture-8:q1",
+      "course_id": "yale:econ-252",
+      "lecture_id": "lecture-8",
+      "prompt": "In \u201cHuman Foibles, Fraud, Manipulation, and Regulation\u201d, what is the session\u2019s opening focus?",
+      "choices": [
+        "By pooling large numbers of independent or low-correlated risks, insurance providers can minimize overall\u2026",
+        "Regulation of financial and securities markets is intended to protect investors while still enabling them to\u2026",
+        "Lecture topics will include: behavioral finance, financial technology, financial instruments, commercial\u2026",
+        "In order to manage risks successfully, particularly long-term, we must pool large amounts of risk among\u2026"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Regulation of financial and securities markets is intended to protect investors while still enabling them to\u2026"
+    },
+    {
+      "id": "yale:econ-252:final",
+      "course_id": "yale:econ-252",
+      "lecture_id": "final",
+      "prompt": "Final for Financial Markets (2008): which best states the course\u2019s core concern?",
+      "choices": [
+        "Taking account of covariances and expected returns, investors can create a diversified portfolio that\u2026",
+        "Financial institutions are a pillar of civilized society, supporting people in their productive ventures and managing\u2026",
+        "Several theories in finance relate to stock price analysis and prediction.",
+        "Psychological patterns such as overconfidence and perceived kinks in the value function seem to impact\u2026"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Financial institutions are a pillar of civilized society, supporting people in their productive ventures and managing\u2026 Early sessions include: Finance and Insurance as Powerful Forces in Our Economy and Society, The Universal Principle of Risk Management: Pooling and the Hedging of Risks, Technology and Invention in Finance\u2026."
     }
   ]
 }

@@ -6,14 +6,35 @@ struct BiteSessionView: View {
 
     @State private var index = 0
     @State private var showQuiz = false
-    @State private var quizForLecture: String?
+    @State private var activeQuiz: QuizItem?
     @State private var appeared = false
     @State private var celebrating = false
+    @State private var didInit = false
 
     private var course: CourseMeta? { store.courses.first { $0.id == courseID } }
     private var bites: [BiteCard] { store.bites(for: courseID) }
     private var quizzes: [QuizItem] { store.quizzes(for: courseID) }
     private var accent: CourseAccent { .forDepartment(course?.department ?? "") }
+
+    private var current: BiteCard? {
+        guard !bites.isEmpty, bites.indices.contains(index) else { return nil }
+        return bites[index]
+    }
+
+    private var lectureNumber: Int {
+        guard let bite = current else { return 0 }
+        if bite.lectureId == "about" { return 0 }
+        if bite.lectureId == "final" { return -1 }
+        let n = bite.lectureId.replacingOccurrences(of: "lecture-", with: "")
+        return Int(n) ?? 0
+    }
+
+    private var lectureBitePosition: (Int, Int) {
+        guard let bite = current else { return (0, 0) }
+        let group = bites.filter { $0.lectureId == bite.lectureId }
+        let pos = (group.firstIndex { $0.id == bite.id } ?? 0) + 1
+        return (pos, group.count)
+    }
 
     var body: some View {
         ZStack {
@@ -22,21 +43,22 @@ struct BiteSessionView: View {
             if bites.isEmpty {
                 Text("No bites in this bundle.")
                     .foregroundStyle(ABitTheme.mist)
-            } else {
-                VStack(spacing: 18) {
-                    progressBar
-                    biteSurface(bites[index])
-                        .id(bites[index].id)
+            } else if let bite = current {
+                VStack(spacing: 16) {
+                    sessionHeader
+                    biteSurface(bite)
+                        .id(bite.id)
                         .transition(
                             .asymmetric(
                                 insertion: .move(edge: .trailing).combined(with: .opacity),
                                 removal: .move(edge: .leading).combined(with: .opacity)
                             )
                         )
-                    controls
+                    Button("Got it") { handleGotIt(bite) }
+                        .buttonStyle(PrimaryBitButton())
                 }
                 .padding(.horizontal, 20)
-                .padding(.vertical, 16)
+                .padding(.vertical, 14)
             }
 
             if celebrating {
@@ -45,9 +67,16 @@ struct BiteSessionView: View {
         }
         .navigationTitle(course?.title ?? "Bites")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            guard !didInit else { return }
+            didInit = true
+            index = store.resumeIndex(for: courseID)
+        }
+        .onChange(of: index) { _, newValue in
+            store.saveResumeIndex(newValue, for: courseID)
+        }
         .sheet(isPresented: $showQuiz) {
-            if let lecture = quizForLecture,
-               let quiz = quizzes.first(where: { $0.lectureId == lecture }) {
+            if let quiz = activeQuiz {
                 QuizView(
                     quiz: quiz,
                     accent: accent,
@@ -56,13 +85,8 @@ struct BiteSessionView: View {
                     },
                     onPass: {
                         showQuiz = false
-                        if index >= bites.count - 1 {
-                            withAnimation(.spring(response: 0.5, dampingFraction: 0.75)) {
-                                celebrating = true
-                            }
-                        } else {
-                            advance()
-                        }
+                        activeQuiz = nil
+                        continueAfterQuiz()
                     }
                 )
                 .presentationDetents([.large])
@@ -71,20 +95,28 @@ struct BiteSessionView: View {
         }
     }
 
-    private var progressBar: some View {
-        HStack(spacing: 5) {
-            ForEach(Array(bites.enumerated()), id: \.offset) { i, bite in
-                Capsule()
-                    .fill(
-                        i < index || store.completedBiteIDs.contains(bite.id)
-                            ? ABitTheme.lime
-                            : (i == index ? ABitTheme.lime.opacity(0.55) : ABitTheme.mist.opacity(0.2))
-                    )
-                    .frame(height: 3)
-                    .animation(.spring(response: 0.35, dampingFraction: 0.8), value: index)
+    private var sessionHeader: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            ProgressView(value: Double(index + 1), total: Double(max(bites.count, 1)))
+                .tint(ABitTheme.lime)
+
+            HStack {
+                Text(moduleLabel)
+                    .font(ABitTheme.caption)
+                    .foregroundStyle(ABitTheme.mist)
+                Spacer()
+                Text("\(index + 1)/\(bites.count)")
+                    .font(ABitTheme.caption)
+                    .foregroundStyle(ABitTheme.lime)
             }
         }
-        .padding(.top, 4)
+    }
+
+    private var moduleLabel: String {
+        let (pos, total) = lectureBitePosition
+        if lectureNumber == 0 { return "Course opening · \(pos)/\(total)" }
+        if lectureNumber < 0 { return "Final" }
+        return "Lecture \(lectureNumber) · bit \(pos)/\(total)"
     }
 
     private func biteSurface(_ bite: BiteCard) -> some View {
@@ -95,7 +127,7 @@ struct BiteSessionView: View {
                 .foregroundStyle(ABitTheme.lime)
 
             Text(bite.headline)
-                .font(.system(size: 36, weight: .semibold, design: .serif))
+                .font(.system(size: 34, weight: .semibold, design: .serif))
                 .foregroundStyle(ABitTheme.chalk)
                 .fixedSize(horizontal: false, vertical: true)
 
@@ -140,35 +172,49 @@ struct BiteSessionView: View {
         }
     }
 
-    private var controls: some View {
-        HStack(spacing: 12) {
-            Button("Got it") {
-                let bite = bites[index]
-                store.markComplete(bite)
-                let lecture = bite.lectureId
-                let remainingInLecture = bites.contains {
-                    $0.lectureId == lecture
-                        && $0.id != bite.id
-                        && !store.completedBiteIDs.contains($0.id)
-                }
-                let quiz = quizzes.first { $0.lectureId == lecture }
-                if !remainingInLecture, let quiz, !store.passedQuizIDs.contains(quiz.id) {
-                    quizForLecture = lecture
-                    showQuiz = true
-                } else if index >= bites.count - 1 {
-                    withAnimation(.spring(response: 0.5, dampingFraction: 0.75)) {
-                        celebrating = true
-                    }
-                } else {
-                    advance()
-                }
-            }
-            .buttonStyle(PrimaryBitButton())
+    private func handleGotIt(_ bite: BiteCard) {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        store.markComplete(bite)
 
-            if index < bites.count - 1 {
-                Button("Skip") { advance() }
-                    .buttonStyle(GhostBitButton())
-            }
+        let lecture = bite.lectureId
+        let remainingInLecture = bites.contains {
+            $0.lectureId == lecture
+                && $0.id != bite.id
+                && !store.completedBiteIDs.contains($0.id)
+        }
+
+        if !remainingInLecture,
+           let quiz = quizzes.first(where: { $0.lectureId == lecture && $0.lectureId != "final" }),
+           !store.passedQuizIDs.contains(quiz.id) {
+            activeQuiz = quiz
+            showQuiz = true
+            return
+        }
+
+        if index >= bites.count - 1 {
+            offerFinalOrCelebrate()
+        } else {
+            advance()
+        }
+    }
+
+    private func continueAfterQuiz() {
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
+        if index >= bites.count - 1 {
+            offerFinalOrCelebrate()
+        } else {
+            advance()
+        }
+    }
+
+    private func offerFinalOrCelebrate() {
+        if let final = store.finalExam(for: courseID), !store.passedQuizIDs.contains(final.id) {
+            activeQuiz = final
+            showQuiz = true
+            return
+        }
+        withAnimation(.spring(response: 0.5, dampingFraction: 0.75)) {
+            celebrating = true
         }
     }
 
@@ -182,7 +228,7 @@ struct BiteSessionView: View {
                     .font(.system(size: 48))
                     .foregroundStyle(ABitTheme.lime)
                     .symbolEffect(.bounce, value: celebrating)
-                Text(passed ? "Course passed" : "Bites complete")
+                Text(passed ? "Course passed" : "Session complete")
                     .font(ABitTheme.title)
                     .foregroundStyle(ABitTheme.chalk)
                 if let grade {
@@ -190,18 +236,18 @@ struct BiteSessionView: View {
                         .font(ABitTheme.body)
                         .foregroundStyle(ABitTheme.mist)
                 } else {
-                    Text("Keep improving quiz checks to lock a passing grade.")
+                    Text("Pass the final and clear enough checks to lock a grade.")
                         .font(ABitTheme.body)
                         .foregroundStyle(ABitTheme.mist)
                         .multilineTextAlignment(.center)
                 }
                 Text(passed
-                     ? "Credits post to your transcript. Graduate from College when your program clears."
-                     : "Pass rules: 80%+ bites and 70%+ lecture checks.")
+                     ? "Credits are on your transcript. Open College to check program requirements."
+                     : "Need 80%+ bites, 70%+ lecture checks, and the final.")
                     .font(ABitTheme.caption)
                     .foregroundStyle(ABitTheme.mist.opacity(0.85))
                     .multilineTextAlignment(.center)
-                Button("Nice") { celebrating = false }
+                Button("Done") { celebrating = false }
                     .buttonStyle(PrimaryBitButton())
                     .frame(width: 160)
             }

@@ -1,15 +1,27 @@
 {
   "course_id": "yale:phil-176",
-  "generated_at": "2026-09-23T15:35:16.913777Z",
+  "generated_at": "2026-09-23T18:06:52.699096Z",
   "bites": [
     {
-      "id": "yale:phil-176:about:1",
+      "id": "yale:phil-176:about:hook",
       "course_id": "yale:phil-176",
       "lecture_id": "about",
       "order": 1,
       "kind": "story",
-      "headline": "Why Death?",
-      "body": "There is one thing I can be sure of: I am going to die. But what am I to make of that fact? This course will examine a number of issues that arise once we begin to reflect on our mortality. The possibility that death may not actually be the end is considered. Are we, in some…",
+      "headline": "Why study Death?",
+      "body": "There is one thing I can be sure of: I am going to die.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/death/phil-176",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:about:stakes",
+      "course_id": "yale:phil-176",
+      "lecture_id": "about",
+      "order": 2,
+      "kind": "concept",
+      "headline": "What’s at stake",
+      "body": "This course will examine a number of issues that arise once we begin to reflect on our mortality.",
       "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/death/phil-176",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -18,7 +30,7 @@
       "id": "yale:phil-176:lecture-1:hook",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-1",
-      "order": 2,
+      "order": 3,
       "kind": "concept",
       "headline": "Course Introduction",
       "body": "Professor Kagan introduces the course and the material that will be covered during the semester.",
@@ -27,13 +39,25 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
+      "id": "yale:phil-176:lecture-1:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-1",
+      "order": 4,
+      "kind": "key_term",
+      "headline": "Introduction",
+      "body": "He aims to clarify what the class will focus on in particular and which subjects it will steer away from.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
       "id": "yale:phil-176:lecture-1:takeaway",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-1",
-      "order": 3,
+      "order": 5,
       "kind": "takeaway",
-      "headline": "Keep this bit",
-      "body": "He aims to clarify what the class will focus on in particular and which subjects it will steer away from.",
+      "headline": "Carry this forward",
+      "body": "The first half of the course will address metaphysical questions while the second half will focus on value theory.",
       "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-1",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -42,7 +66,7 @@
       "id": "yale:phil-176:lecture-2:hook",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-2",
-      "order": 4,
+      "order": 6,
       "kind": "concept",
       "headline": "The Nature of Persons: Dualism vs. Physicalism",
       "body": "Professor Kagan discusses the two main positions with regard to the question, \"What is a person?\" On the one hand, there is the dualist view, according to which a person is a body and a soul.",
@@ -51,13 +75,25 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
+      "id": "yale:phil-176:lecture-2:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-2",
+      "order": 7,
+      "kind": "key_term",
+      "headline": "Professor",
+      "body": "On the other hand, the physicalist view argues that a person is just a body.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
       "id": "yale:phil-176:lecture-2:takeaway",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-2",
-      "order": 5,
+      "order": 8,
       "kind": "takeaway",
-      "headline": "Keep this bit",
-      "body": "On the other hand, the physicalist view argues that a person is just a body.",
+      "headline": "Carry this forward",
+      "body": "The body, however, has a certain set of abilities and is capable of a large range of activities.",
       "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-2",
       "license_spdx": "CC-BY-NC-SA-3.0"
@@ -66,7 +102,7 @@
       "id": "yale:phil-176:lecture-3:hook",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-3",
-      "order": 6,
+      "order": 9,
       "kind": "concept",
       "headline": "Arguments for the Existence of the Soul, Part I",
       "body": "The lecture focuses on arguments that might be offered as proof for the existence of the soul.",
@@ -75,15 +111,843 @@
       "license_spdx": "CC-BY-NC-SA-3.0"
     },
     {
-      "id": "yale:phil-176:lecture-3:takeaway",
+      "id": "yale:phil-176:lecture-3:term",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-3",
-      "order": 7,
-      "kind": "takeaway",
-      "headline": "Keep this bit",
+      "order": 10,
+      "kind": "key_term",
+      "headline": "The",
       "body": "The first series of arguments discussed is those known as \"inferences to the best explanation.\" That is, we posit the existence of things we cannot see so as to explain something else that is generally agreed to take place.",
       "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
       "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-3:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-3",
+      "order": 11,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "The first series of arguments discussed is those known as \"inferences to the best explanation.\" That is, we posit the existence of things we cannot see so as to explain something else that is generally agreed to take place.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-4:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-4",
+      "order": 12,
+      "kind": "concept",
+      "headline": "Introduction to Plato's Phaedo; Arguments for the Existence of the Soul, Part II",
+      "body": "After a brief introduction to Plato's Phaedo , more arguments are offered in this lecture in defense of the existence of an immaterial soul.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-4:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-4",
+      "order": 13,
+      "kind": "key_term",
+      "headline": "Plato's",
+      "body": "The emphasis here is on the fact that we need to believe in the existence of a soul in order to explain the claim that we possess free will.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-4:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-4",
+      "order": 14,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "This is an argument dualists use as an objection to the physicalists: since no merely physical entity could have free will, there must be more to us than just being a physical object.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-4",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-5:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-5",
+      "order": 15,
+      "kind": "concept",
+      "headline": "Arguments for the Existence of the Soul, Part III: Free Will and Near-Death Experiences",
+      "body": "Professor Kagan discusses in detail the argument of free will as proof for the existence of an immaterial soul.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-5:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-5",
+      "order": 16,
+      "kind": "key_term",
+      "headline": "Professor",
+      "body": "The argument consists of three premises: 1) We have free will.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-5:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-5",
+      "order": 17,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "In addition, near-death experiences and the Cartesian argument are discussed at length.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-5",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-6:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-6",
+      "order": 18,
+      "kind": "concept",
+      "headline": "Arguments for the Existence of the Soul, Part IV; Plato, Part I",
+      "body": "The lecture begins with a continued discussion of the Cartesian argument and its weaknesses.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-6:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-6",
+      "order": 19,
+      "kind": "key_term",
+      "headline": "Cartesian",
+      "body": "The lecture then turns to Plato's metaphysical views in the context of his work, Phaedo .",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-6:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-6",
+      "order": 20,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "It is perfect, immaterial and indestructible.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-6",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-7:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-7",
+      "order": 21,
+      "kind": "concept",
+      "headline": "Plato, Part II: Arguments for the Immortality of the Soul",
+      "body": "The discussion of Plato's Phaedo continues, presenting more arguments for the existence and immortality of the soul.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-7:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-7",
+      "order": 22,
+      "kind": "key_term",
+      "headline": "Plato's",
+      "body": "One such argument is \"the argument from the nature of the forms,\" which states that because the forms are non-physical objects and cannot be grasped by something physical like the body, it follows that they must be grasped by…",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-7:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-7",
+      "order": 23,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "This argument is followed by the \"argument from recycling\" and \"the argument from recollection.\"",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-7",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-8:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-8",
+      "order": 24,
+      "kind": "concept",
+      "headline": "Plato, Part III: Arguments for the Immortality of the Soul (cont.)",
+      "body": "The lecture focuses exclusively on one argument for the immortality of the soul from Plato's Phaedo , namely, \"the argument from simplicity.\" Plato suggests that in order for something to be destroyed, it must have parts, that is, it must be…",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-8",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-8:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-8",
+      "order": 25,
+      "kind": "key_term",
+      "headline": "Plato's",
+      "body": "Hold onto “Plato's” as you move through this session’s argument.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-8",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-9:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-9",
+      "order": 26,
+      "kind": "concept",
+      "headline": "Plato, Part IV: Arguments for the Immortality of the Soul (cont.)",
+      "body": "Professor Kagan elaborates on the \"argument from simplicity\" and discusses in detail Plato's claims that the soul is simple, changeless and therefore indestructible.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-9",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-9:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-9",
+      "order": 27,
+      "kind": "key_term",
+      "headline": "Professor",
+      "body": "The final Platonic argument under discussion is the \"argument from essential properties\" in which the essential properties of the soul are addressed.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-9",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-9:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-9",
+      "order": 28,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "At the end of the lecture the question of whether one needs to argue for physicalism is posed.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-9",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-10:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-10",
+      "order": 29,
+      "kind": "concept",
+      "headline": "Personal Identity, Part I: Identity Across Space and Time and the Soul Theory",
+      "body": "The lecture focuses on the question of the metaphysical key to personal identity.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-10",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-10:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-10",
+      "order": 30,
+      "kind": "key_term",
+      "headline": "The",
+      "body": "What does it mean for a person that presently exists to be the very same person in the future?",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-10",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-10:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-10",
+      "order": 31,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Difficulties with that approach are then discussed, independent of the question whether souls exist or not.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-10",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-11:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-11",
+      "order": 32,
+      "kind": "concept",
+      "headline": "Personal Identity, Part II: The Body Theory and the Personality Theory",
+      "body": "Two more views regarding the metaphysical key to personal identity are discussed: the body view and the personality view.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-11",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-11:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-11",
+      "order": 33,
+      "kind": "key_term",
+      "headline": "Two",
+      "body": "According to the body view, an individual is identified in terms of his or her physical body.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-11",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-11:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-11",
+      "order": 34,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "According to the personality view, an individual is identified by his or her unique set of beliefs, desires, memories, goals, and so on.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-11",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-12:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-12",
+      "order": 35,
+      "kind": "concept",
+      "headline": "Personal Identity, Part III: Objections to the Personality Theory",
+      "body": "The lecture focuses on the problems directly related to the personality theory as key to personal identity.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-12",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-12:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-12",
+      "order": 36,
+      "kind": "key_term",
+      "headline": "The",
+      "body": "The theory states that a person retains his or her individuality so long as he or she has the same ongoing personality.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-12",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-12:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-12",
+      "order": 37,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "The lecture explores cases in which the same personality has been transferred or exported to multiple bodies.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-12",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-13:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-13",
+      "order": 38,
+      "kind": "concept",
+      "headline": "Personal Identity, Part IV: What Matters?",
+      "body": "The personality theory is revised to state that the key to personal identity is having the same personality provided that there is no branching, that is, provided there is no transfer or duplication of the same personality from one body to another.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-13",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-13:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-13",
+      "order": 39,
+      "kind": "key_term",
+      "headline": "Personal",
+      "body": "Similar \"no branching\" requirements are added to the other theories as well.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-13",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-13:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-13",
+      "order": 40,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "At the end of class, Professor Kagan suggests a shift from thinking about the survival of the soul in terms of \"what does it take to survive?\" to \"what is it that matters in survival?\"",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-13",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-14:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-14",
+      "order": 41,
+      "kind": "concept",
+      "headline": "What Matters (cont.); The Nature of Death, Part I",
+      "body": "The suggestion is made that what matters in survival is the future existence of someone with a personality similar to one's own.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-14",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-14:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-14",
+      "order": 42,
+      "kind": "key_term",
+      "headline": "The",
+      "body": "Professor Kagan then turns to the question, \"what is it to die?\".",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-14",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-14:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-14",
+      "order": 43,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "In answering this question, attention is first drawn to the bodily and mental functions that are crucial in defining the moment of death.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-14",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-15:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-15",
+      "order": 44,
+      "kind": "concept",
+      "headline": "The Nature of Death (cont.); Believing You Will Die",
+      "body": "The lecture explores the question of the state of being dead.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-15",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-15:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-15",
+      "order": 45,
+      "kind": "key_term",
+      "headline": "The",
+      "body": "Even though the most logical claim seems to be that when a person stops P-functioning he or she is dead, a more careful consideration must allow for exceptions, such as when one is asleep or in a coma.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-15",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-15:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-15",
+      "order": 46,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "As a case in point, he takes Tolstoy's famous character Ivan Ilych.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-15",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-16:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-16",
+      "order": 47,
+      "kind": "concept",
+      "headline": "Dying Alone; The Badness of Death, Part I",
+      "body": "Professor Kagan puts forward the claim that Tolstoy's character Ivan Ilych is quite the typical man in terms of his views on mortality.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-16",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-16:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-16",
+      "order": 48,
+      "kind": "key_term",
+      "headline": "Professor",
+      "body": "All of his life he has known that death is imminent but has never really believed it.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-16",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-16:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-16",
+      "order": 49,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "In trying to further access how people think about death, Professor Kagan explores the claim that \"we all die alone,\" presents a variety of arguments against it and ends by considering whether the primary badness of death could lie in the…",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-16",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-17:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-17",
+      "order": 50,
+      "kind": "concept",
+      "headline": "The Badness of Death, Part II: The Deprivation Account",
+      "body": "This lecture continues to explore the issue of why death may be bad.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-17",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-17:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-17",
+      "order": 51,
+      "kind": "key_term",
+      "headline": "This",
+      "body": "According to the deprivation account, what is bad about death is the fact that because one ceases to exist, one becomes deprived of the good things in life.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-17",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-17:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-17",
+      "order": 52,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Being dead is not intrinsically bad; it is comparatively bad and one is worse off only by virtue of not being able to enjoy the things one enjoyed while alive, such as watching the sunset, listening to music, and discussing philosophy.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-17",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-18:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-18",
+      "order": 53,
+      "kind": "concept",
+      "headline": "The Badness of Death, Part III; Immortality, Part I",
+      "body": "The discussion of the badness of death continues by asking whether it is bad that we do not exist before our birth.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-18",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-18:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-18",
+      "order": 54,
+      "kind": "key_term",
+      "headline": "The",
+      "body": "The views of a number of contemporary philosophers, such as Tom Nagle, Fred Feldman, and Derek Parfit, are introduced.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-18",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-18:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-18",
+      "order": 55,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "The lecture concludes with Bernard Williams' take on immortality which posits that no kind of human life can continue to be enjoyable and attractive for eternity.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-18",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-19:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-19",
+      "order": 56,
+      "kind": "concept",
+      "headline": "Immortality Part II; The Value of Life, Part I",
+      "body": "The lecture begins with further exploration of the question of whether it is desirable to live forever under the right circumstances, and then turns to consideration of some alternative theories of the nature of well-being.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-19",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-19:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-19",
+      "order": 57,
+      "kind": "key_term",
+      "headline": "The",
+      "body": "One popular theory is hedonism, but the thought experiment of being on an \"experience machine\" suggests that this view may be inadequate.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-19",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-19:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-19",
+      "order": 58,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "One popular theory is hedonism, but the thought experiment of being on an \"experience machine\" suggests that this view may be inadequate.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-19",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-20:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-20",
+      "order": 59,
+      "kind": "concept",
+      "headline": "The Value of Life, Part II; Other Bad Aspects of Death, Part I",
+      "body": "Lecture 20 continues the discussion of the value of life.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-20",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-20:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-20",
+      "order": 60,
+      "kind": "key_term",
+      "headline": "Lecture",
+      "body": "It considers the neutral container theory, which holds that the value of life is simply a function of its contents, both pleasant and painful, and contrasts this with the valuable container theory, which assigns value to being…",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-20",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-20:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-20",
+      "order": 61,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Among the issues addressed are the inevitability, variability and unpredictability of death.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-20",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-21:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-21",
+      "order": 62,
+      "kind": "concept",
+      "headline": "Other Bad Aspects of Death, Part II",
+      "body": "Further bad aspects of death are considered, including ubiquity, or the fact that death may occur at any time and strike anyone.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-21",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-21:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-21",
+      "order": 63,
+      "kind": "key_term",
+      "headline": "Further",
+      "body": "Professor Kagan invites students to contemplate the possibility of death-free time periods, vacation spots, and activities.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-21",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-21:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-21",
+      "order": 64,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "On the one hand, it may give one the reason to behave differently; on the other hand, it may just cause a change in behavior.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-21",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-22:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-22",
+      "order": 65,
+      "kind": "concept",
+      "headline": "Fear of Death",
+      "body": "Professor Kagan explores the issue of how thinking about death may influence the way we live.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-22",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-22:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-22",
+      "order": 66,
+      "kind": "key_term",
+      "headline": "Death",
+      "body": "Fear as an emotional response to death is discussed as well as whether it is appropriate and under what conditions.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-22",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-22:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-22",
+      "order": 67,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Finally, a number of other negative emotions are considered as possible appropriate responses to death and dying, such as anger, sadness, and sorrow.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-22",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-23:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-23",
+      "order": 68,
+      "kind": "concept",
+      "headline": "How to Live Given the Certainty of Death",
+      "body": "In this lecture, Professor Kagan invites students to pose the question of how one should live life knowing that it will certainly end in death.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-23",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-23:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-23",
+      "order": 69,
+      "kind": "key_term",
+      "headline": "Professor",
+      "body": "He also explores the issue of how we should set our goals and how we should go about achieving them, bearing in mind the time constraints.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-23",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-23:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-23",
+      "order": 70,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Other questions raised are how this ultimately affects the quality of our work and our accomplishments, as well as how we decide what is worth doing in life.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-23",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-24:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-24",
+      "order": 71,
+      "kind": "concept",
+      "headline": "Suicide, Part I: The Rationality of Suicide",
+      "body": "This is the first of a series of lectures on suicide.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-24",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-24:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-24",
+      "order": 72,
+      "kind": "key_term",
+      "headline": "This",
+      "body": "Two very distinct contexts are presented in which the subject can be further explored.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-24",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-24:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-24",
+      "order": 73,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "The lecture's focus is on the rational requirements of suicide, and Professor Kagan introduces a number of cases which demonstrate that ending one's life, in certain instances, may be rationally sound.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-24",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-25:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-25",
+      "order": 74,
+      "kind": "concept",
+      "headline": "Suicide, Part II: Deciding under Uncertainty",
+      "body": "The discussion of suicide continues.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-25",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-25:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-25",
+      "order": 75,
+      "kind": "key_term",
+      "headline": "Uncertainty",
+      "body": "A few more cases are introduced to consider circumstances under which it might be rational to end one's life, and more graphs are drawn that show relevant variations in the quality of one's life.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-25",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-25:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-25",
+      "order": 76,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "Finally, two quick moral arguments concerning suicide which rest on theological premises are presented.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-25",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-26:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-26",
+      "order": 77,
+      "kind": "concept",
+      "headline": "Suicide, Part III: The Morality of Suicide and Course Conclusion",
+      "body": "The lecture begins by examining the consequences a suicide has on both the person committing it and those around this person.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-26",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-26:term",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-26",
+      "order": 78,
+      "kind": "key_term",
+      "headline": "The",
+      "body": "The question is raised, however, whether this factor is the only that counts morally, as utilitarians claim, or whether other factors matter morally as well, as deontologists claim.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-26",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-26:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-26",
+      "order": 79,
+      "kind": "takeaway",
+      "headline": "Carry this forward",
+      "body": "A concluding summary of the course is offered.",
+      "attribution_line": "Shelly Kagan, Death (Yale University: Open Yale Courses), https://oyc.yale.edu/death/phil-176 (Accessed September 23, 2026). License: Creative Commons BY-NC-SA",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-26",
       "license_spdx": "CC-BY-NC-SA-3.0"
     }
   ],
@@ -92,43 +956,379 @@
       "id": "yale:phil-176:lecture-1:q1",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-1",
-      "prompt": "After “Course Introduction”, which best captures the lecture’s opening focus?",
+      "prompt": "In “Course Introduction”, what is the session’s opening focus?",
       "choices": [
         "Professor Kagan introduces the course and the material that will be covered during the semester.",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "The discussion of the badness of death continues by asking whether it is bad that we do not exist before our…",
+        "Two very distinct contexts are presented in which the subject can be further explored.",
+        "The lecture begins with further exploration of the question of whether it is desirable to live forever under…"
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: Professor Kagan introduces the course and the material that will be covered during the semester."
     },
     {
       "id": "yale:phil-176:lecture-2:q1",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-2",
-      "prompt": "After “The Nature of Persons: Dualism vs. Physicalism”, which best captures the lecture’s opening focus?",
+      "prompt": "In “The Nature of Persons: Dualism vs. Physicalism”, what is the session’s opening focus?",
       "choices": [
-        "Professor Kagan discusses the two main positions with regard to the question, \"What is a person?\" On the one hand,…",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "Professor Kagan discusses the two main positions with regard to the question, \"What is a person?\" On the one…",
+        "On the one hand, it may give one the reason to behave differently; on the other hand, it may just cause a…",
+        "The lecture begins with further exploration of the question of whether it is desirable to live forever under…",
+        "All of his life he has known that death is imminent but has never really believed it."
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: Professor Kagan discusses the two main positions with regard to the question, \"What is a person?\" On the one…"
     },
     {
       "id": "yale:phil-176:lecture-3:q1",
       "course_id": "yale:phil-176",
       "lecture_id": "lecture-3",
-      "prompt": "After “Arguments for the Existence of the Soul, Part I”, which best captures the lecture’s opening focus?",
+      "prompt": "In “Arguments for the Existence of the Soul, Part I”, what is the session’s opening focus?",
       "choices": [
+        "The lecture focuses exclusively on one argument for the immortality of the soul from Plato's Phaedo ,…",
         "The lecture focuses on arguments that might be offered as proof for the existence of the soul.",
-        "A purely biographical timeline with no philosophical claims.",
-        "A lab procedure unrelated to the course themes.",
-        "A summary of campus administrative policy."
+        "Even though the most logical claim seems to be that when a person stops P-functioning he or she is dead, a…",
+        "There is one thing I can be sure of: I am going to die."
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: The lecture focuses on arguments that might be offered as proof for the existence of the soul."
+    },
+    {
+      "id": "yale:phil-176:lecture-4:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-4",
+      "prompt": "In “Introduction to Plato's Phaedo; Arguments for the Existence of the Soul, Part II”, what is the session’s opening focus?",
+      "choices": [
+        "The emphasis will be placed on philosophical questions that arise when one contemplates the nature of death.",
+        "After a brief introduction to Plato's Phaedo , more arguments are offered in this lecture in defense of the…",
+        "Then Professor Kagan turns to the subject of immortality.",
+        "According to the deprivation account, what is bad about death is the fact that because one ceases to exist,…"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: After a brief introduction to Plato's Phaedo , more arguments are offered in this lecture in defense of the…"
+    },
+    {
+      "id": "yale:phil-176:lecture-5:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-5",
+      "prompt": "In “Arguments for the Existence of the Soul, Part III: Free Will and Near-Death Experiences”, what is the session’s opening focus?",
+      "choices": [
+        "A concluding summary of the course is offered.",
+        "Professor Kagan discusses in detail the argument of free will as proof for the existence of an immaterial…",
+        "The lecture begins with further exploration of the question of whether it is desirable to live forever under…",
+        "He aims to clarify what the class will focus on in particular and which subjects it will steer away from."
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Professor Kagan discusses in detail the argument of free will as proof for the existence of an immaterial…"
+    },
+    {
+      "id": "yale:phil-176:lecture-6:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-6",
+      "prompt": "In “Arguments for the Existence of the Soul, Part IV; Plato, Part I”, what is the session’s opening focus?",
+      "choices": [
+        "Even though the most logical claim seems to be that when a person stops P-functioning he or she is dead, a…",
+        "What does it mean to say that a person has died?",
+        "The argument consists of three premises: 1) We have free will.",
+        "The lecture begins with a continued discussion of the Cartesian argument and its weaknesses."
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: The lecture begins with a continued discussion of the Cartesian argument and its weaknesses."
+    },
+    {
+      "id": "yale:phil-176:lecture-7:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-7",
+      "prompt": "In “Plato, Part II: Arguments for the Immortality of the Soul”, what is the session’s opening focus?",
+      "choices": [
+        "The discussion of Plato's Phaedo continues, presenting more arguments for the existence and immortality of…",
+        "Finally, the question is raised as to whether it could be appropriate to refuse to face the facts about our…",
+        "Professor Kagan discusses in detail the argument of free will as proof for the existence of an immaterial…",
+        "A few more cases are introduced to consider circumstances under which it might be rational to end one's…"
       ],
       "answer_index": 0,
-      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+      "explanation": "The overview centers on: The discussion of Plato's Phaedo continues, presenting more arguments for the existence and immortality of…"
+    },
+    {
+      "id": "yale:phil-176:lecture-8:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-8",
+      "prompt": "In “Plato, Part III: Arguments for the Immortality of the Soul (cont.)”, what is the session’s opening focus?",
+      "choices": [
+        "Fear as an emotional response to death is discussed as well as whether it is appropriate and under what…",
+        "The lecture focuses exclusively on one argument for the immortality of the soul from Plato's Phaedo ,…",
+        "The lecture explores the question of the state of being dead.",
+        "Professor Kagan introduces the course and the material that will be covered during the semester."
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: The lecture focuses exclusively on one argument for the immortality of the soul from Plato's Phaedo ,…"
+    },
+    {
+      "id": "yale:phil-176:lecture-9:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-9",
+      "prompt": "In “Plato, Part IV: Arguments for the Immortality of the Soul (cont.)”, what is the session’s opening focus?",
+      "choices": [
+        "Professor Kagan invites students to contemplate the possibility of death-free time periods, vacation spots,…",
+        "The lecture focuses exclusively on one argument for the immortality of the soul from Plato's Phaedo ,…",
+        "At the end of the lecture the question of whether one needs to argue for physicalism is posed.",
+        "Professor Kagan elaborates on the \"argument from simplicity\" and discusses in detail Plato's claims that the…"
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: Professor Kagan elaborates on the \"argument from simplicity\" and discusses in detail Plato's claims that the…"
+    },
+    {
+      "id": "yale:phil-176:lecture-10:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-10",
+      "prompt": "In “Personal Identity, Part I: Identity Across Space and Time and the Soul Theory”, what is the session’s opening focus?",
+      "choices": [
+        "The lecture's focus is on the rational requirements of suicide, and Professor Kagan introduces a number of…",
+        "In addition, near-death experiences and the Cartesian argument are discussed at length.",
+        "The lecture focuses on the question of the metaphysical key to personal identity.",
+        "The first is rationality and the question of under what circumstances it makes sense to end one's own life."
+      ],
+      "answer_index": 2,
+      "explanation": "The overview centers on: The lecture focuses on the question of the metaphysical key to personal identity."
+    },
+    {
+      "id": "yale:phil-176:lecture-11:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-11",
+      "prompt": "In “Personal Identity, Part II: The Body Theory and the Personality Theory”, what is the session’s opening focus?",
+      "choices": [
+        "The lecture concludes with Bernard Williams' take on immortality which posits that no kind of human life can…",
+        "Two more views regarding the metaphysical key to personal identity are discussed: the body view and the…",
+        "The body, however, has a certain set of abilities and is capable of a large range of activities.",
+        "This argument is followed by the \"argument from recycling\" and \"the argument from recollection.\""
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Two more views regarding the metaphysical key to personal identity are discussed: the body view and the…"
+    },
+    {
+      "id": "yale:phil-176:lecture-12:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-12",
+      "prompt": "In “Personal Identity, Part III: Objections to the Personality Theory”, what is the session’s opening focus?",
+      "choices": [
+        "The lecture focuses exclusively on one argument for the immortality of the soul from Plato's Phaedo ,…",
+        "Professor Kagan invites students to contemplate the possibility of death-free time periods, vacation spots,…",
+        "And, finally, different attitudes to death are evaluated.",
+        "The lecture focuses on the problems directly related to the personality theory as key to personal identity."
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: The lecture focuses on the problems directly related to the personality theory as key to personal identity."
+    },
+    {
+      "id": "yale:phil-176:lecture-13:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-13",
+      "prompt": "In “Personal Identity, Part IV: What Matters?”, what is the session’s opening focus?",
+      "choices": [
+        "The moral relevance of a deontological prohibition against harming the innocent is considered.",
+        "Professor Kagan discusses in detail the argument of free will as proof for the existence of an immaterial…",
+        "The personality theory is revised to state that the key to personal identity is having the same personality…",
+        "A distinction is made between fear of the process of dying, and fear of death itself and what may come when…"
+      ],
+      "answer_index": 2,
+      "explanation": "The overview centers on: The personality theory is revised to state that the key to personal identity is having the same personality…"
+    },
+    {
+      "id": "yale:phil-176:lecture-14:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-14",
+      "prompt": "In “What Matters (cont.); The Nature of Death, Part I”, what is the session’s opening focus?",
+      "choices": [
+        "The discussion of Plato's Phaedo continues, presenting more arguments for the existence and immortality of…",
+        "Being dead is not intrinsically bad; it is comparatively bad and one is worse off only by virtue of not…",
+        "In addition, near-death experiences and the Cartesian argument are discussed at length.",
+        "The suggestion is made that what matters in survival is the future existence of someone with a personality…"
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: The suggestion is made that what matters in survival is the future existence of someone with a personality…"
+    },
+    {
+      "id": "yale:phil-176:lecture-15:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-15",
+      "prompt": "In “The Nature of Death (cont.); Believing You Will Die”, what is the session’s opening focus?",
+      "choices": [
+        "Professor Kagan explores the issue of how thinking about death may influence the way we live.",
+        "This lecture continues to explore the issue of why death may be bad.",
+        "The lecture explores the question of the state of being dead.",
+        "Difficulties with that approach are then discussed, independent of the question whether souls exist or not."
+      ],
+      "answer_index": 2,
+      "explanation": "The overview centers on: The lecture explores the question of the state of being dead."
+    },
+    {
+      "id": "yale:phil-176:lecture-16:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-16",
+      "prompt": "In “Dying Alone; The Badness of Death, Part I”, what is the session’s opening focus?",
+      "choices": [
+        "Finally, the question is raised as to whether it could be appropriate to refuse to face the facts about our…",
+        "Professor Kagan puts forward the claim that Tolstoy's character Ivan Ilych is quite the typical man in terms…",
+        "The personality theory is revised to state that the key to personal identity is having the same personality…",
+        "The second is morality and the question of whether we can ever ethically justify resorting to suicide."
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Professor Kagan puts forward the claim that Tolstoy's character Ivan Ilych is quite the typical man in terms…"
+    },
+    {
+      "id": "yale:phil-176:lecture-17:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-17",
+      "prompt": "In “The Badness of Death, Part II: The Deprivation Account”, what is the session’s opening focus?",
+      "choices": [
+        "These forms are the abstract properties that we attribute to physical objects, such as beauty, justice,…",
+        "At the end of the lecture the question of whether one needs to argue for physicalism is posed.",
+        "This lecture continues to explore the issue of why death may be bad.",
+        "Finally, the question is raised as to whether it could be appropriate to refuse to face the facts about our…"
+      ],
+      "answer_index": 2,
+      "explanation": "The overview centers on: This lecture continues to explore the issue of why death may be bad."
+    },
+    {
+      "id": "yale:phil-176:lecture-18:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-18",
+      "prompt": "In “The Badness of Death, Part III; Immortality, Part I”, what is the session’s opening focus?",
+      "choices": [
+        "Then there is consideration of the value of the human condition, which consists of life, followed by death.",
+        "The discussion of the badness of death continues by asking whether it is bad that we do not exist before our…",
+        "Fear as an emotional response to death is discussed as well as whether it is appropriate and under what…",
+        "Similar \"no branching\" requirements are added to the other theories as well."
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: The discussion of the badness of death continues by asking whether it is bad that we do not exist before our…"
+    },
+    {
+      "id": "yale:phil-176:lecture-19:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-19",
+      "prompt": "In “Immortality Part II; The Value of Life, Part I”, what is the session’s opening focus?",
+      "choices": [
+        "The lecture begins with further exploration of the question of whether it is desirable to live forever under…",
+        "Even though the most logical claim seems to be that when a person stops P-functioning he or she is dead, a…",
+        "Finally, a number of other negative emotions are considered as possible appropriate responses to death and…",
+        "3) All purely physical systems are subject to determinism."
+      ],
+      "answer_index": 0,
+      "explanation": "The overview centers on: The lecture begins with further exploration of the question of whether it is desirable to live forever under…"
+    },
+    {
+      "id": "yale:phil-176:lecture-20:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-20",
+      "prompt": "In “The Value of Life, Part II; Other Bad Aspects of Death, Part I”, what is the session’s opening focus?",
+      "choices": [
+        "When he suddenly falls ill and is about to die, the fact of his mortality shocks him.",
+        "Lecture 20 continues the discussion of the value of life.",
+        "At the end of class, Professor Kagan suggests a shift from thinking about the survival of the soul in terms…",
+        "Fear as an emotional response to death is discussed as well as whether it is appropriate and under what…"
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: Lecture 20 continues the discussion of the value of life."
+    },
+    {
+      "id": "yale:phil-176:lecture-21:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-21",
+      "prompt": "In “Other Bad Aspects of Death, Part II”, what is the session’s opening focus?",
+      "choices": [
+        "The views of a number of contemporary philosophers, such as Tom Nagle, Fred Feldman, and Derek Parfit, are…",
+        "It is perfect, immaterial and indestructible.",
+        "Finally, a number of other negative emotions are considered as possible appropriate responses to death and…",
+        "Further bad aspects of death are considered, including ubiquity, or the fact that death may occur at any…"
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: Further bad aspects of death are considered, including ubiquity, or the fact that death may occur at any…"
+    },
+    {
+      "id": "yale:phil-176:lecture-22:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-22",
+      "prompt": "In “Fear of Death”, what is the session’s opening focus?",
+      "choices": [
+        "The lecture begins with further exploration of the question of whether it is desirable to live forever under…",
+        "When he suddenly falls ill and is about to die, the fact of his mortality shocks him.",
+        "Professor Kagan explores the issue of how thinking about death may influence the way we live.",
+        "The lecture then turns to a consideration of some of the other aspects of death that may contribute to the…"
+      ],
+      "answer_index": 2,
+      "explanation": "The overview centers on: Professor Kagan explores the issue of how thinking about death may influence the way we live."
+    },
+    {
+      "id": "yale:phil-176:lecture-23:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-23",
+      "prompt": "In “How to Live Given the Certainty of Death”, what is the session’s opening focus?",
+      "choices": [
+        "A distinction is made between fear of the process of dying, and fear of death itself and what may come when…",
+        "In this lecture, Professor Kagan invites students to pose the question of how one should live life knowing…",
+        "Professor Kagan discusses in detail the argument of free will as proof for the existence of an immaterial…",
+        "At the end of the lecture the question of whether one needs to argue for physicalism is posed."
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: In this lecture, Professor Kagan invites students to pose the question of how one should live life knowing…"
+    },
+    {
+      "id": "yale:phil-176:lecture-24:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-24",
+      "prompt": "In “Suicide, Part I: The Rationality of Suicide”, what is the session’s opening focus?",
+      "choices": [
+        "Since it is the soul that conceives of these Platonic forms and ideas, Plato argues that the soul not only…",
+        "This is the first of a series of lectures on suicide.",
+        "At the end of class, Professor Kagan suggests a shift from thinking about the survival of the soul in terms…",
+        "When he suddenly falls ill and is about to die, the fact of his mortality shocks him."
+      ],
+      "answer_index": 1,
+      "explanation": "The overview centers on: This is the first of a series of lectures on suicide."
+    },
+    {
+      "id": "yale:phil-176:lecture-25:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-25",
+      "prompt": "In “Suicide, Part II: Deciding under Uncertainty”, what is the session’s opening focus?",
+      "choices": [
+        "Professor Kagan then turns to the question, \"what is it to die?\".",
+        "The lecture begins by examining the consequences a suicide has on both the person committing it and those…",
+        "In addition, near-death experiences and the Cartesian argument are discussed at length.",
+        "The discussion of suicide continues."
+      ],
+      "answer_index": 3,
+      "explanation": "The overview centers on: The discussion of suicide continues."
+    },
+    {
+      "id": "yale:phil-176:lecture-26:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-26",
+      "prompt": "In “Suicide, Part III: The Morality of Suicide and Course Conclusion”, what is the session’s opening focus?",
+      "choices": [
+        "The lecture begins by examining the consequences a suicide has on both the person committing it and those…",
+        "The first series of arguments discussed is those known as \"inferences to the best explanation.\" That is, we…",
+        "These forms are the abstract properties that we attribute to physical objects, such as beauty, justice,…",
+        "One popular theory is hedonism, but the thought experiment of being on an \"experience machine\" suggests that…"
+      ],
+      "answer_index": 0,
+      "explanation": "The overview centers on: The lecture begins by examining the consequences a suicide has on both the person committing it and those…"
+    },
+    {
+      "id": "yale:phil-176:final",
+      "course_id": "yale:phil-176",
+      "lecture_id": "final",
+      "prompt": "Final for Death: which best states the course’s core concern?",
+      "choices": [
+        "There is one thing I can be sure of: I am going to die.",
+        "Professor Kagan then turns to the question, \"what is it to die?\".",
+        "Professor Kagan introduces the course and the material that will be covered during the semester.",
+        "Being dead is not intrinsically bad; it is comparatively bad and one is worse off only by virtue of not…"
+      ],
+      "answer_index": 0,
+      "explanation": "The overview centers on: There is one thing I can be sure of: I am going to die. Early sessions include: Course Introduction, The Nature of Persons: Dualism vs. Physicalism, Arguments for the Existence of the Soul, Part I…."
     }
   ]
 }

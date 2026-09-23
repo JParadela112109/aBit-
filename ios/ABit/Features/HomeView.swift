@@ -16,11 +16,14 @@ struct HomeView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading, spacing: 0) {
                         hero
-                            .frame(minHeight: max(geo.size.height * 0.72, 520))
+                            .frame(minHeight: max(geo.size.height * 0.68, 500))
                             .padding(.horizontal, 24)
 
+                        streakBand
+                            .padding(.horizontal, 24)
+                            .padding(.bottom, 28)
+
                         pathsSection
-                            .padding(.top, 8)
                             .padding(.bottom, 56)
                     }
                 }
@@ -48,20 +51,19 @@ struct HomeView: View {
                 .opacity(heroVisible ? 1 : 0)
                 .offset(y: heroVisible ? 0 : 12)
 
-            Text("Open lectures, remixed into tiny lessons you can finish between classes.")
+            Text("Real open lectures. Tiny lessons. Pass the course, earn the credits, graduate your program.")
                 .font(ABitTheme.body)
                 .foregroundStyle(ABitTheme.mist)
                 .fixedSize(horizontal: false, vertical: true)
-                .frame(maxWidth: 320, alignment: .leading)
+                .frame(maxWidth: 340, alignment: .leading)
                 .opacity(heroVisible ? 1 : 0)
-                .offset(y: heroVisible ? 0 : 10)
 
             if let course = continueCourse {
                 NavigationLink {
                     CourseDetailView(courseID: course.id)
                 } label: {
                     HStack(spacing: 10) {
-                        Text(store.progress(for: course.id) > 0 ? "Continue \(course.title)" : "Begin with \(course.title)")
+                        Text(store.progress(for: course.id) > 0 ? "Continue \(course.title)" : "Begin \(course.title)")
                         Image(systemName: "arrow.right")
                             .font(.system(size: 14, weight: .bold))
                     }
@@ -72,20 +74,47 @@ struct HomeView: View {
                     .background(ABitTheme.lime, in: Capsule())
                 }
                 .buttonStyle(PressableCardStyle())
-                .padding(.top, 10)
+                .padding(.top, 8)
                 .opacity(heroVisible ? 1 : 0)
-                .offset(y: heroVisible ? 0 : 8)
             }
 
-            Spacer(minLength: 24)
+            Spacer(minLength: 20)
 
             Image(systemName: "chevron.compact.down")
                 .font(.system(size: 22, weight: .semibold))
                 .foregroundStyle(ABitTheme.mist.opacity(0.55))
                 .frame(maxWidth: .infinity)
                 .opacity(heroVisible ? 1 : 0)
-                .padding(.bottom, 12)
+                .padding(.bottom, 8)
         }
+    }
+
+    private var streakBand: some View {
+        HStack(spacing: 14) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("STREAK")
+                    .font(ABitTheme.micro)
+                    .tracking(1.2)
+                    .foregroundStyle(ABitTheme.mist)
+                Text("\(store.currentStreak) day\(store.currentStreak == 1 ? "" : "s")")
+                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                    .foregroundStyle(ABitTheme.lime)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text("TODAY · \(store.bitsCompletedToday)/\(store.dailyGoal) bits")
+                    .font(ABitTheme.micro)
+                    .tracking(1.0)
+                    .foregroundStyle(ABitTheme.mist)
+                ProgressView(value: store.dailyGoalProgress)
+                    .tint(ABitTheme.lime)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(16)
+        .background(ABitTheme.inkElevated, in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .opacity(heroVisible ? 1 : 0)
     }
 
     private var pathsSection: some View {
@@ -101,11 +130,6 @@ struct HomeView: View {
             }
             .padding(.horizontal, 24)
 
-            Text("Drop a scraped `.course.json` into Resources/Courses — it shows up here.")
-                .font(ABitTheme.micro)
-                .foregroundStyle(ABitTheme.mist.opacity(0.75))
-                .padding(.horizontal, 24)
-
             LazyVStack(spacing: 14) {
                 ForEach(Array(store.courses.enumerated()), id: \.element.id) { index, course in
                     NavigationLink {
@@ -114,7 +138,9 @@ struct HomeView: View {
                         CoursePathRow(
                             course: course,
                             progress: store.progress(for: course.id),
-                            biteCount: store.bites(for: course.id).count
+                            biteCount: store.bites(for: course.id).count,
+                            grade: store.letterGrade(for: course.id),
+                            passed: store.isCoursePassed(course.id)
                         )
                     }
                     .buttonStyle(PressableCardStyle())
@@ -135,6 +161,8 @@ struct CoursePathRow: View {
     let course: CourseMeta
     let progress: Double
     let biteCount: Int
+    var grade: LetterGrade? = nil
+    var passed: Bool = false
 
     private var accent: CourseAccent { .forDepartment(course.department) }
 
@@ -172,9 +200,14 @@ struct CoursePathRow: View {
 
                 HStack(spacing: 10) {
                     Text("\(biteCount) bites")
-                    if progress > 0 {
-                        Text("·")
-                        Text("\(Int(progress * 100))%")
+                    if passed {
+                        Text("· Passed")
+                            .foregroundStyle(ABitTheme.lime)
+                    } else if let grade {
+                        Text("· \(grade.rawValue)")
+                            .foregroundStyle(ABitTheme.lime)
+                    } else if progress > 0 {
+                        Text("· \(Int(progress * 100))%")
                             .foregroundStyle(ABitTheme.lime)
                     }
                 }

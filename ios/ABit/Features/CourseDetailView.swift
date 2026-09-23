@@ -122,6 +122,16 @@ struct CourseDetailView: View {
                 .foregroundStyle(ABitTheme.mist)
                 .fixedSize(horizontal: false, vertical: true)
 
+            if let final = store.finalExam(for: course.id) {
+                let finalDone = store.passedQuizIDs.contains(final.id)
+                Label(
+                    finalDone ? "Final complete" : "Final required to pass",
+                    systemImage: finalDone ? "checkmark.seal.fill" : "graduationcap"
+                )
+                .font(ABitTheme.caption)
+                .foregroundStyle(finalDone ? ABitTheme.lime : ABitTheme.mist)
+            }
+
             if !prereqs.isEmpty {
                 Text("Prerequisites: " + prereqs.map { store.engine.title(for: $0) }.joined(separator: ", "))
                     .font(ABitTheme.micro)
@@ -154,7 +164,7 @@ struct CourseDetailView: View {
     private func passRuleCopy(quizRate: Double) -> String {
         let quizPct = Int(AcademicRules.minQuizPassRate * 100)
         let bitePct = Int(AcademicRules.minBiteCompletionToPass * 100)
-        return "To pass: clear \(bitePct)%+ of bites and \(quizPct)%+ of lecture checks. Letter grade blends bite completion (\(Int(AcademicRules.biteWeight * 100))%) with quiz accuracy (\(Int(AcademicRules.quizWeight * 100))%). Your quiz rate: \(Int(quizRate * 100))%."
+        return "To pass: \(bitePct)%+ bites, \(quizPct)%+ lecture checks, and the course final. Grade blends bites (\(Int(AcademicRules.biteWeight * 100))%) with checks (\(Int(AcademicRules.quizWeight * 100))%). Your check rate: \(Int(quizRate * 100))%."
     }
 
     @ViewBuilder

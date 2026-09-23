@@ -4,6 +4,19 @@ struct FriendsView: View {
     @Environment(AppStore.self) private var store
     @State private var appear = false
 
+    private var leaderboard: [FriendActivity] {
+        var rows = store.friends
+        rows.append(
+            FriendActivity(
+                id: "you",
+                name: "You",
+                studying: store.enrolledPrograms.first.map(\.fullName) ?? "Undeclared",
+                bitsToday: store.bitsCompletedToday
+            )
+        )
+        return rows.sorted { $0.bitsToday > $1.bitsToday }
+    }
+
     var body: some View {
         ZStack {
             AtmosphereBackground(accent: .ocean)
@@ -13,7 +26,7 @@ struct FriendsView: View {
                         Text("Friends")
                             .font(ABitTheme.display)
                             .foregroundStyle(ABitTheme.chalk)
-                        Text("See who’s clearing bits — and what they’re studying tonight.")
+                        Text("Daily bits — your streak is \(store.currentStreak) day\(store.currentStreak == 1 ? "" : "s"). Best: \(store.longestStreak).")
                             .font(ABitTheme.body)
                             .foregroundStyle(ABitTheme.mist)
                     }
@@ -25,8 +38,8 @@ struct FriendsView: View {
                         .foregroundStyle(ABitTheme.lime)
                         .padding(.top, 8)
 
-                    ForEach(Array(store.friends.sorted { $0.bitsToday > $1.bitsToday }.enumerated()), id: \.element.id) { rank, friend in
-                        friendRow(rank: rank + 1, friend: friend)
+                    ForEach(Array(leaderboard.enumerated()), id: \.element.id) { rank, friend in
+                        friendRow(rank: rank + 1, friend: friend, isYou: friend.id == "you")
                             .opacity(appear ? 1 : 0)
                             .offset(y: appear ? 0 : 14)
                             .animation(
@@ -34,6 +47,11 @@ struct FriendsView: View {
                                 value: appear
                             )
                     }
+
+                    Text("Live friends sync comes next — for now this is a local leaderboard with demo classmates.")
+                        .font(ABitTheme.micro)
+                        .foregroundStyle(ABitTheme.mist.opacity(0.65))
+                        .padding(.top, 8)
                 }
                 .padding(.horizontal, 24)
                 .padding(.bottom, 48)
@@ -45,7 +63,7 @@ struct FriendsView: View {
         }
     }
 
-    private func friendRow(rank: Int, friend: FriendActivity) -> some View {
+    private func friendRow(rank: Int, friend: FriendActivity, isYou: Bool) -> some View {
         HStack(spacing: 14) {
             Text("\(rank)")
                 .font(.system(.title3, design: .rounded).weight(.bold))
@@ -55,7 +73,7 @@ struct FriendsView: View {
             Circle()
                 .fill(
                     LinearGradient(
-                        colors: [ABitTheme.lime.opacity(0.45), ABitTheme.inkSoft],
+                        colors: [ABitTheme.lime.opacity(isYou ? 0.7 : 0.45), ABitTheme.inkSoft],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
@@ -91,6 +109,10 @@ struct FriendsView: View {
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
                 .fill(ABitTheme.inkElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 22, style: .continuous)
+                        .strokeBorder(isYou ? ABitTheme.lime.opacity(0.45) : .clear, lineWidth: 1)
+                )
         )
     }
 }

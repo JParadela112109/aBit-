@@ -136,15 +136,25 @@ class YaleOYCClient:
         return ""
 
     def _extract_lectures(self, soup: BeautifulSoup, course_path: str) -> list[LectureOutline]:
-        pattern = re.compile(rf"^{re.escape(course_path.rstrip('/'))}/lecture-(\d+)/?$")
+        # Catalog paths (e.g. /death/phil-176) often differ from lecture paths
+        # (e.g. /philosophy/phil-176/lecture-1). Prefer exact prefix, then
+        # fall back to any /lecture-N link that shares the course number segment.
+        course_path = course_path.rstrip("/")
+        number_slug = course_path.split("/")[-1]  # phil-176
+        exact = re.compile(rf"^{re.escape(course_path)}/lecture-(\d+)/?$")
+        loose = re.compile(rf"^/.*/{re.escape(number_slug)}/lecture-(\d+)/?$")
         found: dict[int, LectureOutline] = {}
         for a in soup.find_all("a", href=True):
             href = a["href"].split("?")[0]
-            m = pattern.match(href)
+            m = exact.match(href) or loose.match(href)
             if not m:
                 continue
             idx = int(m.group(1))
             title = a.get_text(" ", strip=True) or f"Lecture {idx}"
+            # Prefer richer titles if we see the link twice
+            existing = found.get(idx)
+            if existing and len(existing.title) >= len(title):
+                continue
             found[idx] = LectureOutline(
                 id=f"lecture-{idx}",
                 index=idx,

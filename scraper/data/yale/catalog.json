@@ -1,0 +1,1127 @@
+{
+  "source": "yale",
+  "scraped_at": "2026-09-23T15:31:13.156099Z",
+  "course_count": 40,
+  "courses": [
+    {
+      "id": "yale:afam-162",
+      "source": "yale",
+      "department": "African American Studies",
+      "number": "AFAM 162",
+      "title": "African American History: From Emancipation to the Present (2010)",
+      "professor": "Jonathan Holloway",
+      "term": "Spring 2010",
+      "path": "/african-american-studies/afam-162",
+      "url": "https://oyc.yale.edu/african-american-studies/afam-162",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Jonathan Holloway",
+        "course_title": "African American History: From Emancipation to the Present (2010)",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/african-american-studies/afam-162",
+        "accessed_at": "2026-09-23T15:31:13.155175Z"
+      }
+    },
+    {
+      "id": "yale:amst-246",
+      "source": "yale",
+      "department": "American Studies",
+      "number": "AMST 246",
+      "title": "Hemingway, Fitzgerald, Faulkner",
+      "professor": "Wai Chee Dimock",
+      "term": "Fall 2011",
+      "path": "/american-studies/amst-246",
+      "url": "https://oyc.yale.edu/american-studies/amst-246",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Wai Chee Dimock",
+        "course_title": "Hemingway, Fitzgerald, Faulkner",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/american-studies/amst-246",
+        "accessed_at": "2026-09-23T15:31:13.155233Z"
+      }
+    },
+    {
+      "id": "yale:astr-160",
+      "source": "yale",
+      "department": "Astronomy",
+      "number": "ASTR 160",
+      "title": "Frontiers and Controversies in Astrophysics",
+      "professor": "Charles Bailyn",
+      "term": "Spring 2007",
+      "path": "/astronomy/astr-160",
+      "url": "https://oyc.yale.edu/astronomy/astr-160",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Charles Bailyn",
+        "course_title": "Frontiers and Controversies in Astrophysics",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/astronomy/astr-160",
+        "accessed_at": "2026-09-23T15:31:13.155269Z"
+      }
+    },
+    {
+      "id": "yale:beng-100",
+      "source": "yale",
+      "department": "Biomedical Engineering",
+      "number": "BENG 100",
+      "title": "Frontiers of Biomedical Engineering",
+      "professor": "W. Mark Saltzman",
+      "term": "Spring 2008",
+      "path": "/biomedical-engineering/beng-100",
+      "url": "https://oyc.yale.edu/biomedical-engineering/beng-100",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "W. Mark Saltzman",
+        "course_title": "Frontiers of Biomedical Engineering",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/biomedical-engineering/beng-100",
+        "accessed_at": "2026-09-23T15:31:13.155299Z"
+      }
+    },
+    {
+      "id": "yale:chem-125a",
+      "source": "yale",
+      "department": "Chemistry",
+      "number": "CHEM 125a",
+      "title": "Freshman Organic Chemistry I",
+      "professor": "J. Michael McBride",
+      "term": "Fall 2008",
+      "path": "/chemistry/chem-125a",
+      "url": "https://oyc.yale.edu/chemistry/chem-125a",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "J. Michael McBride",
+        "course_title": "Freshman Organic Chemistry I",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/chemistry/chem-125a",
+        "accessed_at": "2026-09-23T15:31:13.155324Z"
+      }
+    },
+    {
+      "id": "yale:chem-125b",
+      "source": "yale",
+      "department": "Chemistry",
+      "number": "CHEM 125b",
+      "title": "Freshman Organic Chemistry II",
+      "professor": "J. Michael McBride",
+      "term": "Spring 2011",
+      "path": "/chemistry/chem-125b",
+      "url": "https://oyc.yale.edu/chemistry/chem-125b",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "J. Michael McBride",
+        "course_title": "Freshman Organic Chemistry II",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/chemistry/chem-125b",
+        "accessed_at": "2026-09-23T15:31:13.155347Z"
+      }
+    },
+    {
+      "id": "yale:clcv-205",
+      "source": "yale",
+      "department": "Classics",
+      "number": "CLCV 205",
+      "title": "Introduction to Ancient Greek History",
+      "professor": "Donald Kagan",
+      "term": "Fall 2007",
+      "path": "/classics/clcv-205",
+      "url": "https://oyc.yale.edu/classics/clcv-205",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Donald Kagan",
+        "course_title": "Introduction to Ancient Greek History",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/classics/clcv-205",
+        "accessed_at": "2026-09-23T15:31:13.155368Z"
+      }
+    },
+    {
+      "id": "yale:eeb-122",
+      "source": "yale",
+      "department": "Ecology and Evolutionary Biology",
+      "number": "EEB 122",
+      "title": "Principles of Evolution, Ecology and Behavior",
+      "professor": "Stephen C. Stearns",
+      "term": "Spring 2009",
+      "path": "/ecology-and-evolutionary-biology/eeb-122",
+      "url": "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Stephen C. Stearns",
+        "course_title": "Principles of Evolution, Ecology and Behavior",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122",
+        "accessed_at": "2026-09-23T15:31:13.155391Z"
+      }
+    },
+    {
+      "id": "yale:econ-252",
+      "source": "yale",
+      "department": "Economics",
+      "number": "ECON 252",
+      "title": "Financial Markets (2008)",
+      "professor": "Robert J. Shiller",
+      "term": "Spring 2008",
+      "path": "/economics/econ-252-08",
+      "url": "https://oyc.yale.edu/economics/econ-252-08",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Robert J. Shiller",
+        "course_title": "Financial Markets (2008)",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/economics/econ-252-08",
+        "accessed_at": "2026-09-23T15:31:13.155416Z"
+      }
+    },
+    {
+      "id": "yale:econ-252",
+      "source": "yale",
+      "department": "Economics",
+      "number": "ECON 252",
+      "title": "Financial Markets (2011)",
+      "professor": "Robert J. Shiller",
+      "term": "Spring 2011",
+      "path": "/economics/econ-252",
+      "url": "https://oyc.yale.edu/economics/econ-252",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Robert J. Shiller",
+        "course_title": "Financial Markets (2011)",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/economics/econ-252",
+        "accessed_at": "2026-09-23T15:31:13.155440Z"
+      }
+    },
+    {
+      "id": "yale:econ-251",
+      "source": "yale",
+      "department": "Economics",
+      "number": "ECON 251",
+      "title": "Financial Theory",
+      "professor": "John Geanakoplos",
+      "term": "Fall 2009",
+      "path": "/economics/econ-251",
+      "url": "https://oyc.yale.edu/economics/econ-251",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "John Geanakoplos",
+        "course_title": "Financial Theory",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/economics/econ-251",
+        "accessed_at": "2026-09-23T15:31:13.155463Z"
+      }
+    },
+    {
+      "id": "yale:econ-159",
+      "source": "yale",
+      "department": "Economics",
+      "number": "ECON 159",
+      "title": "Game Theory",
+      "professor": "Ben Polak",
+      "term": "Fall 2007",
+      "path": "/economics/econ-159",
+      "url": "https://oyc.yale.edu/economics/econ-159",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Ben Polak",
+        "course_title": "Game Theory",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/economics/econ-159",
+        "accessed_at": "2026-09-23T15:31:13.155487Z"
+      }
+    },
+    {
+      "id": "yale:engl-300",
+      "source": "yale",
+      "department": "English",
+      "number": "ENGL 300",
+      "title": "Introduction to Theory of Literature",
+      "professor": "Paul H. Fry",
+      "term": "Spring 2009",
+      "path": "/english/engl-300",
+      "url": "https://oyc.yale.edu/english/engl-300",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Paul H. Fry",
+        "course_title": "Introduction to Theory of Literature",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/english/engl-300",
+        "accessed_at": "2026-09-23T15:31:13.155510Z"
+      }
+    },
+    {
+      "id": "yale:engl-220",
+      "source": "yale",
+      "department": "English",
+      "number": "ENGL 220",
+      "title": "Milton",
+      "professor": "John Rogers",
+      "term": "Fall 2007",
+      "path": "/english/engl-220",
+      "url": "https://oyc.yale.edu/english/engl-220",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "John Rogers",
+        "course_title": "Milton",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/english/engl-220",
+        "accessed_at": "2026-09-23T15:31:13.155533Z"
+      }
+    },
+    {
+      "id": "yale:engl-310",
+      "source": "yale",
+      "department": "English",
+      "number": "ENGL 310",
+      "title": "Modern Poetry",
+      "professor": "Langdon Hammer",
+      "term": "Spring 2007",
+      "path": "/english/engl-310",
+      "url": "https://oyc.yale.edu/english/engl-310",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Langdon Hammer",
+        "course_title": "Modern Poetry",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/english/engl-310",
+        "accessed_at": "2026-09-23T15:31:13.155558Z"
+      }
+    },
+    {
+      "id": "yale:engl-291",
+      "source": "yale",
+      "department": "English",
+      "number": "ENGL 291",
+      "title": "The American Novel Since 1945",
+      "professor": "Amy Hungerford",
+      "term": "Spring 2008",
+      "path": "/english/engl-291",
+      "url": "https://oyc.yale.edu/english/engl-291",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Amy Hungerford",
+        "course_title": "The American Novel Since 1945",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/english/engl-291",
+        "accessed_at": "2026-09-23T15:31:13.155579Z"
+      }
+    },
+    {
+      "id": "yale:evst-255",
+      "source": "yale",
+      "department": "Environmental Studies",
+      "number": "EVST 255",
+      "title": "Environmental Politics and Law",
+      "professor": "John Wargo",
+      "term": "Spring 2010",
+      "path": "/environmental-studies/evst-255",
+      "url": "https://oyc.yale.edu/environmental-studies/evst-255",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "John Wargo",
+        "course_title": "Environmental Politics and Law",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/environmental-studies/evst-255",
+        "accessed_at": "2026-09-23T15:31:13.155600Z"
+      }
+    },
+    {
+      "id": "yale:gg-140",
+      "source": "yale",
+      "department": "Geology and Geophysics",
+      "number": "GG 140",
+      "title": "The Atmosphere, the Ocean, and Environmental Change",
+      "professor": "Ronald B. Smith",
+      "term": "Fall 2011",
+      "path": "/geology-and-geophysics/gg-140",
+      "url": "https://oyc.yale.edu/geology-and-geophysics/gg-140",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Ronald B. Smith",
+        "course_title": "The Atmosphere, the Ocean, and Environmental Change",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/geology-and-geophysics/gg-140",
+        "accessed_at": "2026-09-23T15:31:13.155621Z"
+      }
+    },
+    {
+      "id": "yale:hist-116",
+      "source": "yale",
+      "department": "History",
+      "number": "HIST 116",
+      "title": "The American Revolution",
+      "professor": "Joanne Freeman",
+      "term": "Spring 2010",
+      "path": "/history/hist-116",
+      "url": "https://oyc.yale.edu/history/hist-116",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Joanne Freeman",
+        "course_title": "The American Revolution",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history/hist-116",
+        "accessed_at": "2026-09-23T15:31:13.155646Z"
+      }
+    },
+    {
+      "id": "yale:hist-119",
+      "source": "yale",
+      "department": "History",
+      "number": "HIST 119",
+      "title": "The Civil War and Reconstruction Era, 1845-1877",
+      "professor": "David W. Blight",
+      "term": "Spring 2008",
+      "path": "/history/hist-119",
+      "url": "https://oyc.yale.edu/history/hist-119",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "David W. Blight",
+        "course_title": "The Civil War and Reconstruction Era, 1845-1877",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history/hist-119",
+        "accessed_at": "2026-09-23T15:31:13.155665Z"
+      }
+    },
+    {
+      "id": "yale:hist-210",
+      "source": "yale",
+      "department": "History",
+      "number": "HIST 210",
+      "title": "The Early Middle Ages, 284–1000",
+      "professor": "Paul Freedman",
+      "term": "Fall 2011",
+      "path": "/history/hist-210",
+      "url": "https://oyc.yale.edu/history/hist-210",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Paul Freedman",
+        "course_title": "The Early Middle Ages, 284–1000",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history/hist-210",
+        "accessed_at": "2026-09-23T15:31:13.155685Z"
+      }
+    },
+    {
+      "id": "yale:hist-202",
+      "source": "yale",
+      "department": "History",
+      "number": "HIST 202",
+      "title": "European Civilization, 1648-1945",
+      "professor": "John Merriman",
+      "term": "Fall 2008",
+      "path": "/history/hist-202",
+      "url": "https://oyc.yale.edu/history/hist-202",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "John Merriman",
+        "course_title": "European Civilization, 1648-1945",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history/hist-202",
+        "accessed_at": "2026-09-23T15:31:13.155707Z"
+      }
+    },
+    {
+      "id": "yale:hist-234",
+      "source": "yale",
+      "department": "History",
+      "number": "HIST 234",
+      "title": "Epidemics in Western Society Since 1600",
+      "professor": "Frank Snowden",
+      "term": "Spring 2010",
+      "path": "/history/hist-234",
+      "url": "https://oyc.yale.edu/history/hist-234",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Frank Snowden",
+        "course_title": "Epidemics in Western Society Since 1600",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history/hist-234",
+        "accessed_at": "2026-09-23T15:31:13.155730Z"
+      }
+    },
+    {
+      "id": "yale:hist-251",
+      "source": "yale",
+      "department": "History",
+      "number": "HIST 251",
+      "title": "Early Modern England: Politics, Religion, and Society under the Tudors and Stuarts",
+      "professor": "Keith E. Wrightson",
+      "term": "Fall 2009",
+      "path": "/history/hist-251",
+      "url": "https://oyc.yale.edu/history/hist-251",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Keith E. Wrightson",
+        "course_title": "Early Modern England: Politics, Religion, and Society under the Tudors and Stuarts",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history/hist-251",
+        "accessed_at": "2026-09-23T15:31:13.155750Z"
+      }
+    },
+    {
+      "id": "yale:hist-276",
+      "source": "yale",
+      "department": "History",
+      "number": "HIST 276",
+      "title": "France Since 1871",
+      "professor": "John Merriman",
+      "term": "Fall 2007",
+      "path": "/history/hist-276",
+      "url": "https://oyc.yale.edu/history/hist-276",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "John Merriman",
+        "course_title": "France Since 1871",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history/hist-276",
+        "accessed_at": "2026-09-23T15:31:13.155772Z"
+      }
+    },
+    {
+      "id": "yale:hsar-252",
+      "source": "yale",
+      "department": "History of Art",
+      "number": "HSAR 252",
+      "title": "Roman Architecture",
+      "professor": "Diana E. E. Kleiner",
+      "term": "Spring 2009",
+      "path": "/history-of-art/hsar-252",
+      "url": "https://oyc.yale.edu/history-of-art/hsar-252",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Diana E. E. Kleiner",
+        "course_title": "Roman Architecture",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/history-of-art/hsar-252",
+        "accessed_at": "2026-09-23T15:31:13.155792Z"
+      }
+    },
+    {
+      "id": "yale:ital-310",
+      "source": "yale",
+      "department": "Italian Language and Literature",
+      "number": "ITAL 310",
+      "title": "Dante in Translation",
+      "professor": "Giuseppe Mazzotta",
+      "term": "Fall 2008",
+      "path": "/italian-language-and-literature/ital-310",
+      "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Giuseppe Mazzotta",
+        "course_title": "Dante in Translation",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/italian-language-and-literature/ital-310",
+        "accessed_at": "2026-09-23T15:31:13.155814Z"
+      }
+    },
+    {
+      "id": "yale:mcdb-150",
+      "source": "yale",
+      "department": "Molecular, Cellular and Developmental Biology",
+      "number": "MCDB 150",
+      "title": "Global Problems of Population Growth",
+      "professor": "Robert Wyman",
+      "term": "Spring 2009",
+      "path": "/molecular-cellular-and-developmental-biology/mcdb-150",
+      "url": "https://oyc.yale.edu/molecular-cellular-and-developmental-biology/mcdb-150",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Robert Wyman",
+        "course_title": "Global Problems of Population Growth",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/molecular-cellular-and-developmental-biology/mcdb-150",
+        "accessed_at": "2026-09-23T15:31:13.155835Z"
+      }
+    },
+    {
+      "id": "yale:phil-181",
+      "source": "yale",
+      "department": "Philosophy",
+      "number": "PHIL 181",
+      "title": "Philosophy and the Science of Human Nature",
+      "professor": "Tamar Gendler",
+      "term": "Spring 2011",
+      "path": "/philosophy/phil-181",
+      "url": "https://oyc.yale.edu/philosophy/phil-181",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Tamar Gendler",
+        "course_title": "Philosophy and the Science of Human Nature",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/philosophy/phil-181",
+        "accessed_at": "2026-09-23T15:31:13.155857Z"
+      }
+    },
+    {
+      "id": "yale:phil-176",
+      "source": "yale",
+      "department": "Philosophy",
+      "number": "PHIL 176",
+      "title": "Death",
+      "professor": "Shelly Kagan",
+      "term": "Spring 2007",
+      "path": "/death/phil-176",
+      "url": "https://oyc.yale.edu/death/phil-176",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Shelly Kagan",
+        "course_title": "Death",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/death/phil-176",
+        "accessed_at": "2026-09-23T15:31:13.155879Z"
+      }
+    },
+    {
+      "id": "yale:phys-200",
+      "source": "yale",
+      "department": "Physics",
+      "number": "PHYS 200",
+      "title": "Fundamentals of Physics I",
+      "professor": "Ramamurti Shankar",
+      "term": "Fall 2006",
+      "path": "/physics/phys-200",
+      "url": "https://oyc.yale.edu/physics/phys-200",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Ramamurti Shankar",
+        "course_title": "Fundamentals of Physics I",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/physics/phys-200",
+        "accessed_at": "2026-09-23T15:31:13.155900Z"
+      }
+    },
+    {
+      "id": "yale:phys-201",
+      "source": "yale",
+      "department": "Physics",
+      "number": "PHYS 201",
+      "title": "Fundamentals of Physics II",
+      "professor": "Ramamurti Shankar",
+      "term": "Spring 2010",
+      "path": "/physics/phys-201",
+      "url": "https://oyc.yale.edu/physics/phys-201",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Ramamurti Shankar",
+        "course_title": "Fundamentals of Physics II",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/physics/phys-201",
+        "accessed_at": "2026-09-23T15:31:13.155923Z"
+      }
+    },
+    {
+      "id": "yale:plsc-270",
+      "source": "yale",
+      "department": "Political Science",
+      "number": "PLSC 270",
+      "title": "Capitalism: Success, Crisis, and Reform",
+      "professor": "Douglas W. Rae",
+      "term": "Fall 2009",
+      "path": "/political-science/plsc-270",
+      "url": "https://oyc.yale.edu/political-science/plsc-270",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Douglas W. Rae",
+        "course_title": "Capitalism: Success, Crisis, and Reform",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/political-science/plsc-270",
+        "accessed_at": "2026-09-23T15:31:13.155944Z"
+      }
+    },
+    {
+      "id": "yale:plsc-114",
+      "source": "yale",
+      "department": "Political Science",
+      "number": "PLSC 114",
+      "title": "Introduction to Political Philosophy",
+      "professor": "Steven B. Smith",
+      "term": "Fall 2006",
+      "path": "/political-science/plsc-114",
+      "url": "https://oyc.yale.edu/political-science/plsc-114",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Steven B. Smith",
+        "course_title": "Introduction to Political Philosophy",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/political-science/plsc-114",
+        "accessed_at": "2026-09-23T15:31:13.155964Z"
+      }
+    },
+    {
+      "id": "yale:psyc-110",
+      "source": "yale",
+      "department": "Psychology",
+      "number": "PSYC 110",
+      "title": "Introduction to Psychology",
+      "professor": "Paul Bloom",
+      "term": "Spring 2007",
+      "path": "/introduction-psychology/psyc-110",
+      "url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Paul Bloom",
+        "course_title": "Introduction to Psychology",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
+        "accessed_at": "2026-09-23T15:31:13.155985Z"
+      }
+    },
+    {
+      "id": "yale:psyc-123",
+      "source": "yale",
+      "department": "Psychology",
+      "number": "PSYC 123",
+      "title": "The Psychology, Biology and Politics of Food",
+      "professor": "Kelly D. Brownell",
+      "term": "Fall 2008",
+      "path": "/psychology/psyc-123",
+      "url": "https://oyc.yale.edu/psychology/psyc-123",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Kelly D. Brownell",
+        "course_title": "The Psychology, Biology and Politics of Food",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/psychology/psyc-123",
+        "accessed_at": "2026-09-23T15:31:13.156006Z"
+      }
+    },
+    {
+      "id": "yale:rlst-152",
+      "source": "yale",
+      "department": "Religious Studies",
+      "number": "RLST 152",
+      "title": "Introduction to the New Testament History and Literature",
+      "professor": "Dale B. Martin",
+      "term": "Spring 2009",
+      "path": "/religious-studies/rlst-152",
+      "url": "https://oyc.yale.edu/religious-studies/rlst-152",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Dale B. Martin",
+        "course_title": "Introduction to the New Testament History and Literature",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/religious-studies/rlst-152",
+        "accessed_at": "2026-09-23T15:31:13.156026Z"
+      }
+    },
+    {
+      "id": "yale:rlst-145",
+      "source": "yale",
+      "department": "Religious Studies",
+      "number": "RLST 145",
+      "title": "Introduction to the Old Testament (Hebrew Bible)",
+      "professor": "Christine Hayes",
+      "term": "Fall 2006",
+      "path": "/religious-studies/rlst-145",
+      "url": "https://oyc.yale.edu/religious-studies/rlst-145",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Christine Hayes",
+        "course_title": "Introduction to the Old Testament (Hebrew Bible)",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/religious-studies/rlst-145",
+        "accessed_at": "2026-09-23T15:31:13.156046Z"
+      }
+    },
+    {
+      "id": "yale:socy-151",
+      "source": "yale",
+      "department": "Sociology",
+      "number": "SOCY 151",
+      "title": "Foundations of Modern Social Theory",
+      "professor": "Iván Szelényi",
+      "term": "Fall 2009",
+      "path": "/sociology/socy-151",
+      "url": "https://oyc.yale.edu/sociology/socy-151",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Iván Szelényi",
+        "course_title": "Foundations of Modern Social Theory",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/sociology/socy-151",
+        "accessed_at": "2026-09-23T15:31:13.156070Z"
+      }
+    },
+    {
+      "id": "yale:span-300",
+      "source": "yale",
+      "department": "Spanish and Portuguese",
+      "number": "SPAN 300",
+      "title": "Cervantes' Don Quixote",
+      "professor": "Roberto González Echevarría",
+      "term": "Fall 2009",
+      "path": "/spanish-and-portuguese/span-300",
+      "url": "https://oyc.yale.edu/spanish-and-portuguese/span-300",
+      "about": "",
+      "lectures": [],
+      "license": {
+        "spdx": "CC-BY-NC-SA-3.0",
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "commercial_ok": false,
+        "notes": "Most OYC material is CC BY-NC-SA 3.0; third-party lecture inserts may be excluded."
+      },
+      "attribution": {
+        "faculty": "Roberto González Echevarría",
+        "course_title": "Cervantes' Don Quixote",
+        "institution": "Yale University",
+        "project": "Open Yale Courses",
+        "source_url": "https://oyc.yale.edu/spanish-and-portuguese/span-300",
+        "accessed_at": "2026-09-23T15:31:13.156091Z"
+      }
+    }
+  ]
+}

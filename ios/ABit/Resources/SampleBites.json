@@ -1,0 +1,122 @@
+{
+  "course_id": "yale:phil-176",
+  "generated_at": "2026-09-23T15:31:16.366809Z",
+  "bites": [
+    {
+      "id": "yale:phil-176:lecture-1:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-1",
+      "order": 1,
+      "kind": "concept",
+      "headline": "Course Introduction",
+      "body": "Professor Kagan introduces the course and the material that will be covered during the semester.",
+      "attribution_line": ", PHIL 176 (Open course)",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-1:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-1",
+      "order": 2,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "He aims to clarify what the class will focus on in particular and which subjects it will steer away from.",
+      "attribution_line": ", PHIL 176 (Open course)",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-1",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-2:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-2",
+      "order": 3,
+      "kind": "concept",
+      "headline": "The Nature of Persons: Dualism vs. Physicalism",
+      "body": "Professor Kagan discusses the two main positions with regard to the question, \"What is a person?\" On the one hand, there is the dualist view, according to which a person is a body and a soul.",
+      "attribution_line": ", PHIL 176 (Open course)",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-2:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-2",
+      "order": 4,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "On the other hand, the physicalist view argues that a person is just a body.",
+      "attribution_line": ", PHIL 176 (Open course)",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-2",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-3:hook",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-3",
+      "order": 5,
+      "kind": "concept",
+      "headline": "Arguments for the Existence of the Soul, Part I",
+      "body": "The lecture focuses on arguments that might be offered as proof for the existence of the soul.",
+      "attribution_line": ", PHIL 176 (Open course)",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    },
+    {
+      "id": "yale:phil-176:lecture-3:takeaway",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-3",
+      "order": 6,
+      "kind": "takeaway",
+      "headline": "Keep this bit",
+      "body": "The first series of arguments discussed is those known as \"inferences to the best explanation.\" That is, we posit the existence of things we cannot see so as to explain something else that is generally agreed to take place.",
+      "attribution_line": ", PHIL 176 (Open course)",
+      "source_url": "https://oyc.yale.edu/philosophy/phil-176/lecture-3",
+      "license_spdx": "CC-BY-NC-SA-3.0"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "yale:phil-176:lecture-1:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-1",
+      "prompt": "After \u201cCourse Introduction\u201d, which best captures the lecture\u2019s opening focus?",
+      "choices": [
+        "Professor Kagan introduces the course and the material that will be covered during the semester.",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    },
+    {
+      "id": "yale:phil-176:lecture-2:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-2",
+      "prompt": "After \u201cThe Nature of Persons: Dualism vs. Physicalism\u201d, which best captures the lecture\u2019s opening focus?",
+      "choices": [
+        "Professor Kagan discusses the two main positions with regard to the question, \"What is a person?\" On the one hand,\u2026",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    },
+    {
+      "id": "yale:phil-176:lecture-3:q1",
+      "course_id": "yale:phil-176",
+      "lecture_id": "lecture-3",
+      "prompt": "After \u201cArguments for the Existence of the Soul, Part I\u201d, which best captures the lecture\u2019s opening focus?",
+      "choices": [
+        "The lecture focuses on arguments that might be offered as proof for the existence of the soul.",
+        "A purely biographical timeline with no philosophical claims.",
+        "A lab procedure unrelated to the course themes.",
+        "A summary of campus administrative policy."
+      ],
+      "answer_index": 0,
+      "explanation": "Grounded in the openly published lecture overview on Open Yale Courses."
+    }
+  ]
+}

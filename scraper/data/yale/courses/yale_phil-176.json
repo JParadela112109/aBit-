@@ -1,0 +1,46 @@
+{
+  "id": "yale:phil-176",
+  "source": "yale",
+  "department": "",
+  "number": "PHIL 176",
+  "title": "PHIL 176",
+  "professor": "",
+  "term": "",
+  "path": "/philosophy/phil-176",
+  "url": "https://oyc.yale.edu/philosophy/phil-176",
+  "about": "",
+  "lectures": [
+    {
+      "id": "lecture-1",
+      "index": 1,
+      "title": "Course Introduction",
+      "path": "/philosophy/phil-176/lecture-1",
+      "url": "https://oyc.yale.edu/philosophy/phil-176/lecture-1",
+      "overview": "Professor Kagan introduces the course and the material that will be covered during the semester. He aims to clarify what the class will focus on in particular and which subjects it will steer away from. The emphasis will be placed on philosophical questions that arise when one contemplates the nature of death. The first half of the course will address metaphysical questions while the second half will focus on value theory."
+    },
+    {
+      "id": "lecture-2",
+      "index": 2,
+      "title": "The Nature of Persons: Dualism vs. Physicalism",
+      "path": "/philosophy/phil-176/lecture-2",
+      "url": "https://oyc.yale.edu/philosophy/phil-176/lecture-2",
+      "overview": "Professor Kagan discusses the two main positions with regard to the question, \"What is a person?\" On the one hand, there is the dualist view, according to which a person is a body and a soul. On the other hand, the physicalist view argues that a person is just a body. The body, however, has a certain set of abilities and is capable of a large range of activities."
+    },
+    {
+      "id": "lecture-3",
+      "index": 3,
+      "title": "Arguments for the Existence of the Soul, Part I",
+      "path": "/philosophy/phil-176/lecture-3",
+      "url": "https://oyc.yale.edu/philosophy/phil-176/lecture-3",
+      "overview": "The lecture focuses on arguments that might be offered as proof for the existence of the soul. The first series of arguments discussed is those known as \"inferences to the best explanation.\" That is, we posit the existence of things we cannot see so as to explain something else that is generally agreed to take place."
+    }
+  ],
+  "license": {
+    "spdx": "CC-BY-NC-SA-3.0",
+    "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "commercial_ok": false,
+    "notes": ""
+  },
+  "attribution": null
+}

@@ -41,9 +41,11 @@ cd ios && brew install xcodegen && xcodegen generate && open ABit.xcodeproj
 ## Product pillars
 
 1. **Bites** — one idea, one screen, high craft  
-2. **Prove it** — short checks to unlock the next module  
-3. **Degrees** — playful credentials after you pass a path  
+2. **Prove it** — lecture checks that feed a real letter grade  
+3. **College** — programs, credits, GPA, transcript, commence to graduate  
 4. **Friends** — streaks, leaderboards, what they’re studying  
+
+Degree rules: [docs/DEGREES.md](docs/DEGREES.md).
 
 ## Stack
 

@@ -111,7 +111,7 @@ struct DegreeView: View {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(course.title)
-                            .font(ABitTheme.body.weight(.semibold))
+                            .font(.system(size: 17, weight: .semibold, design: .rounded))
                             .foregroundStyle(ABitTheme.chalk)
                         Text("\(Int(store.progress(for: course.id) * 100))%")
                             .font(ABitTheme.caption)
